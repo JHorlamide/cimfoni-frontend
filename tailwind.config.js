@@ -9,7 +9,8 @@ module.exports = {
         primaryColorLight: "rgba(30, 26, 58, 0.55)",
         studentSectionColor: "#52BFEE",
         communityColor: "#1E1A3A",
-        whyColor: "#F5F3F5"
+        whyColor: "#F5F3F5",
+        subscriptionSectionColor: '#1E1A3A'
       },
     },
 

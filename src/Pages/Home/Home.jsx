@@ -1,13 +1,26 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import Navbar from "../../components/Navbar";
 import HeroImage from "../../assets/Rectangle-6.png";
 import CustomBtn from "../../components/CustomBtn";
+import CustomInput from "../../components/CustomInput";
 
 import Ellipse6 from "../../assets/Ellipse-6.png";
 import Rectangle1 from "../../assets/Rectangle-1.png";
 import Rectangle2 from "../../assets/Rectangle-2.png";
+import Vector from "../../assets/icons/Vector.png";
 
 const Home = () => {
+  const [email, setEmail] = useState("");
+
+  const handleChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handleSubscription = (e) => {
+    e.preventDefault();
+    console.log(email);
+  };
+
   return (
     <Fragment>
       <Navbar />
@@ -21,7 +34,7 @@ const Home = () => {
         />
 
         <div className='lg:absolute w-full h-full bg-center bg-cover items-center text-white py-5 lg:absolute top-0 left-0 lg:top-0 md:top-0 lg:left-2 md:left-5 lg:px-28 md:px-10 lg:py-28 md:py-6'>
-          <h1 className='max-w-sm text-3xl text-center mx-auto mb-3 font-bold lg:font-bold md:font-bold lg:mx-0 md:mx-0 lg:max-w-3xl md:max-w-lg lg:leading-snug md:leading-snug lg:text-6xl md:text-4xl lg:text-left md:text-left'>
+          <h1 className='max-w-sm text-2xl text-center mx-auto mb-3 font-bold lg:font-bold md:font-bold lg:mx-0 md:mx-0 lg:max-w-3xl md:max-w-lg lg:leading-snug md:leading-snug lg:text-6xl md:text-4xl lg:text-left md:text-left'>
             Design Digital <br className='hidden lg:block' />
             Experience that Improves business growth
           </h1>
@@ -89,7 +102,7 @@ const Home = () => {
 
         <div className='grid grid-rows-2 grid-flow-col gap-2 lg:flex md:flex lg:justify-center lg:items-center space-x-2 lg:space-x-10 md:space-x-4'>
           {[1, 2, 3, 4, 5].map((items) => (
-            <img src={Ellipse6} alt='Avatar' />
+            <img className='object-cover' src={Ellipse6} alt='Avatar' />
           ))}
         </div>
       </div>
@@ -104,7 +117,7 @@ const Home = () => {
           {/* ITEM 1 */}
           <div className='flex flex-col space-y-5 justify-evenly items-center lg:flex-row md:flex-row lg:flex-row-reverse md:flex-row-reverse'>
             <img
-              className='lg:h-1/2 md:h-3/5 lg:w-1/3 md:w-1/3'
+              className='object-cover lg:h-1/2 md:h-3/5 lg:w-1/3 md:w-1/3'
               src={Rectangle1}
               alt='Rectangle'
             />
@@ -149,7 +162,7 @@ const Home = () => {
           {/* ITEM 2 */}
           <div className='flex flex-col space-y-10 justify-evenly items-center lg:flex-row md:flex-row'>
             <img
-              className='lg:h-1/2 md:h-3/5 lg:w-1/3 md:w-1/3'
+              className='object-cover lg:h-1/2 md:h-3/5 lg:w-1/3 md:w-1/3'
               src={Rectangle1}
               alt='Rectangle'
             />
@@ -194,7 +207,7 @@ const Home = () => {
           {/* ITEM 3 */}
           <div className='flex flex-col space-y-10 justify-evenly items-center lg:flex-row md:flex-row lg:flex-row-reverse md:flex-row-reverse'>
             <img
-              className='lg:h-1/2 md:h-3/5 lg:w-1/3 md:w-1/3'
+              className='object-cover lg:h-1/2 md:h-3/5 lg:w-1/3 md:w-1/3'
               src={Rectangle1}
               alt='Rectangle'
             />
@@ -308,6 +321,168 @@ const Home = () => {
                 with years of experience in the field to help them grow and
                 thrive in the industry
               </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* OUR STUDENT FEEDBACK */}
+      <div className='bg-studentSectionColor px-10 py-10 lg:px-20 md:px-8 lg:py-10 md:py-10'>
+        <div className='flex flex-col space-y-5'>
+          {/* ITEM ONE */}
+          <div className='flex flex-col justify-center items-center space-y-3'>
+            <h1 className='text-2xl font-bold text-communityColor'>
+              Our Student Feedbacks
+            </h1>
+
+            <p className='font-normal text-center text-communityColor'>
+              Don't take our words for it. Hear what others have to say
+            </p>
+          </div>
+
+          {/* ITEM TWO */}
+          <div className='flex flex-col justify-center items-center space-y-5 lg:space-x-3 md:space-x-5 lg:space-y-0 md:space-y-0 space-x-5 lg:flex-row md:flex-row'>
+            {/* FIRST */}
+            <div className='bg-white rounded px-5 py-5 flex flex-col space-y-3'>
+              {/* heading */}
+              <div className='flex justify-between items-center lg:flex-row md:flex-col md:space-y-3'>
+                <img src={Ellipse6} alt='Ellipse6' />
+
+                <div className='flex lg:-mt-20 space-x-1'>
+                  {[1, 2, 3, 4, 5].map((item) => (
+                    <img src={Vector} alt='Vector' />
+                  ))}
+                </div>
+              </div>
+
+              {/* contents */}
+              <div className='flex justify-between items-center'>
+                <p className='font-semibold text-lg'>Chidi Ogbonna</p>
+              </div>
+
+              <p className='text-sm text-justify font-normal'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vulputate gravida ornare quam massa nec. A, ullamcorper risus
+                diam lacinia viverra placerat odio tempor. Sed vitae facilisi
+                amet, erat. Dui dapibus etiam cras placerat elementum dolor.
+              </p>
+            </div>
+
+            {/* SECOND */}
+            <div className='bg-white rounded px-5 py-5 flex flex-col space-y-3'>
+              {/* heading */}
+              <div className='flex justify-between items-center lg:flex-row md:flex-col md:space-y-3'>
+                <img src={Ellipse6} alt='Ellipse6' />
+
+                <div className='flex -mt-8 space-x-1'>
+                  {[1, 2, 3, 4, 5].map((item) => (
+                    <img src={Vector} alt='Vector' />
+                  ))}
+                </div>
+              </div>
+
+              {/* contents */}
+              <div className='flex justify-between items-center'>
+                <p className='font-semibold text-lg'>Chidi Ogbonna</p>
+              </div>
+
+              <p className='text-sm text-justify font-normal'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vulputate gravida ornare quam massa nec. A, ullamcorper risus
+                diam lacinia viverra placerat odio tempor. Sed vitae facilisi
+                amet, erat. Dui dapibus etiam cras placerat elementum dolor.
+              </p>
+            </div>
+
+            {/* THIRD */}
+            <div className='bg-white rounded px-5 py-5 flex flex-col space-y-3'>
+              {/* heading */}
+              <div className='flex justify-between items-center lg:flex-row md:flex-col md:space-y-3'>
+                <img src={Ellipse6} alt='Ellipse6' />
+
+                <div className='flex -mt-8 space-x-1'>
+                  {[1, 2, 3, 4, 5].map((item) => (
+                    <img src={Vector} alt='Vector' />
+                  ))}
+                </div>
+              </div>
+
+              {/* contents */}
+              <div className='flex justify-between items-center'>
+                <p className='font-semibold text-lg'>Chidi Ogbonna</p>
+              </div>
+
+              <p className='text-sm text-justify font-normal'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vulputate gravida ornare quam massa nec. A, ullamcorper risus
+                diam lacinia viverra placerat odio tempor. Sed vitae facilisi
+                amet, erat. Dui dapibus etiam cras placerat elementum dolor.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* JOIN OUR COMMUNITY */}
+      <div className='bg-subscriptionSectionColor px-5 py-5 lg:px-40 md:px-30 lg:py-16 md:py-10'>
+        <div className='flex flex-col justify-center space-y-5'>
+          <h1 className='text-white text-center text-lg font-semibold lg:text-3xl md:text-3xl'>
+            Join our community
+          </h1>
+
+          <p className='max-w-lg mx-auto text-white text-center font-normal'>
+            Become a part of our community. Get the latest news from our front
+            desk sent to your inbox weekly.
+          </p>
+
+          <div className='hidden mx-auto w-1/2 mt-1 relative rounded-md shadow-sm lg:block md:block'>
+            <CustomInput
+              inputStyle={
+                "py-3.5 block w-full pl-7 pr-12 sm:text-sm border-gray-300 rounded-lg rounded-tr-xl rounded-br-xl"
+              }
+              inputProps={{
+                type: "email",
+                name: "email",
+                placeholder: "Enter an email address...",
+                value: email,
+                onChange: handleChange,
+              }}
+            />
+
+            <div className='absolute inset-y-0 right-0 flex items-center'>
+              <CustomBtn
+                btnStyle={
+                  "text-communityColor px-8 py-3 rounded-tr-xl rounded-br-xl bg-studentSectionColor"
+                }
+              >
+                Send invite
+              </CustomBtn>
+            </div>
+          </div>
+
+          {/* MOBILE */}
+          <div className='flex justify-between space-x-3 mt-1 rounded-md shadow-sm lg:hidden md:hidden'>
+            <CustomInput
+              inputStyle={
+                "py-3.5 block w-full pl-7 pr-12 sm:text-sm border-gray-300 rounded-lg"
+              }
+              inputProps={{
+                type: "email",
+                name: "email",
+                placeholder: "Enter an email address...",
+                value: email,
+                onChange: handleChange,
+              }}
+            />
+
+            <div className='inset-y-0 right-0 flex items-center'>
+              <CustomBtn
+                btnStyle={
+                  "text-sm text-communityColor px-8 py-2 rounded bg-studentSectionColor"
+                }
+              >
+                Send invite
+              </CustomBtn>
             </div>
           </div>
         </div>
