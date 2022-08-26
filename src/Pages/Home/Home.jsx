@@ -5,6 +5,7 @@ import CustomBtn from "../../components/CustomBtn";
 
 import Ellipse6 from "../../assets/Ellipse-6.png";
 import Rectangle1 from "../../assets/Rectangle-1.png";
+import Rectangle2 from "../../assets/Rectangle-2.png";
 
 const Home = () => {
   return (
@@ -238,8 +239,78 @@ const Home = () => {
       </div>
 
       {/* WHY CIMFONI */}
-      <div className="bg-whyColor px-28">
-        
+      <div className='bg-whyColor px-8 py-10 lg:px-28 lg:py-20'>
+        <h1 className='font-semibold text-2xl lg:text-4xl md:text-4xl'>
+          Why Cimfoni?
+        </h1>
+
+        <div className='flex flex-col py-5 space-y-4 lg:space-y-0 md:space-y-0 lg:space-x-16 md:space-x-6 lg:flex-row md:flex-row'>
+          <img
+            className='lg:h-auto md:h-80 object-cover'
+            src={Rectangle2}
+            alt='Rectangle2'
+          />
+
+          <div className='space-y-4 lg:space-y-0 md:space-y-0 lg:grid lg:grid-rows-2 lg:grid-flow-col lg:gap-x-10 lg:gap-y-0 md:grid md:grid-rows-2 md:grid-flow-col md:gap-x-6 md:gap-y-6'>
+            {/* ITEM 1 */}
+            <div className='flex flex-col space-y-3'>
+              <h1 className='text-xl font-semibold'>
+                Best Knowledge Of Design
+              </h1>
+
+              <p className='text-sm font-normal text-justify leading-relaxed'>
+                Navigating the product industry is usually a challenging phase
+                for young designers. Without the right guidance and support, the
+                average designer spends a longer time trying to find their feet.
+                Perxels connects young designers with professionals and mentors
+                with years of experience in the field to help them grow and
+                thrive in the industry
+              </p>
+            </div>
+
+            {/* ITEM 2 */}
+            <div className='flex flex-col space-y-3'>
+              <h1 className='text-xl font-semibold'>Growth & Mentorship</h1>
+
+              <p className='text-sm font-normal text-justify leading-relaxed'>
+                Navigating the product industry is usually a challenging phase
+                for young designers. Without the right guidance and support, the
+                average designer spends a longer time trying to find their feet.
+                Perxels connects young designers with professionals and mentors
+                with years of experience in the field to help them grow and
+                thrive in the industry
+              </p>
+            </div>
+
+            {/* ITEM 3 */}
+            <div className='flex flex-col space-y-3'>
+              <h1 className='text-xl font-semibold'>Peer Support</h1>
+
+              <p className='text-sm font-normal text-justify leading-relaxed'>
+                Navigating the product industry is usually a challenging phase
+                for young designers. Without the right guidance and support, the
+                average designer spends a longer time trying to find their feet.
+                Perxels connects young designers with professionals and mentors
+                with years of experience in the field to help them grow and
+                thrive in the industry
+              </p>
+            </div>
+
+            {/* ITEM 4 */}
+            <div className='flex flex-col space-y-3'>
+              <h1 className='text-xl font-semibold'>Hands on Experiments</h1>
+
+              <p className='text-sm font-normal text-justify leading-relaxed'>
+                Navigating the product industry is usually a challenging phase
+                for young designers. Without the right guidance and support, the
+                average designer spends a longer time trying to find their feet.
+                Perxels connects young designers with professionals and mentors
+                with years of experience in the field to help them grow and
+                thrive in the industry
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </Fragment>
   );
