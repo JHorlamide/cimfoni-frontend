@@ -331,7 +331,7 @@ const Home = () => {
         <div className='flex flex-col space-y-5'>
           {/* ITEM ONE */}
           <div className='flex flex-col justify-center items-center space-y-3'>
-            <h1 className='text-2xl font-bold text-communityColor'>
+            <h1 className='text-2xl text-center font-bold text-communityColor'>
               Our Student Feedbacks
             </h1>
 
