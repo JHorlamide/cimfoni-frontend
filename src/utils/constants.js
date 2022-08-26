@@ -30,3 +30,10 @@ export const navigation = [
     title: "Gallery",
   },
 ];
+
+export const ratings = [
+  {
+    id: 1,
+    rating: 4.5,
+  },
+];

@@ -3,11 +3,13 @@ import Navbar from "../../components/Navbar";
 import HeroImage from "../../assets/Rectangle-6.png";
 import CustomBtn from "../../components/CustomBtn";
 import CustomInput from "../../components/CustomInput";
+import RatingCard from "./RatingCard";
+import FaqItems from './FaqItems'
 
 import Ellipse6 from "../../assets/Ellipse-6.png";
 import Rectangle1 from "../../assets/Rectangle-1.png";
 import Rectangle2 from "../../assets/Rectangle-2.png";
-import Vector from "../../assets/icons/Vector.png";
+import { ratings } from "../../utils/constants";
 
 const Home = () => {
   const [email, setEmail] = useState("");
@@ -101,8 +103,13 @@ const Home = () => {
         </h1>
 
         <div className='grid grid-rows-2 grid-flow-col gap-2 lg:flex md:flex lg:justify-center lg:items-center space-x-2 lg:space-x-10 md:space-x-4'>
-          {[1, 2, 3, 4, 5].map((items) => (
-            <img className='object-cover' src={Ellipse6} alt='Avatar' />
+          {[1, 2, 3, 4, 5].map((items, index) => (
+            <img
+              key={index}
+              className='object-cover'
+              src={Ellipse6}
+              alt='Avatar'
+            />
           ))}
         </div>
       </div>
@@ -342,83 +349,9 @@ const Home = () => {
 
           {/* ITEM TWO */}
           <div className='flex flex-col justify-center items-center space-y-5 lg:space-x-3 md:space-x-5 lg:space-y-0 md:space-y-0 space-x-5 lg:flex-row md:flex-row'>
-            {/* FIRST */}
-            <div className='bg-white rounded px-5 py-5 flex flex-col space-y-3'>
-              {/* heading */}
-              <div className='flex justify-between items-center lg:flex-row md:flex-col md:space-y-3'>
-                <img src={Ellipse6} alt='Ellipse6' />
-
-                <div className='flex lg:-mt-20 space-x-1'>
-                  {[1, 2, 3, 4, 5].map((item) => (
-                    <img src={Vector} alt='Vector' />
-                  ))}
-                </div>
-              </div>
-
-              {/* contents */}
-              <div className='flex justify-between items-center'>
-                <p className='font-semibold text-lg'>Chidi Ogbonna</p>
-              </div>
-
-              <p className='text-sm text-justify font-normal'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Vulputate gravida ornare quam massa nec. A, ullamcorper risus
-                diam lacinia viverra placerat odio tempor. Sed vitae facilisi
-                amet, erat. Dui dapibus etiam cras placerat elementum dolor.
-              </p>
-            </div>
-
-            {/* SECOND */}
-            <div className='bg-white rounded px-5 py-5 flex flex-col space-y-3'>
-              {/* heading */}
-              <div className='flex justify-between items-center lg:flex-row md:flex-col md:space-y-3'>
-                <img src={Ellipse6} alt='Ellipse6' />
-
-                <div className='flex -mt-8 space-x-1'>
-                  {[1, 2, 3, 4, 5].map((item) => (
-                    <img src={Vector} alt='Vector' />
-                  ))}
-                </div>
-              </div>
-
-              {/* contents */}
-              <div className='flex justify-between items-center'>
-                <p className='font-semibold text-lg'>Chidi Ogbonna</p>
-              </div>
-
-              <p className='text-sm text-justify font-normal'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Vulputate gravida ornare quam massa nec. A, ullamcorper risus
-                diam lacinia viverra placerat odio tempor. Sed vitae facilisi
-                amet, erat. Dui dapibus etiam cras placerat elementum dolor.
-              </p>
-            </div>
-
-            {/* THIRD */}
-            <div className='bg-white rounded px-5 py-5 flex flex-col space-y-3'>
-              {/* heading */}
-              <div className='flex justify-between items-center lg:flex-row md:flex-col md:space-y-3'>
-                <img src={Ellipse6} alt='Ellipse6' />
-
-                <div className='flex -mt-8 space-x-1'>
-                  {[1, 2, 3, 4, 5].map((item) => (
-                    <img src={Vector} alt='Vector' />
-                  ))}
-                </div>
-              </div>
-
-              {/* contents */}
-              <div className='flex justify-between items-center'>
-                <p className='font-semibold text-lg'>Chidi Ogbonna</p>
-              </div>
-
-              <p className='text-sm text-justify font-normal'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Vulputate gravida ornare quam massa nec. A, ullamcorper risus
-                diam lacinia viverra placerat odio tempor. Sed vitae facilisi
-                amet, erat. Dui dapibus etiam cras placerat elementum dolor.
-              </p>
-            </div>
+            {[1, 2, 3].map((feedback, index) => (
+              <RatingCard key={index} imageUrl={Ellipse6} />
+            ))}
           </div>
         </div>
       </div>
@@ -485,6 +418,17 @@ const Home = () => {
               </CustomBtn>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* FAQ */}
+      <div className='bg-secondaryColor px-16 py-10 lg:px-30 md:px-28 lg:py-10 md:py-10'>
+        <div className='flex flex-col justify-center items-center space-y-4'>
+          <h1 className='text-xl font-bold text-communityColor text-center mx-auto lg:text-2xl md:text-2xl'>
+            Frequently Asked Questions
+          </h1>
+
+          {[1, 2, 3].map((item) => (<FaqItems />))}
         </div>
       </div>
     </Fragment>
