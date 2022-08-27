@@ -1,11 +1,44 @@
-import React from "react";
+import React, { Fragment } from "react";
+import facebookIcon from "../../assets/icons/facebook.png";
+import twitterIcon from "../../assets/icons/twitter.png";
+import instagramIcon from "../../assets/icons/instagram.png";
+import linkedinIcon from "../../assets/icons/linkedin.png";
+
+const FooterSocial = () => {
+  return (
+    <Fragment>
+      <h1 className='font-semibold mb-5 pt-3 text-center mx-auto lg:text-left md:text-left lg:pt-5 md:pt-5'>Follow Us</h1>
+      <div className='grid grid-rows-2 grid-flow-col gap-4 mx-5 lg:space-x-2 md:space-x-2 lg:flex md:flex'>
+        <div className='flex space-x-2'>
+          <img className="w-4 h-4" src={facebookIcon} alt='facebook icon' width={20} height={20} />
+          <p className='text-sm'>Facebook</p>
+        </div>
+
+        <div className='flex space-x-2'>
+          <img className="w-4 h-4" src={twitterIcon} alt='facebook icon' width={20} height={20} />
+          <p className='text-sm'>Twitter</p>
+        </div>
+
+        <div className='flex space-x-2'>
+          <img className="w-4 h-4" src={instagramIcon} alt='facebook icon' width={20} height={20} />
+          <p className='text-sm'>Instagram</p>
+        </div>
+
+        <div className='flex space-x-2'>
+          <img className="w-4 h-4" src={linkedinIcon} alt='facebook icon' width={20} height={20} />
+          <p className='text-sm'>LinkedIn</p>
+        </div>
+      </div>
+    </Fragment>
+  );
+};
 
 const Footer = () => {
   return (
     <div className='bg-subscriptionSectionColor w-full px-5 py-5 lg:px-10 md:px-8 lg:py-10 md:py-10'>
-      <div className='text-white flex flex-col space-y-10 lg:justify-evenly md:justify-evenly lg:space-x-5 md:space-x-5 lg:flex-row md:flex-row'>
+      <div className='text-white flex flex-col space-y-10 lg:justify-evenly lg:space-x-5 lg:flex lg:flex-row md:grid md:grid-rows-2 md:grid-flow-col gap-x-3 gap-y-1'>
         {/* ITEM-1 */}
-        <div className='flex flex-col space-y-5'>
+        <div className='flex flex-col space-y-5 justify-center items-center lg:justify-start md:justify-start lg:items-start md:items-start'>
           <h4>Logo</h4>
 
           <div>
@@ -78,7 +111,7 @@ const Footer = () => {
         </div>
 
         {/* ITEM-2 */}
-        <div className='flex flex-row space-x-5 lg:space-x-0 md:space-x-0 lg:flex-col md:flex-col'>
+        <div className='flex flex-row space-x-5 justify-center items-start lg:space-x-0 md:space-x-0 lg:flex-col md:flex-col'>
           <h1 className='font-semibold mb-5'>Explore</h1>
 
           <div className='flex flex-col space-y-2 text-sm'>
@@ -207,11 +240,16 @@ const Footer = () => {
                 </svg>
               </span>
             </div>
+
+            {/* Socials desktop */}
+            <div className='hidden lg:block md:block'>
+              <FooterSocial />
+            </div>
           </div>
         </div>
 
         {/* ITEM-3 */}
-        <div className='flex flex-row space-x-5 lg:space-x-0 md:space-x-0 lg:flex-col md:flex-col'>
+        <div className='flex flex-row space-x-5 justify-center items-start lg:justify-start md:justify-start lg:space-x-0 md:space-x-0 lg:flex-col md:flex-col'>
           <h1 className='font-semibold mb-5'>Learn</h1>
 
           <div className='flex flex-col space-y-2 text-sm'>
@@ -279,9 +317,9 @@ const Footer = () => {
             </div>
           </div>
         </div>
-       
+
         {/* ITEM-4 */}
-        <div className='flex flex-row space-x-5 lg:space-x-0 md:space-x-0 lg:flex-col md:flex-col'>
+        <div className='flex flex-row space-x-5 justify-center items-start lg:justify-start md:justify-start lg:space-x-0 md:space-x-0 lg:flex-col md:flex-col'>
           <h1 className='font-semibold mb-5'>Legal</h1>
 
           <div className='flex flex-col space-y-2 text-sm'>
@@ -348,6 +386,11 @@ const Footer = () => {
               </span>
             </div>
           </div>
+        </div>
+
+        {/* Socials mobile */}
+        <div className='lg:hidden md:hidden'>
+          <FooterSocial />
         </div>
       </div>
     </div>
