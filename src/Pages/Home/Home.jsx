@@ -5,11 +5,13 @@ import CustomBtn from "../../components/CustomBtn";
 import CustomInput from "../../components/CustomInput";
 import RatingCard from "./RatingCard";
 import FaqItems from "./FaqItems";
-import Footer from '../../components/Footer/Footer'
+import Footer from "../../components/Footer/Footer";
+import HeroSection from "../../components/Hero";
 
 import Ellipse6 from "../../assets/Ellipse-6.png";
 import Rectangle1 from "../../assets/Rectangle-1.png";
 import Rectangle2 from "../../assets/Rectangle-2.png";
+import ArrowSVG from "../../assets/icons/arrow";
 
 const Home = () => {
   const [email, setEmail] = useState("");
@@ -26,74 +28,9 @@ const Home = () => {
   return (
     <Fragment>
       <Navbar />
-
       {/* HERO */}
-      <div className='relative lg:relative bg-primaryColor h-full w-full bg-cover bg-center -mt-12'>
-        <img
-          className='absolute lg:relative w-full h-full object-cover mix-blend-overlay opacity-95'
-          src={HeroImage}
-          alt='Hero'
-        />
-
-        <div className='lg:absolute w-full h-full bg-center bg-cover items-center text-white py-5 lg:absolute top-0 left-0 lg:top-0 md:top-0 lg:left-2 md:left-5 lg:px-28 md:px-10 lg:py-28 md:py-6'>
-          <h1 className='max-w-sm text-2xl text-center mx-auto mb-3 font-bold lg:font-bold md:font-bold lg:mx-0 md:mx-0 lg:max-w-4xl md:max-w-lg lg:leading-snug md:leading-snug lg:text-6xl md:text-4xl lg:text-left md:text-left'>
-            Design Digital <br className='hidden lg:block' />
-            Experience that Improves business growth
-          </h1>
-
-          <p className='max-w-2xl py-1 px-5 bottom-0 text-md text-justify mx-auto lg:mx-0 md:mx-0 lg:py-5 lg:px-0 md:px-0 md:py-2 lg:max-w-4xl md:max-w-xl'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis sit
-            gravida mus enim elit egestas ut. Nulla faucibus rutrum phasellus
-            iaculis. Donec tristique volutpat id lectus nibh. Lorem commodo, sit
-            elit suspendisse leo, phasellus molestie.
-          </p>
-
-          <div className='flex justify-center items-center lg:justify-start md:justify-start items-start space-x-3 py-3 lg:flex-row'>
-            <CustomBtn
-              btnStyle={
-                "text-sm bg-white text-primaryColor font-medium px-4 py-3 rounded-md flex lg:text-md"
-              }
-            >
-              View Courses
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                fill='none'
-                viewBox='0 0 24 24'
-                strokeWidth={1.5}
-                stroke='currentColor'
-                className='w-6 h-6 ml-3'
-              >
-                <path
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                  d='M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3'
-                />
-              </svg>
-            </CustomBtn>
-
-            <CustomBtn
-              btnStyle={
-                "text-sm border-2 border-white bg-primaryColor text-white font-medium px-4 py-3 rounded-md flex lg:border-0 lg:text-md"
-              }
-            >
-              Start a project
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                fill='none'
-                viewBox='0 0 24 24'
-                strokeWidth={1.5}
-                stroke='currentColor'
-                className='w-6 h-6 ml-3'
-              >
-                <path
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                  d='M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3'
-                />
-              </svg>
-            </CustomBtn>
-          </div>
-        </div>
+      <div className='h-full w-full bg-cover bg-center -mt-12'>
+        <HeroSection />
       </div>
 
       {/* SUPPORT */}
@@ -143,7 +80,7 @@ const Home = () => {
               </p>
 
               <CustomBtn
-                btnStyle={
+                className={
                   "flex mx-auto justify-center bg-primaryColor text-white font-medium px-4 py-3 rounded-md lg:w-1/3 md:w-1/2 lg:mx-0 md:mx-0"
                 }
               >
@@ -188,7 +125,7 @@ const Home = () => {
               </p>
 
               <CustomBtn
-                btnStyle={
+                className={
                   "flex mx-auto justify-center bg-primaryColor text-white font-medium px-4 py-3 rounded-md lg:w-1/3 md:w-1/2 lg:mx-0 md:mx-0"
                 }
               >
@@ -233,7 +170,7 @@ const Home = () => {
               </p>
 
               <CustomBtn
-                btnStyle={
+                className={
                   "flex mx-auto justify-center bg-primaryColor text-white font-medium px-4 py-3 rounded-md lg:w-1/3 md:w-1/2 lg:mx-0 md:mx-0"
                 }
               >
@@ -387,7 +324,7 @@ const Home = () => {
 
             <div className='absolute inset-y-0 right-0 flex items-center'>
               <CustomBtn
-                btnStyle={
+                className={
                   "text-communityColor px-8 py-3 rounded-tr-xl rounded-br-xl bg-studentSectionColor"
                 }
               >
@@ -413,7 +350,7 @@ const Home = () => {
 
             <div className='inset-y-0 right-0 flex items-center'>
               <CustomBtn
-                btnStyle={
+                className={
                   "text-sm text-communityColor px-8 py-2 rounded bg-studentSectionColor"
                 }
               >
@@ -431,8 +368,8 @@ const Home = () => {
             Frequently Asked Questions
           </h1>
 
-          {[1, 2, 3].map((item) => (
-            <FaqItems />
+          {[1, 2, 3].map((item, index) => (
+            <FaqItems key={index} />
           ))}
         </div>
       </div>

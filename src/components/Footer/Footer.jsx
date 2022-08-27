@@ -144,9 +144,10 @@ const Footer = () => {
 
           <div className=' flex flex-col space-y-2 text-sm'>
             {footer_nav.map((navItem) => (
-              <div className='flex space-x-1'>
+              <div key={navItem.id} className='flex space-x-1'>
                 <p className='text-sm'>{navItem.title}</p>
-                <span>{navItem.icon}</span>
+                {/* {navItem.icon} */}
+                <navItem.icon className={'w-6 h-6'}/>
               </div>
             ))}
 

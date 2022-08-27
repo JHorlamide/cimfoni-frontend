@@ -42,7 +42,7 @@ const Navbar = () => {
             <div className='flex space-x-4 text-gray-500 -mt-14'>
               <div className='hidden flex items-center space-x-2 md:flex lg:flex'>
                 <CustomBtn
-                  btnStyle={
+                  className={
                     "bg-primaryColor text-white px-5 py-3 rounded font-semibold md:inline-block"
                   }
                 >
@@ -50,7 +50,7 @@ const Navbar = () => {
                 </CustomBtn>
 
                 <CustomBtn
-                  btnStyle={
+                  className={
                     "text-primaryColor rounded font-semibold border border-primaryColor px-4 py-3"
                   }
                 >
@@ -111,7 +111,7 @@ const Navbar = () => {
                     <div className='flex flex-col space-y-4'>
                       <Menu.Item>
                         <CustomBtn
-                          btnStyle={
+                          className={
                             "bg-primaryColor text-white  mx-2 px-2 py-3 rounded font-semibold md:inline-block"
                           }
                         >
@@ -121,7 +121,7 @@ const Navbar = () => {
 
                       <Menu.Item>
                         <CustomBtn
-                          btnStyle={
+                          className={
                             "text-primaryColor rounded font-semibold border border-primaryColor mx-2 px-4 py-3"
                           }
                         >

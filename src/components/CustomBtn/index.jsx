@@ -1,9 +1,11 @@
 import React from "react";
 
-const CustomBtn = ({ btnStyle, children, ...rest }) => {
+const CustomBtn = ({ className, leftIcon, rightIcon, children, ...rest }) => {
   return (
-    <button className={`${btnStyle}`} {...rest}>
+    <button className={className} {...rest}>
+      {!!leftIcon && leftIcon}
       {children}
+      {!!rightIcon && rightIcon}
     </button>
   );
 };
