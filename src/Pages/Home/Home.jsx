@@ -1,15 +1,15 @@
 import React, { Fragment, useState } from "react";
-import Navbar from "../../components/Navbar";
+import Navbar from "../../components/Navbar/Navbar";
 import HeroImage from "../../assets/Rectangle-6.png";
 import CustomBtn from "../../components/CustomBtn";
 import CustomInput from "../../components/CustomInput";
 import RatingCard from "./RatingCard";
-import FaqItems from './FaqItems'
+import FaqItems from "./FaqItems";
+import Footer from '../../components/Footer/Footer'
 
 import Ellipse6 from "../../assets/Ellipse-6.png";
 import Rectangle1 from "../../assets/Rectangle-1.png";
 import Rectangle2 from "../../assets/Rectangle-2.png";
-import { ratings } from "../../utils/constants";
 
 const Home = () => {
   const [email, setEmail] = useState("");
@@ -368,7 +368,10 @@ const Home = () => {
             desk sent to your inbox weekly.
           </p>
 
-          <div className='hidden mx-auto w-1/2 mt-1 relative rounded-md shadow-sm lg:block md:block'>
+          <form
+            onSubmit={handleSubscription}
+            className='hidden mx-auto w-1/2 mt-1 relative rounded-md shadow-sm lg:block md:block'
+          >
             <CustomInput
               inputStyle={
                 "py-3.5 block w-full pl-7 pr-12 sm:text-sm border-gray-300 rounded-lg rounded-tr-xl rounded-br-xl"
@@ -391,7 +394,7 @@ const Home = () => {
                 Send invite
               </CustomBtn>
             </div>
-          </div>
+          </form>
 
           {/* MOBILE */}
           <div className='flex justify-between space-x-3 mt-1 rounded-md shadow-sm lg:hidden md:hidden'>
@@ -428,9 +431,14 @@ const Home = () => {
             Frequently Asked Questions
           </h1>
 
-          {[1, 2, 3].map((item) => (<FaqItems />))}
+          {[1, 2, 3].map((item) => (
+            <FaqItems />
+          ))}
         </div>
       </div>
+
+      {/* FOOTER */}
+      <Footer />
     </Fragment>
   );
 };

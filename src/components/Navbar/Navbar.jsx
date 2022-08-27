@@ -1,11 +1,11 @@
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
-import { navigation } from "../utils/constants";
+import { navigation } from "../../utils/constants";
 import NavLinks from "./NavLinks/Index";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 
-import CustomBtn from "./CustomBtn";
-import Logo from "../assets/Cimfoni_Logo.png";
+import CustomBtn from "../CustomBtn";
+import Logo from "../../assets/Cimfoni_Logo.png";
 
 const Navbar = () => {
   return (
