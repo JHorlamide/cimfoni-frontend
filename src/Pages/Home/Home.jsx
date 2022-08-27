@@ -36,7 +36,7 @@ const Home = () => {
         />
 
         <div className='lg:absolute w-full h-full bg-center bg-cover items-center text-white py-5 lg:absolute top-0 left-0 lg:top-0 md:top-0 lg:left-2 md:left-5 lg:px-28 md:px-10 lg:py-28 md:py-6'>
-          <h1 className='max-w-sm text-2xl text-center mx-auto mb-3 font-bold lg:font-bold md:font-bold lg:mx-0 md:mx-0 lg:max-w-3xl md:max-w-lg lg:leading-snug md:leading-snug lg:text-6xl md:text-4xl lg:text-left md:text-left'>
+          <h1 className='max-w-sm text-2xl text-center mx-auto mb-3 font-bold lg:font-bold md:font-bold lg:mx-0 md:mx-0 lg:max-w-4xl md:max-w-lg lg:leading-snug md:leading-snug lg:text-6xl md:text-4xl lg:text-left md:text-left'>
             Design Digital <br className='hidden lg:block' />
             Experience that Improves business growth
           </h1>
