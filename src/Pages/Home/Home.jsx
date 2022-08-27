@@ -51,7 +51,7 @@ const Home = () => {
           <div className='flex justify-center items-center lg:justify-start md:justify-start items-start space-x-3 py-3 lg:flex-row'>
             <CustomBtn
               btnStyle={
-                "bg-white text-primaryColor font-medium px-4 py-3 rounded-md flex"
+                "text-sm bg-white text-primaryColor font-medium px-4 py-3 rounded-md flex lg:text-md"
               }
             >
               View Courses
@@ -73,7 +73,7 @@ const Home = () => {
 
             <CustomBtn
               btnStyle={
-                "border-2 border-white bg-primaryColor text-white font-medium px-4 py-3 rounded-md flex lg:border-0"
+                "text-sm border-2 border-white bg-primaryColor text-white font-medium px-4 py-3 rounded-md flex lg:border-0 lg:text-md"
               }
             >
               Start a project
