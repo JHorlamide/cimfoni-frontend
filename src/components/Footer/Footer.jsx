@@ -141,7 +141,7 @@ const Footer = () => {
         <div className='flex flex-row space-x-5 justify-center items-start lg:space-x-0 md:space-x-0 lg:flex-col md:flex-col'>
           <h1 className='font-semibold mb-5'>Explore</h1>
 
-          <div className='flex flex-col space-y-2 text-sm'>
+          <div className=' flex flex-col space-y-2 text-sm'>
             {footer_nav.map((navItem) => (
               <div className='flex space-x-1'>
                 <p className='text-sm'>{navItem.title}</p>
@@ -150,7 +150,7 @@ const Footer = () => {
             ))}
 
             {/* Socials desktop */}
-            <div className='hidden lg:block md:block'>
+            <div className='lg:w-2/3 -mr-80 hidden lg:block md:block'>
               <FooterSocial />
             </div>
           </div>
