@@ -3,7 +3,8 @@ import facebookIcon from "../../assets/icons/facebook.png";
 import twitterIcon from "../../assets/icons/twitter.png";
 import instagramIcon from "../../assets/icons/instagram.png";
 import linkedinIcon from "../../assets/icons/linkedin.png";
-import { footer_nav } from "../../utils/constants";
+import { footerNav } from "../../utils/constants";
+import ArrowSVG from "../../assets/icons/arrow";
 
 const FooterSocial = () => {
   return (
@@ -139,15 +140,16 @@ const Footer = () => {
         </div>
 
         {/* ITEM-2 */}
-        <div className='flex flex-row space-x-5 justify-center items-start lg:space-x-0 md:space-x-0 lg:flex-col md:flex-col'>
-          <h1 className='font-semibold mb-5'>Explore</h1>
+        <div className='flex flex-col space-x-5 justify-center items-start lg:space-x-0 md:space-x-0 lg:flex-col md:flex-col'>
+          <h1 className='mx-auto font-semibold mb-5 lg:mx-0 md:mx-0 lg:mx-0'>
+            Explore
+          </h1>
 
-          <div className=' flex flex-col space-y-2 text-sm'>
-            {footer_nav.map((navItem) => (
+          <div className=' text-sm grid grid-rows-2 grid-flow-col gap-3 lg:flex md:flex lg:flex-col md:flex-col lg:space-y-2'>
+            {footerNav.explore.map((navItem) => (
               <div key={navItem.id} className='flex space-x-1'>
                 <p className='text-sm'>{navItem.title}</p>
-                {/* {navItem.icon} */}
-                <navItem.icon className={'w-6 h-6'}/>
+                <navItem.icon className={"w-6 h-6"} />
               </div>
             ))}
 
@@ -159,142 +161,30 @@ const Footer = () => {
         </div>
 
         {/* ITEM-3 */}
-        <div className='flex flex-row space-x-5 justify-center items-start lg:justify-start md:justify-start lg:space-x-0 md:space-x-0 lg:flex-col md:flex-col'>
-          <h1 className='font-semibold mb-5'>Learn</h1>
+        <div className='flex flex-col space-x-5 justify-center items-start lg:justify-start md:justify-start lg:space-x-0 md:space-x-0 lg:flex-col md:flex-col'>
+          <h1 className='mx-auto font-semibold mb-5 md:mx-0 lg:mx-0'>Learn</h1>
 
-          <div className='flex flex-col space-y-2 text-sm'>
-            <div className='flex space-x-1'>
-              <p className='text-sm'>Software Development</p>
-
-              <span>
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  fill='none'
-                  viewBox='0 0 24 24'
-                  strokeWidth={1.5}
-                  stroke='currentColor'
-                  className='w-6 h-6'
-                >
-                  <path
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    d='M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3'
-                  />
-                </svg>
-              </span>
-            </div>
-
-            <div className='flex space-x-1'>
-              <p className='text-sm'>Graphics Design</p>
-
-              <span>
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  fill='none'
-                  viewBox='0 0 24 24'
-                  strokeWidth={1.5}
-                  stroke='currentColor'
-                  className='w-6 h-6'
-                >
-                  <path
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    d='M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3'
-                  />
-                </svg>
-              </span>
-            </div>
-
-            <div className='flex space-x-1'>
-              <p className='text-sm'>Media Broadcasting</p>
-
-              <span>
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  fill='none'
-                  viewBox='0 0 24 24'
-                  strokeWidth={1.5}
-                  stroke='currentColor'
-                  className='w-6 h-6'
-                >
-                  <path
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    d='M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3'
-                  />
-                </svg>
-              </span>
-            </div>
+          <div className='text-sm grid grid-rows-2 grid-flow-col gap-3 lg:flex md:flex lg:flex-col md:flex-col lg:space-y-2'>
+            {footerNav.learn.map((navItem) => (
+              <div key={navItem.id} className='flex space-x-1'>
+                <p className='text-sm'>{navItem.title}</p>
+                <navItem.icon className={"w-6 h-6"} />
+              </div>
+            ))}
           </div>
         </div>
 
         {/* ITEM-4 */}
-        <div className='flex flex-row space-x-5 justify-center items-start lg:justify-start md:justify-start lg:space-x-0 md:space-x-0 lg:flex-col md:flex-col'>
-          <h1 className='font-semibold mb-5'>Legal</h1>
+        <div className='flex flex-col space-x-5 justify-center items-start lg:justify-start md:justify-start lg:space-x-0 md:space-x-0 lg:flex-col md:flex-col'>
+          <h1 className='mx-auto font-semibold mb-5 md:mx-auto lg:mx-auto'>Legal</h1>
 
-          <div className='flex flex-col space-y-2 text-sm'>
-            <div className='flex space-x-1'>
-              <p className='text-sm'>Privacy & Cookies</p>
-
-              <span>
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  fill='none'
-                  viewBox='0 0 24 24'
-                  strokeWidth={1.5}
-                  stroke='currentColor'
-                  className='w-6 h-6'
-                >
-                  <path
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    d='M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3'
-                  />
-                </svg>
-              </span>
-            </div>
-
-            <div className='flex space-x-1'>
-              <p className='text-sm'>Terms & Conditions</p>
-
-              <span>
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  fill='none'
-                  viewBox='0 0 24 24'
-                  strokeWidth={1.5}
-                  stroke='currentColor'
-                  className='w-6 h-6'
-                >
-                  <path
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    d='M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3'
-                  />
-                </svg>
-              </span>
-            </div>
-
-            <div className='flex space-x-1'>
-              <p className='text-sm'>Legal Disclaimer</p>
-
-              <span>
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  fill='none'
-                  viewBox='0 0 24 24'
-                  strokeWidth={1.5}
-                  stroke='currentColor'
-                  className='w-6 h-6'
-                >
-                  <path
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    d='M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3'
-                  />
-                </svg>
-              </span>
-            </div>
+          <div className='text-sm grid grid-rows-2 grid-flow-col gap-3 lg:flex md:flex lg:flex-col md:flex-col lg:space-y-2'>
+            {footerNav.legal.map((navItem) => (
+              <div key={navItem.id} className='flex space-x-1'>
+                <p className='text-sm'>{navItem.title}</p>
+                <ArrowSVG className={"w-6 h-6"} />
+              </div>
+            ))}
           </div>
         </div>
 

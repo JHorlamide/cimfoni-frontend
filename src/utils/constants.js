@@ -1,4 +1,4 @@
-import ArrowSVG from '../assets/icons/arrow';
+import ArrowSVG from "../assets/icons/arrow";
 
 export const navigation = [
   {
@@ -33,50 +33,94 @@ export const navigation = [
   },
 ];
 
-export const footer_nav = [
-  {
-    id: 1,
-    path: "/home",
-    title: "Home",
-    icon: ArrowSVG
-  },
-  {
-    id: 2,
-    path: "/about",
-    title: "About Us",
-    icon: ArrowSVG,
-  },
-  {
-    id: 3,
-    path: "/resources",
-    title: "Resources",
-    icon: ArrowSVG,
-  },
-  {
-    id: 4,
-    path: "/community",
-    title: "Community",
-    icon: ArrowSVG,
-  },
-  {
-    id: 5,
-    path: "/community",
-    title: "Community",
-    icon: ArrowSVG,
-  },
-  {
-    id: 6,
-    path: "/glossary",
-    title: "Glossary",
-    icon: ArrowSVG,
-  },
-  {
-    id: 7,
-    path: "/news",
-    title: "News",
-    icon: ArrowSVG,
-  },
-];
+export const footerNav = {
+  explore: [
+    {
+      id: 1,
+      path: "/home",
+      title: "Home",
+      icon: ArrowSVG,
+    },
+    {
+      id: 2,
+      path: "/about",
+      title: "About Us",
+      icon: ArrowSVG,
+    },
+    {
+      id: 3,
+      path: "/resources",
+      title: "Resources",
+      icon: ArrowSVG,
+    },
+    {
+      id: 4,
+      path: "/community",
+      title: "Community",
+      icon: ArrowSVG,
+    },
+    {
+      id: 5,
+      path: "/community",
+      title: "Community",
+      icon: ArrowSVG,
+    },
+    {
+      id: 6,
+      path: "/glossary",
+      title: "Glossary",
+      icon: ArrowSVG,
+    },
+    {
+      id: 7,
+      path: "/news",
+      title: "News",
+      icon: ArrowSVG,
+    },
+  ],
+
+  learn: [
+    {
+      id: 1,
+      path: "/software-development",
+      title: "Software Development",
+      icon: ArrowSVG,
+    },
+    {
+      id: 2,
+      path: "/graphics-design",
+      title: "Graphics Design",
+      icon: ArrowSVG,
+    },
+    {
+      id: 3,
+      path: "/media-broadcasting",
+      title: "Media Broadcasting",
+      icon: ArrowSVG,
+    },
+  ],
+
+  legal: [
+    {
+      id: 1,
+      path: "/privacy-policy",
+      title: "Privacy & Cookies",
+      icon: ArrowSVG,
+    },
+    {
+      id: 2,
+      path: "/terms-condition",
+      title: "Terms & Conditions",
+      icon: ArrowSVG,
+    },
+    {
+      id: 3,
+      path: "/legal-disclaimer",
+      title: "Legal Disclaimer",
+      icon: ArrowSVG,
+    },
+  ]
+};
 
 export const ratings = [
   {
