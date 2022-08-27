@@ -12,7 +12,7 @@ const FooterSocial = () => {
         Follow Us
       </h1>
 
-      <div className='ml-20 lg:ml-0 grid grid-rows-2 grid-flow-col gap-4 mx-5 lg:space-x-2 md:space-x-2 lg:flex md:flex'>
+      <div className='ml-20 grid grid-rows-2 grid-flow-col gap-4 mx-5 lg:space-x-2 md:space-x-2 lg:flex md:flex lg:ml-0'>
         <div className='flex space-x-2'>
           <img
             className='w-4 h-4'
