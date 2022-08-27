@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+
 import Navbar from "../../components/Navbar/Navbar";
 import CustomBtn from "../../components/CustomBtn";
 import Footer from "../../components/Footer/Footer";
@@ -7,9 +8,9 @@ import FAQ from "../../components/FAQ/";
 import Community from "../../components/Community";
 import Testimony from "../../components/Testimony";
 
-import Ellipse6 from "../../assets/Ellipse-6.png";
-import Rectangle1 from "../../assets/Rectangle-1.png";
-import Rectangle2 from "../../assets/Rectangle-2.png";
+import Ellipse6 from "../../assets/images/Ellipse-6.png";
+import Rectangle1 from "../../assets/images/Rectangle-1.png";
+import Rectangle2 from "../../assets/images/Rectangle-2.png";
 
 const Home = () => {
   return (
@@ -183,7 +184,7 @@ const Home = () => {
       </div>
 
       {/* WHY CIMFONI */}
-      <div className='bg-whyColor px-8 py-10 lg:px-28 lg:py-20'>
+      <div className='bg-lightGray px-8 py-10 lg:px-28 lg:py-20'>
         <h1 className='font-semibold text-2xl lg:text-4xl md:text-4xl'>
           Why Cimfoni?
         </h1>

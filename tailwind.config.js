@@ -6,21 +6,13 @@ module.exports = {
       colors: {
         primaryColor: "#432779",
         secondaryColor: "#DEFFFF",
-        primaryColorLight: "rgba(30, 26, 58, 0.55)",
-        studentSectionColor: "#52BFEE",
-        communityColor: "#1E1A3A",
-        whyColor: "#F5F3F5",
-        subscriptionSectionColor: '#1E1A3A',
-        overlayColor: "#1e1a3a8c",
-
-        badgedColor: "#52BFEE"
+        lightBlueText: "#1E1A3A",
+        lightGray: "#F5F3F5",
+        dipBlue: "#1E1A3A",
+        primaryColorLight: "#1e1a3a8c",
+        skyBlue: "#52BFEE",
       },
     },
-
-    fontFamily: {
-      'body': ['Montserrat'],
-      'sans': ['Montserrat', 'Helvetica', 'Arial', 'sans-serif']
-    }
   },
   plugins: [],
 };

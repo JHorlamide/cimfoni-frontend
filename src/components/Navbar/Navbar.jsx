@@ -5,7 +5,7 @@ import NavLinks from "./NavLinks/Index";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 
 import CustomBtn from "../CustomBtn";
-import Logo from "../../assets/Cimfoni_Logo.png";
+import Logo from "../../assets/images/Logo.png";
 
 const Navbar = () => {
   return (

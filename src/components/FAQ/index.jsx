@@ -5,7 +5,7 @@ const index = () => {
   return (
     <div className='bg-secondaryColor px-16 py-10 lg:px-30 md:px-28 lg:py-16 md:py-10'>
       <div className='flex flex-col justify-center items-center space-y-4'>
-        <h1 className='text-xl font-bold text-communityColor text-center mx-auto lg:text-2xl md:text-2xl'>
+        <h1 className='text-xl font-bold text-lightBlueText text-center mx-auto lg:text-2xl md:text-2xl'>
           Frequently Asked Questions
         </h1>
 

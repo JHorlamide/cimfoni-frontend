@@ -15,7 +15,7 @@ const Community = () => {
   };
   
   return (
-    <div className='bg-subscriptionSectionColor px-5 py-5 lg:px-40 md:px-30 lg:py-16 md:py-10'>
+    <div className='bg-dipBlue px-5 py-5 lg:px-40 md:px-30 lg:py-16 md:py-10'>
       <div className='flex flex-col justify-center space-y-5'>
         <h1 className='text-white text-center text-lg font-semibold lg:text-3xl md:text-3xl'>
           Join our community
@@ -46,7 +46,7 @@ const Community = () => {
           <div className='absolute inset-y-0 right-0 flex items-center'>
             <CustomBtn
               className={
-                "text-communityColor px-8 py-3 rounded-tr-xl rounded-br-xl bg-studentSectionColor"
+                "text-lightBlueText px-8 py-3 rounded-tr-xl rounded-br-xl bg-skyBlue"
               }
             >
               Send invite
@@ -72,7 +72,7 @@ const Community = () => {
           <div className='inset-y-0 right-0 flex items-center'>
             <CustomBtn
               className={
-                "text-sm text-communityColor px-8 py-2 rounded bg-studentSectionColor"
+                "text-sm text-lightBlueText px-8 py-2 rounded bg-skyBlue"
               }
             >
               Send invite

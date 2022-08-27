@@ -1,12 +1,20 @@
 import React, { Fragment } from "react";
 import Navbar from "../../components/Navbar/Navbar";
-import Rectangle8 from "../../assets/Rectangle-8.png";
+import Rectangle8 from "../../assets/images/Rectangle-8.png";
 import CustomBtn from "../../components/CustomBtn";
 import ArrowSVG from "../../assets/icons/arrow";
 import Community from "../../components/Community";
 import Testimony from "../../components/Testimony";
 import FAQ from "../../components/FAQ";
 import Footer from "../../components/Footer/Footer";
+
+const badges = ["Javascript", "React.Js", "MongoDB", "HTML & CSS"];
+
+const Badge = ({ badgeText }) => {
+  return (
+    <p className='bg-skyBlue rounded px-1.5 py-1.5 text-xs'>{badgeText}</p>
+  );
+};
 
 const Courses = () => {
   return (
@@ -51,18 +59,9 @@ const Courses = () => {
             <p className='text-primaryColor md:text-sm'>10 class mates</p>
 
             <div id='languages' className='flex space-x-3 md:py-1'>
-              <p className='bg-badgedColor rounded px-1.5 py-1.5 text-xs'>
-                Javascript
-              </p>
-              <p className='bg-badgedColor rounded px-1.5 py-1.5 text-xs'>
-                React.Js
-              </p>
-              <p className='bg-badgedColor rounded px-1.5 py-1.5 text-xs'>
-                MongoDB
-              </p>
-              <p className='bg-badgedColor rounded px-1.5 py-1.5 text-xs'>
-                HTML & CSS
-              </p>
+              {badges.map((badge, index) => (
+                <Badge key={index} badgeText={badge} />
+              ))}
             </div>
 
             <p className='px-5 text-justify md:px-0 md:py-2 lg:max-w-md'>
@@ -95,18 +94,9 @@ const Courses = () => {
             <p className='text-primaryColor md:text-sm'>10 class mates</p>
 
             <div id='languages' className='flex space-x-3 md:py-1'>
-              <p className='bg-badgedColor rounded px-1.5 py-1.5 text-xs'>
-                Javascript
-              </p>
-              <p className='bg-badgedColor rounded px-1.5 py-1.5 text-xs'>
-                React.Js
-              </p>
-              <p className='bg-badgedColor rounded px-1.5 py-1.5 text-xs'>
-                MongoDB
-              </p>
-              <p className='bg-badgedColor rounded px-1.5 py-1.5 text-xs'>
-                HTML & CSS
-              </p>
+              {badges.map((badge, index) => (
+                <Badge key={index} badgeText={badge} />
+              ))}
             </div>
 
             <p className='px-5 text-justify md:px-0 md:py-2 lg:max-w-md'>
@@ -151,18 +141,9 @@ const Courses = () => {
             <p className='text-primaryColor md:text-sm'>10 class mates</p>
 
             <div id='languages' className='flex space-x-3 md:py-1'>
-              <p className='bg-badgedColor rounded px-1.5 py-1.5 text-xs'>
-                Javascript
-              </p>
-              <p className='bg-badgedColor rounded px-1.5 py-1.5 text-xs'>
-                React.Js
-              </p>
-              <p className='bg-badgedColor rounded px-1.5 py-1.5 text-xs'>
-                MongoDB
-              </p>
-              <p className='bg-badgedColor rounded px-1.5 py-1.5 text-xs'>
-                HTML & CSS
-              </p>
+              {badges.map((badge, index) => (
+                <Badge key={index} badgeText={badge} />
+              ))}
             </div>
 
             <p className='px-5 text-justify md:px-0 md:py-2 lg:max-w-md'>
