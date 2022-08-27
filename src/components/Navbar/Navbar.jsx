@@ -6,6 +6,7 @@ import { Disclosure, Menu, Transition } from "@headlessui/react";
 
 import CustomBtn from "../CustomBtn";
 import Logo from "../../assets/Cimfoni_Logo.png";
+import Logo2 from "../../assets/Logo-mark.png";
 
 const Navbar = () => {
   return (
@@ -14,7 +15,8 @@ const Navbar = () => {
         <Fragment>
           <div className='flex justify-between items-center mx-auto max-w-screen-xl'>
             {/* Image */}
-            <Link to='/' arial-current='page'>
+            <Link className="flex" to='/' arial-current='page'>
+              {/* <img className="hidden my-5 w-16 h-16 lg:block md:hidden -mr-5" src={Logo2} alt="" /> */}
               <img className='w-48 -ml-4 lg:ml-0' src={Logo} alt='Cimfoni Logo' />
             </Link>
 
