@@ -1,30 +1,17 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment } from "react";
 import Navbar from "../../components/Navbar/Navbar";
-import HeroImage from "../../assets/Rectangle-6.png";
 import CustomBtn from "../../components/CustomBtn";
-import CustomInput from "../../components/CustomInput";
-import RatingCard from "./RatingCard";
-import FaqItems from "./FaqItems";
 import Footer from "../../components/Footer/Footer";
 import HeroSection from "../../components/Hero";
+import FAQ from "../../components/FAQ/";
+import Community from "../../components/Community";
+import Testimony from "../../components/Testimony";
 
 import Ellipse6 from "../../assets/Ellipse-6.png";
 import Rectangle1 from "../../assets/Rectangle-1.png";
 import Rectangle2 from "../../assets/Rectangle-2.png";
-import ArrowSVG from "../../assets/icons/arrow";
 
 const Home = () => {
-  const [email, setEmail] = useState("");
-
-  const handleChange = (e) => {
-    setEmail(e.target.value);
-  };
-
-  const handleSubscription = (e) => {
-    e.preventDefault();
-    console.log(email);
-  };
-
   return (
     <Fragment>
       <Navbar />
@@ -271,108 +258,13 @@ const Home = () => {
       </div>
 
       {/* OUR STUDENT FEEDBACK */}
-      <div className='bg-studentSectionColor px-10 py-10 lg:px-20 md:px-8 lg:py-16 md:py-10'>
-        <div className='flex flex-col space-y-5'>
-          {/* ITEM ONE */}
-          <div className='flex flex-col justify-center items-center space-y-3'>
-            <h1 className='mx-auto text-2xl text-center font-bold text-communityColor'>
-              Our Student Feedbacks
-            </h1>
-
-            <p className='font-normal text-center text-communityColor'>
-              Don't take our words for it. Hear what others have to say
-            </p>
-          </div>
-
-          {/* ITEM TWO */}
-          <div className='flex flex-col justify-center items-center space-y-5 lg:space-x-3 md:space-x-5 lg:space-y-0 md:space-y-0 space-x-5 lg:flex-row md:flex-row'>
-            {[1, 2, 3].map((feedback, index) => (
-              <RatingCard key={index} imageUrl={Ellipse6} />
-            ))}
-          </div>
-        </div>
-      </div>
+      <Testimony />
 
       {/* JOIN OUR COMMUNITY */}
-      <div className='bg-subscriptionSectionColor px-5 py-5 lg:px-40 md:px-30 lg:py-16 md:py-10'>
-        <div className='flex flex-col justify-center space-y-5'>
-          <h1 className='text-white text-center text-lg font-semibold lg:text-3xl md:text-3xl'>
-            Join our community
-          </h1>
-
-          <p className='max-w-lg mx-auto text-white text-center font-normal'>
-            Become a part of our community. Get the latest news from our front
-            desk sent to your inbox weekly.
-          </p>
-
-          <form
-            onSubmit={handleSubscription}
-            className='hidden mx-auto w-1/2 mt-1 relative rounded-md shadow-sm lg:block md:block'
-          >
-            <CustomInput
-              inputStyle={
-                "py-3.5 block w-full pl-7 pr-12 sm:text-sm border-gray-300 rounded-lg rounded-tr-xl rounded-br-xl"
-              }
-              inputProps={{
-                type: "email",
-                name: "email",
-                placeholder: "Enter an email address...",
-                value: email,
-                onChange: handleChange,
-              }}
-            />
-
-            <div className='absolute inset-y-0 right-0 flex items-center'>
-              <CustomBtn
-                className={
-                  "text-communityColor px-8 py-3 rounded-tr-xl rounded-br-xl bg-studentSectionColor"
-                }
-              >
-                Send invite
-              </CustomBtn>
-            </div>
-          </form>
-
-          {/* MOBILE */}
-          <div className='flex justify-between space-x-3 mt-1 rounded-md shadow-sm lg:hidden md:hidden'>
-            <CustomInput
-              inputStyle={
-                "py-3.5 block w-full pl-7 pr-12 sm:text-sm border-gray-300 rounded-lg"
-              }
-              inputProps={{
-                type: "email",
-                name: "email",
-                placeholder: "Enter an email address...",
-                value: email,
-                onChange: handleChange,
-              }}
-            />
-
-            <div className='inset-y-0 right-0 flex items-center'>
-              <CustomBtn
-                className={
-                  "text-sm text-communityColor px-8 py-2 rounded bg-studentSectionColor"
-                }
-              >
-                Send invite
-              </CustomBtn>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Community />
 
       {/* FAQ */}
-      <div className='bg-secondaryColor px-16 py-10 lg:px-30 md:px-28 lg:py-10 md:py-10'>
-        <div className='flex flex-col justify-center items-center space-y-4'>
-          <h1 className='text-xl font-bold text-communityColor text-center mx-auto lg:text-2xl md:text-2xl'>
-            Frequently Asked Questions
-          </h1>
-
-          {[1, 2, 3].map((item, index) => (
-            <FaqItems key={index} />
-          ))}
-        </div>
-      </div>
+      <FAQ />
 
       {/* FOOTER */}
       <Footer />
