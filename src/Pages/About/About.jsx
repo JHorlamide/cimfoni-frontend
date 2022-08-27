@@ -5,7 +5,6 @@ const About = () => {
   return (
     <Fragment>
       <Navbar />
-      <div>About</div>
     </Fragment>
   );
 };

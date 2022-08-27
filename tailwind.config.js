@@ -11,7 +11,9 @@ module.exports = {
         communityColor: "#1E1A3A",
         whyColor: "#F5F3F5",
         subscriptionSectionColor: '#1E1A3A',
-        overlayColor: "#1e1a3a8c"
+        overlayColor: "#1e1a3a8c",
+
+        badgedColor: "#52BFEE"
       },
     },
 
