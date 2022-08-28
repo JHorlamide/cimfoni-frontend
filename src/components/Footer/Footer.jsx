@@ -149,7 +149,7 @@ const Footer = () => {
             {footerNav.explore.map((navItem) => (
               <div key={navItem.id} className='flex space-x-1'>
                 <p className='text-sm'>{navItem.title}</p>
-                <navItem.icon className={"w-6 h-6"} />
+                <navItem.icon className={"hidden lg:block md:block w-6 h-6"} />
               </div>
             ))}
 
@@ -168,7 +168,7 @@ const Footer = () => {
             {footerNav.learn.map((navItem) => (
               <div key={navItem.id} className='flex space-x-1'>
                 <p className='text-sm'>{navItem.title}</p>
-                <navItem.icon className={"w-6 h-6"} />
+                <navItem.icon className={"hidden lg:block md:block  w-6 h-6"} />
               </div>
             ))}
           </div>
@@ -182,7 +182,7 @@ const Footer = () => {
             {footerNav.legal.map((navItem) => (
               <div key={navItem.id} className='flex space-x-1'>
                 <p className='text-sm'>{navItem.title}</p>
-                <ArrowSVG className={"w-6 h-6"} />
+                <ArrowSVG className={"hidden lg:block md:block  w-6 h-6"} />
               </div>
             ))}
           </div>
