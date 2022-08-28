@@ -1,4 +1,8 @@
 import ArrowSVG from "../assets/icons/arrow";
+import facebookIcon from "../assets/icons/facebook.png";
+import twitterIcon from "../assets/icons/twitter.png";
+import instagramIcon from "../assets/icons/instagram.png";
+import linkedinIcon from "../assets/icons/linkedin.png";
 
 export const navigation = [
   {
@@ -121,6 +125,33 @@ export const footerNav = {
     },
   ]
 };
+
+export const footerSocials = [
+  {
+    id:1,
+    url: 'https://facebook.com/username',
+    title: "Facebook",
+    image: facebookIcon
+  },
+  {
+    id: 2,
+    url: 'https://instagram.com/username',
+    title: "Instagram",
+    image: instagramIcon
+  },
+  {
+    id: 3,
+    url: 'https://twitter.com/username',
+    title: "Twitter",
+    image: twitterIcon
+  },
+  {
+    id: 4,
+    url: 'https://linkedin.com/username',
+    title: "LinkedIn",
+    image: linkedinIcon
+  },
+]
 
 export const ratings = [
   {

@@ -1,9 +1,6 @@
 import React, { Fragment } from "react";
-import facebookIcon from "../../assets/icons/facebook.png";
-import twitterIcon from "../../assets/icons/twitter.png";
-import instagramIcon from "../../assets/icons/instagram.png";
-import linkedinIcon from "../../assets/icons/linkedin.png";
-import { footerNav } from "../../utils/constants";
+import { Link } from "react-router-dom";
+import { footerNav, footerSocials } from "../../utils/constants";
 import ArrowSVG from "../../assets/icons/arrow";
 
 const FooterSocial = () => {
@@ -14,49 +11,12 @@ const FooterSocial = () => {
       </h1>
 
       <div className='grid grid-rows-2 grid-flow-col gap-x-16 gap-y-5 mx-5 justify-center items-center lg:justify-start lg:items-start lg:space-x-2 md:space-x-2 lg:flex md:flex lg:ml-0'>
-        <div className='flex space-x-2'>
-          <img
-            className='w-4 h-4'
-            src={facebookIcon}
-            alt='facebook icon'
-            width={20}
-            height={20}
-          />
-          <p className='text-sm'>Facebook</p>
-        </div>
-
-        <div className='flex space-x-2'>
-          <img
-            className='w-4 h-4'
-            src={twitterIcon}
-            alt='facebook icon'
-            width={20}
-            height={20}
-          />
-          <p className='text-sm'>Twitter</p>
-        </div>
-
-        <div className='flex space-x-2'>
-          <img
-            className='w-4 h-4'
-            src={instagramIcon}
-            alt='facebook icon'
-            width={20}
-            height={20}
-          />
-          <p className='text-sm'>Instagram</p>
-        </div>
-
-        <div className='flex space-x-2'>
-          <img
-            className='w-4 h-4'
-            src={linkedinIcon}
-            alt='facebook icon'
-            width={20}
-            height={20}
-          />
-          <p className='text-sm'>LinkedIn</p>
-        </div>
+        {footerSocials.map(({ id, url, title, image }) => (
+          <Link className='flex space-x-2' key={id} to={url} target='_blank'>
+            <img className='w-4 h-4' src={image} alt={title} />
+            <p className='text-sm'>{title}</p>
+          </Link>
+        ))}
       </div>
     </Fragment>
   );
