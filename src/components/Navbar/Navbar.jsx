@@ -6,6 +6,7 @@ import { Disclosure, Menu, Transition } from "@headlessui/react";
 
 import CustomBtn from "../CustomBtn";
 import Logo from "../../assets/images/Logo.png";
+import LogoMobile from "../../assets/images/Logo-mobile.png";
 
 const Navbar = () => {
   return (
@@ -16,8 +17,14 @@ const Navbar = () => {
             {/* Image */}
             <Link className='flex' to='/' arial-current='page'>
               <img
-                className='w-48 -ml-4 lg:ml-0'
+                className='hidden w-48 -ml-4 lg:ml-0 lg:block md:block'
                 src={Logo}
+                alt='Cimfoni Logo'
+              />
+              
+              <img
+                className='w-48 -ml-4 lg:ml-0 lg:hidden md:hidden'
+                src={LogoMobile}
                 alt='Cimfoni Logo'
               />
             </Link>
