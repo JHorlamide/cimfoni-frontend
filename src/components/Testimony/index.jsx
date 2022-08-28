@@ -18,9 +18,9 @@ const index = () => {
         </div>
 
         {/* ITEM TWO */}
-        <div className='flex flex-col justify-center items-center space-y-5 lg:space-x-3 md:space-x-5 lg:space-y-0 md:space-y-0 space-x-5 lg:flex-row md:flex-row'>
+        <div className='flex flex-col justify-center items-center space-y-5 lg:space-x-3 md:space-x-5 lg:space-y-0 md:space-y-0 lg:flex-row md:flex-row'>
           {[1, 2, 3].map((feedback, index) => (
-            <RatingCard key={index} imageUrl={Ellipse6} />
+            <RatingCard key={index} image={Ellipse6} />
           ))}
         </div>
       </div>

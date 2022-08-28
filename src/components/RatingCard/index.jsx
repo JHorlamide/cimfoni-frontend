@@ -2,12 +2,12 @@ import React from "react";
 import Rating from "../Rating";
 import { ratings } from "../../utils/constants";
 
-const index = ({ imageUrl }) => {
+const index = ({ image }) => {
   return (
-    <div className='bg-white rounded px-5 py-5 flex flex-col space-y-3'>
+    <div className='bg-white rounded px-5 py-5 flex flex-col'>
       {/* heading */}
       <div className='flex justify-between items-center lg:flex-row md:flex-col md:space-y-3'>
-        <img src={imageUrl} alt='Ellipse6' />
+        <img src={image} alt='Ellipse6' />
 
         {ratings.map((rating) => (
           <Rating
