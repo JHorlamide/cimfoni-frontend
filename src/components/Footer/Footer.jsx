@@ -13,7 +13,7 @@ const FooterSocial = () => {
         Follow Us
       </h1>
 
-      <div className='ml-20 grid grid-rows-2 grid-flow-col gap-4 mx-5 lg:space-x-2 md:space-x-2 lg:flex md:flex lg:ml-0'>
+      <div className='grid grid-rows-2 grid-flow-col gap-x-16 gap-y-5 mx-5 justify-center items-center lg:justify-start lg:items-start lg:space-x-2 md:space-x-2 lg:flex md:flex lg:ml-0'>
         <div className='flex space-x-2'>
           <img
             className='w-4 h-4'
@@ -140,12 +140,12 @@ const Footer = () => {
         </div>
 
         {/* ITEM-2 */}
-        <div className='flex flex-col space-x-5 justify-center items-start lg:space-x-0 md:space-x-0 lg:flex-col md:flex-col'>
+        <div className='flex flex-col space-x-5 justify-center items-center lg:items-start md:items-start lg:space-x-0 md:space-x-0 lg:flex-col md:flex-col'>
           <h1 className='mx-auto font-semibold mb-5 lg:mx-0 md:mx-0 lg:mx-0'>
             Explore
           </h1>
 
-          <div className=' text-sm grid grid-rows-2 grid-flow-col gap-3 lg:flex md:flex lg:flex-col md:flex-col lg:space-y-2'>
+          <div className='text-sm grid grid-rows-2 grid-flow-col gap-3 lg:flex md:flex lg:flex-col md:flex-col lg:space-y-2'>
             {footerNav.explore.map((navItem) => (
               <div key={navItem.id} className='flex space-x-1'>
                 <p className='text-sm'>{navItem.title}</p>
@@ -161,7 +161,7 @@ const Footer = () => {
         </div>
 
         {/* ITEM-3 */}
-        <div className='flex flex-col space-x-5 justify-center items-start lg:justify-start md:justify-start lg:space-x-0 md:space-x-0 lg:flex-col md:flex-col'>
+        <div className='flex flex-col space-x-5 justify-center items-center lg:items-start md:items-start lg:justify-start md:justify-start lg:space-x-0 md:space-x-0 lg:flex-col md:flex-col'>
           <h1 className='mx-auto font-semibold mb-5 md:mx-0 lg:mx-0'>Learn</h1>
 
           <div className='text-sm grid grid-rows-2 grid-flow-col gap-3 lg:flex md:flex lg:flex-col md:flex-col lg:space-y-2'>
@@ -175,8 +175,8 @@ const Footer = () => {
         </div>
 
         {/* ITEM-4 */}
-        <div className='flex flex-col space-x-5 justify-center items-start lg:justify-start md:justify-start lg:space-x-0 md:space-x-0 lg:flex-col md:flex-col'>
-          <h1 className='mx-auto font-semibold mb-5 md:mx-auto lg:mx-auto'>Legal</h1>
+        <div className='flex flex-col space-x-5 justify-center items-center lg:items-start md:items-start lg:justify-start md:justify-start lg:space-x-0 md:space-x-0 lg:flex-col md:flex-col'>
+          <h1 className='mx-auto font-semibold mb-5 md:mx-0 lg:mx-0'>Legal</h1>
 
           <div className='text-sm grid grid-rows-2 grid-flow-col gap-3 lg:flex md:flex lg:flex-col md:flex-col lg:space-y-2'>
             {footerNav.legal.map((navItem) => (
