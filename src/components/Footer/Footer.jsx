@@ -24,8 +24,8 @@ const FooterSocial = () => {
 
 const Footer = () => {
   return (
-    <div className='bg-dipBlue w-full px-5 py-5 lg:px-10 md:px-8 lg:py-10 md:py-10'>
-      <div className='text-white flex flex-col space-y-10 lg:justify-evenly lg:space-x-5 lg:flex lg:flex-row md:grid md:grid-rows-2 md:grid-flow-col gap-x-3 gap-y-1'>
+    <div className='bg-dipBlue w-full px-5 py-5 lg:px-10 md:px-0 lg:py-10 md:pb-10'>
+      <div className='text-white flex flex-col justify-center items-center space-y-10 lg:justify-evenly lg:items-start lg:space-x-5 lg:flex lg:flex-row md:grid md:grid-rows-2 md:grid-flow-col gap-x-40 gap-y-0'>
         {/* ITEM-1 */}
         <div className='mt-10 flex flex-col space-y-5 justify-center items-center lg:justify-start md:justify-start lg:items-start md:items-start'>
           <h4>Logo</h4>
