@@ -11,6 +11,7 @@ module.exports = {
         dipBlue: "#1E1A3A",
         primaryColorLight: "#1e1a3a8c",
         skyBlue: "#52BFEE",
+        lightPurple: "#F0ECF9"
       },
     },
   },

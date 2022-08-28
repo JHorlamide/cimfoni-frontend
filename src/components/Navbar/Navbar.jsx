@@ -10,20 +10,20 @@ import LogoMobile from "../../assets/images/Logo-mobile.png";
 
 const Navbar = () => {
   return (
-    <Disclosure as={"nav"} className='bg-white px-2 lg:px-6'>
+    <Disclosure as={"nav"} className='sticky top-0 bg-white mt-10 px-2 lg:px-6'>
       {({ open }) => (
         <Fragment>
           <div className='flex justify-between items-center mx-auto max-w-screen-xl'>
             {/* Image */}
             <Link className='flex' to='/' arial-current='page'>
               <img
-                className='hidden w-48 -ml-4 lg:ml-0 lg:block md:block'
+                className='hidden w-48 -ml-4 lg:ml-0 lg:block md:block lg:-mb-10 lg:-mt-10 md:-mb-10 md:-mt-10'
                 src={Logo}
                 alt='Cimfoni Logo'
               />
               
               <img
-                className='w-48 -ml-4 lg:ml-0 lg:hidden md:hidden'
+                className='w-48 -ml-4 -mb-12 -mt-10 lg:ml-0 lg:hidden md:hidden'
                 src={LogoMobile}
                 alt='Cimfoni Logo'
               />

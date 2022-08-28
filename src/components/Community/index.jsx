@@ -13,7 +13,7 @@ const Community = () => {
     e.preventDefault();
     console.log(email);
   };
-  
+
   return (
     <div className='bg-dipBlue px-5 py-5 lg:px-40 md:px-30 lg:py-16 md:py-10'>
       <div className='flex flex-col justify-center space-y-5'>
@@ -31,7 +31,7 @@ const Community = () => {
           className='hidden mx-auto w-1/2 mt-1 relative rounded-md shadow-sm lg:block md:block'
         >
           <CustomInput
-            inputStyle={
+            inputClassName={
               "py-3.5 block w-full pl-7 pr-12 sm:text-sm border-gray-300 rounded-lg rounded-tr-xl rounded-br-xl"
             }
             inputProps={{
@@ -57,9 +57,7 @@ const Community = () => {
         {/* MOBILE */}
         <div className='flex justify-between space-x-3 mt-1 rounded-md shadow-sm lg:hidden md:hidden'>
           <CustomInput
-            inputStyle={
-              "py-3.5 block w-full pl-7 pr-12 sm:text-sm border-gray-300 rounded-lg"
-            }
+            inputClassName='py-3.5 block w-full pl-7 pr-12 sm:text-sm border-gray-300 rounded-lg'
             inputProps={{
               type: "email",
               name: "email",
