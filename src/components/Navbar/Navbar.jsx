@@ -16,14 +16,19 @@ const Navbar = () => {
           <div className='flex justify-between items-center mx-auto max-w-screen-xl'>
             {/* Image */}
             <Link className='flex' to='/' arial-current='page'>
-              <img
+              {/* <img
                 className='hidden w-48 -ml-4 lg:ml-0 lg:block md:block lg:-mb-10 lg:-mt-10 md:-mb-10 md:-mt-10'
                 src={Logo}
                 alt='Cimfoni Logo'
-              />
+              /> */}
               
-              <img
+              {/* <img
                 className='w-48 -ml-4 -mb-12 -mt-10 lg:ml-0 lg:hidden md:hidden'
+                src={LogoMobile}
+                alt='Cimfoni Logo'
+              /> */}
+              <img
+                className='w-48 -ml-4 -mb-12 -mt-10 lg:ml-0'
                 src={LogoMobile}
                 alt='Cimfoni Logo'
               />
