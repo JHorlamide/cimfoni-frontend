@@ -2,8 +2,8 @@ import React from "react";
 
 const CustomBtn = ({
   className,
-  isLoading,
-  isError,
+  isloading,
+  iserror,
   leftIcon,
   rightIcon,
   children,
@@ -11,7 +11,7 @@ const CustomBtn = ({
 }) => {
   return (
     <button
-      isLoading={isError ? false : isLoading}
+      isloading={iserror ? false : isloading}
       className={className}
       {...rest}
     >

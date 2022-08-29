@@ -6,32 +6,31 @@ import { Disclosure, Menu, Transition } from "@headlessui/react";
 
 import CustomBtn from "../CustomBtn";
 import Logo from "../../assets/images/Logo.png";
+import Logo2 from "../../assets/images/Logo2.png";
 import LogoMobile from "../../assets/images/Logo-mobile.png";
 
 const Navbar = () => {
   return (
-    <Disclosure as={"nav"} className='sticky top-0 bg-white mt-10 px-2 lg:px-6'>
+    <Disclosure
+      as={"nav"}
+      className='sticky top-0 bg-white px-2 lg:px-6 pt-16 md:pt-16 lg:pt-20'
+    >
       {({ open }) => (
         <Fragment>
           <div className='flex justify-between items-center mx-auto max-w-screen-xl'>
             {/* Image */}
             <Link className='flex' to='/' arial-current='page'>
-              {/* <img
-                className='hidden w-48 -ml-4 lg:ml-0 lg:block md:block lg:-mb-10 lg:-mt-10 md:-mb-10 md:-mt-10'
-                src={Logo}
-                alt='Cimfoni Logo'
-              /> */}
-              
-              {/* <img
-                className='w-48 -ml-4 -mb-12 -mt-10 lg:ml-0 lg:hidden md:hidden'
-                src={LogoMobile}
-                alt='Cimfoni Logo'
-              /> */}
               <img
-                className='w-48 -ml-4 -mb-12 -mt-10 lg:ml-0'
-                src={LogoMobile}
+                className='w-full flex -mt-14 md:-mt-16 lg:-mt-16'
+                src={Logo2}
                 alt='Cimfoni Logo'
               />
+
+              {/* <img
+                className='-ml-8 -mt-20 lg:hidden md:hidden'
+                src={LogoMobile}
+                alt='Cimfoni Logo'
+              /> */}
             </Link>
 
             {/* NAV LINKS */}
@@ -44,9 +43,7 @@ const Navbar = () => {
                   <NavLinks
                     key={link.id}
                     link={link}
-                    styles={
-                      "hover:font-semibold hover:text-primaryColor block py-2 pr-4 pl-3 text-gray-500 rounded"
-                    }
+                    className='whitespace-normal hover:font-semibold hover:text-primaryColor block py-2 pr-4 pl-3 text-gray-500 rounded'
                   />
                 ))}
               </div>
@@ -55,19 +52,11 @@ const Navbar = () => {
             {/* AUTH BUTTONS */}
             <div className='flex space-x-4 text-gray-500 -mt-14'>
               <div className='hidden flex items-center space-x-2 md:flex lg:flex'>
-                <CustomBtn
-                  className={
-                    "bg-primaryColor text-white px-5 py-3 rounded font-semibold md:inline-block"
-                  }
-                >
+                <CustomBtn className='whitespace-nowrap bg-primaryColor text-white px-5 py-3 rounded font-semibold md:inline-block'>
                   Get Stated
                 </CustomBtn>
 
-                <CustomBtn
-                  className={
-                    "text-primaryColor rounded font-semibold border border-primaryColor px-4 py-3"
-                  }
-                >
+                <CustomBtn className='text-primaryColor rounded font-semibold border border-primaryColor px-4 py-3'>
                   Login
                 </CustomBtn>
               </div>
@@ -114,9 +103,7 @@ const Navbar = () => {
                         <Menu.Item key={link.id}>
                           <NavLinks
                             link={link}
-                            styles={
-                              "block px-4 py-2 text-sm text-gray-700 hover:font-semibold hover:text-primaryColor block py-2 pr-4 pl-3 text-gray-500 rounded"
-                            }
+                            className='block px-4 py-2 text-sm text-gray-700 hover:font-semibold hover:text-primaryColor block py-2 pr-4 pl-3 text-gray-500 rounded'
                           />
                         </Menu.Item>
                       );
