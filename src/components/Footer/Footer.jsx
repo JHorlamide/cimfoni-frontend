@@ -31,56 +31,29 @@ const Footer = () => {
           <h4>Logo</h4>
 
           <div>
-            <p className='text-sm'>Cimfoni 2022. All copyright reserved</p>
-            <div className='flex space-x-1'>
-              <p className='text-sm'>Our privacy policies</p>
+            <p className='text-sm text-center'>
+              Cimfoni 2022. All copyright reserved
+            </p>
 
-              <span>
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  fill='none'
-                  viewBox='0 0 24 24'
-                  strokeWidth={1.5}
-                  stroke='currentColor'
-                  className='w-6 h-6'
-                >
-                  <path
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    d='M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3'
-                  />
-                </svg>
-              </span>
+            <div className='flex space-x-1'>
+              <p className='text-sm mx-auto lg:mx-0 md:mx-0'>Our privacy policies</p>
+
+              <ArrowSVG className='hidden w-6 h-6 lg:block md:block' />
             </div>
           </div>
 
           <div className='flex flex-col'>
             <p className='text-md font-semibold'>Contact Us</p>
+
             <div className='flex space-x-1'>
               <p className='text-sm'>Hello@cimfoni.com</p>
-
-              <span>
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  fill='none'
-                  viewBox='0 0 24 24'
-                  strokeWidth={1.5}
-                  stroke='currentColor'
-                  className='w-6 h-6'
-                >
-                  <path
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    d='M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3'
-                  />
-                </svg>
-              </span>
+              <ArrowSVG className='hidden w-6 h-6 lg:block md:block' />
             </div>
           </div>
 
           <div className='flex flex-col'>
-            <p className='text-md font-semibold'>Office</p>
             <div className='flex space-x-1'>
+              <p className='text-md font-semibold'>Office</p>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 viewBox='0 0 24 24'
@@ -105,10 +78,12 @@ const Footer = () => {
             Explore
           </h1>
 
-          <div className='text-sm grid grid-rows-2 grid-flow-col gap-3 lg:flex md:flex lg:flex-col md:flex-col lg:space-y-2'>
+          <div className='text-sm grid grid-rows-2 grid-flow-col gap-6 lg:flex md:flex lg:flex-col md:flex-col lg:space-y-2'>
             {footerNav.explore.map((navItem) => (
               <div key={navItem.id} className='flex space-x-1'>
-                <p className='text-sm'>{navItem.title}</p>
+                <Link to={navItem.path} className='text-sm'>
+                  {navItem.title}
+                </Link>
                 <navItem.icon className={"hidden lg:block md:block w-6 h-6"} />
               </div>
             ))}
@@ -127,7 +102,9 @@ const Footer = () => {
           <div className='text-sm grid grid-rows-2 grid-flow-col gap-3 lg:flex md:flex lg:flex-col md:flex-col lg:space-y-2'>
             {footerNav.learn.map((navItem) => (
               <div key={navItem.id} className='flex space-x-1'>
-                <p className='text-sm'>{navItem.title}</p>
+                <Link to={navItem.path} className='text-sm whitespace-nowrap'>
+                  {navItem.title}
+                </Link>
                 <navItem.icon className={"hidden lg:block md:block  w-6 h-6"} />
               </div>
             ))}
@@ -141,7 +118,9 @@ const Footer = () => {
           <div className='text-sm grid grid-rows-2 grid-flow-col gap-3 lg:flex md:flex lg:flex-col md:flex-col lg:space-y-2'>
             {footerNav.legal.map((navItem) => (
               <div key={navItem.id} className='flex space-x-1'>
-                <p className='text-sm'>{navItem.title}</p>
+                <Link to={navItem.path} className='text-sm whitespace-nowrap'>
+                  {navItem.title}
+                </Link>
                 <ArrowSVG className={"hidden lg:block md:block  w-6 h-6"} />
               </div>
             ))}

@@ -41,7 +41,7 @@ export const footerNav = {
   explore: [
     {
       id: 1,
-      path: "/home",
+      path: "/",
       title: "Home",
       icon: ArrowSVG,
     },
@@ -65,18 +65,12 @@ export const footerNav = {
     },
     {
       id: 5,
-      path: "/community",
-      title: "Community",
-      icon: ArrowSVG,
-    },
-    {
-      id: 6,
       path: "/glossary",
       title: "Glossary",
       icon: ArrowSVG,
     },
     {
-      id: 7,
+      id: 6,
       path: "/news",
       title: "News",
       icon: ArrowSVG,
