@@ -1,8 +1,20 @@
 import React from "react";
 
-const CustomBtn = ({ className, leftIcon, rightIcon, children, ...rest }) => {
+const CustomBtn = ({
+  className,
+  isLoading,
+  isError,
+  leftIcon,
+  rightIcon,
+  children,
+  ...rest
+}) => {
   return (
-    <button className={className} {...rest}>
+    <button
+      isLoading={isError ? false : isLoading}
+      className={className}
+      {...rest}
+    >
       {!!leftIcon && leftIcon}
       {children}
       {!!rightIcon && rightIcon}

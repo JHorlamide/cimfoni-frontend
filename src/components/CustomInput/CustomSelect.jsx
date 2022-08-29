@@ -1,4 +1,5 @@
 import React from "react";
+import Spinner from "../Spinner";
 
 const CustomSelect = ({
   id,
@@ -9,11 +10,7 @@ const CustomSelect = ({
   selectClassName,
 }) => {
   return (
-    <select
-      className={selectClassName}
-      id={id}
-      {...selectProps}
-    >
+    <select className={selectClassName} id={id} {...selectProps}>
       {selectPlaceholder ? (
         <option value={""} disabled>
           {selectPlaceholder}
@@ -21,7 +18,9 @@ const CustomSelect = ({
       ) : null}
 
       {selectLoading ? (
-        <option disabled>loading...</option>
+        <option disabled>
+          <Spinner />
+        </option>
       ) : (
         selectOptions?.map((option) => (
           <option

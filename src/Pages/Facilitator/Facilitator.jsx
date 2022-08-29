@@ -39,7 +39,6 @@ const Facilitator = () => {
   });
 
   const {
-    register,
     handleSubmit,
     formState: { errors },
   } = useForm();
