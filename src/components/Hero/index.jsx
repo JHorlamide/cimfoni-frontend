@@ -5,7 +5,7 @@ import CustomBtn from "../CustomBtn";
 const index = () => {
   return (
     <div
-      className='bg-center bg-cover bg-no-repeat items-center w-full h-full text-white mt-16 lg:mt-16 md:mt-16'
+      className='bg-center bg-cover bg-no-repeat items-center w-full h-full text-white mt-5 lg:mt-16 md:mt-16'
       style={{ backgroundImage: "url('images/hero-image.png')" }}
     >
       <div className='px-5 py-6 lg:px-36 md:px-20 lg:py-36 md:py-20 bg-primaryColorLight justify-center'>
