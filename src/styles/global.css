@@ -1,0 +1,10 @@
+.phone_input_container {
+   margin-top: 13px;
+}
+
+.phone_input {
+   width: 100% !important;
+   padding-top: 20px !important;
+   padding-bottom: 20px !important;
+   border: 2px solid #DFDFE6 !important;
+}

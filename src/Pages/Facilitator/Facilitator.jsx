@@ -4,6 +4,9 @@ import CustomInput from "../../components/CustomInput";
 import Navbar from "../../components/Navbar/Navbar";
 import Community from "../../components/Community";
 import Footer from "../../components/Footer/Footer";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
+import { useForm } from "react-hook-form";
 
 const specializationOptions = [
   {
@@ -35,10 +38,14 @@ const Facilitator = () => {
     specialization: "",
   });
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
 
-    console.log(formData);
+  const onSubmit = (data) => {
+    console.log(data);
   };
 
   const handleChange = (e) => {
@@ -65,12 +72,12 @@ const Facilitator = () => {
         </div>
       </section>
 
-      <section className='w-full flex flex-col px-10 py-5 md:px-28 lg:px-96 lg:py-10'>
+      <section className='w-full flex flex-col px-10 py-5 md:px-28 lg:px-80 lg:py-10'>
         <h1 className='text-lg font-medium md:text-2xl lg:text-3xl'>
           Fill out the form below
         </h1>
 
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit(onSubmit)}>
           <div className='grid gap-6 mb-6 md:grid-cols-2 mt-10 lg:mt-10 md:mt-10'>
             <div>
               <CustomInput
@@ -82,7 +89,7 @@ const Facilitator = () => {
                   value: formData.first_name,
                   onChange: handleChange,
                 }}
-                errorText='First name is required'
+                errorText={errors.first_name && "First name is required"}
                 required
                 inputClassName='w-full mt-3 px-3 py-2 rounded-md border-2'
                 labelClassName={"text-sm text-gray-500 font-medium"}
@@ -99,7 +106,7 @@ const Facilitator = () => {
                   value: formData.last_name,
                   onChange: handleChange,
                 }}
-                errorText='Last name is required'
+                errorText={errors.label && "Last name is required"}
                 required
                 inputClassName='w-full mt-3 px-3 py-2 rounded-md border-2'
                 labelClassName={"text-sm text-gray-500 font-medium"}
@@ -117,7 +124,7 @@ const Facilitator = () => {
                 value: formData.email,
                 onChange: handleChange,
               }}
-              errorText='Email is required'
+              errorText={errors.email && "Email is required"}
               required
               inputClassName='w-full mt-3 px-3 py-2 rounded-md border-2'
               labelClassName={"text-sm text-gray-500 font-medium"}
@@ -134,7 +141,9 @@ const Facilitator = () => {
                 value: formData.linkedin_profile,
                 onChange: handleChange,
               }}
-              errorText='linkedin profile is required'
+              errorText={
+                errors.linkedin_profile && "linkedin profile is required"
+              }
               required
               inputClassName='w-full mt-3 px-3 py-2 rounded-md border-2'
               labelClassName={"text-sm text-gray-500 font-medium"}
@@ -150,34 +159,18 @@ const Facilitator = () => {
                 Phone Number
               </label>
               <div className='w-full flex space-x-3 lg:flex lg:space-x-2 md:flex md:space-x-2'>
-                <CustomInput // +234
-                  id='phone'
-                  select
-                  selectOptions={specializationOptions}
-                  selectProps={{
-                    name: "phone_code",
-                    value: formData.phone_code,
-                    onChange: handleChange,
+                <PhoneInput
+                  country={"ng"}
+                  containerClass='phone_input_container'
+                  inputClass='phone_input'
+                  autoFormat={true}
+                  value={formData.phone_code}
+                  onChange={(phone_code) => {
+                    setFormData({
+                      ...formData,
+                      phone_code: phone_code,
+                    });
                   }}
-                  required
-                  selectClassName='w-20 lg:w-16 md:w-16 mt-3 px-3 py-2 rounded-md border-2'
-                  labelClassName={"text-sm text-gray-500 font-medium"}
-                  aria-label='Choose phone county code'
-                  // errorText='code is required'
-                />
-
-                <CustomInput
-                  id='phone'
-                  inputProps={{
-                    type: "text",
-                    name: "phone_number",
-                    value: formData.phone_number,
-                    onChange: handleChange,
-                  }}
-                  errorText='Phone number is required'
-                  required
-                  inputClassName='w-full lg:w-72 md:72 mt-3 px-3 py-2 rounded-md border-2'
-                  labelClassName={"text-sm text-gray-500 font-medium"}
                 />
               </div>
             </div>
@@ -197,16 +190,17 @@ const Facilitator = () => {
                 selectClassName='w-full mt-3 px-3 py-2 rounded-md border-2'
                 labelClassName={"text-sm text-gray-500 font-medium"}
                 aria-label='Choose your specialization'
-                errorText='Your specialization is required'
+                errorText={
+                  errors.specialization && "Your specialization is required"
+                }
               />
             </div>
           </div>
 
           <div className='mb-6 lg:mt-20'>
             <CustomBtn
-              className={
-                "w-full font-semibold bg-primaryColor py-4 mx-auto rounded-lg text-white"
-              }
+              type='submit'
+              className='w-full font-semibold bg-primaryColor py-4 mx-auto rounded-lg text-white'
             >
               Sign me up
             </CustomBtn>
