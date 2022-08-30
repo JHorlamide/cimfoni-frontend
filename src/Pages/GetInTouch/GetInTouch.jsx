@@ -174,21 +174,21 @@ const GetInTouch = () => {
                 </div>
 
                 <div className='mt-4 lg:mt-10'>
-                  <CustomBtn
-                    type='submit'
-                    className='w-full font-semibold bg-primaryColor py-4 mx-auto rounded-lg text-white'
-                  >
-                    Submit Application
-                  </CustomBtn>
+              <CustomBtn
+                type='submit'
+                className='w-full font-semibold bg-primaryColor py-4 mx-auto rounded-lg text-white'
+              >
+                Submit Application
+              </CustomBtn>
 
-                  <div className='lg:flex lg:justify-center lg:items-center lg:mt-1 lg:space-x-2'>
-                    <input className="-mb-3.5" type='checkbox' checked/>
-                    <p className='text-xs text-primaryColor mt-4 text-center'>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Quis sit gravida mus enim elit egestas
-                    </p>
-                  </div>
-                </div>
+              <div className='flex space-x-2 mt-5 lg:flex lg:justify-center lg:items-center lg:mt-5 md:mt-5 lg:space-x-2'>
+                <input className='-mb-3.5 md:mb-0' type='checkbox' checked />
+                <p className='text-xs text-primaryColor text-center'>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis
+                  sit gravida mus enim elit egestas
+                </p>
+              </div>
+            </div>
               </form>
             </div>
           </div>
