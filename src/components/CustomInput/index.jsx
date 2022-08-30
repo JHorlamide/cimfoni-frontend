@@ -3,27 +3,36 @@ import CustomSelect from "./CustomSelect";
 import CustomTextarea from "./CustomTextarea";
 import CustomInput from "./CustomInput";
 
+
 const CustomizedInput = ({
-  inputProps,
+  id,
   label,
   labelClassName,
-  id,
+
   select,
-  selectOptions,
   selectProps,
+  selectOptions,
   selectClassName,
-  errorText,
   selectLoading,
   selectPlaceholder,
+
   box,
   boxProps,
   boxClassName,
+
+  inputProps,
   inputClassName,
+  errorText,
   ...rest
 }) => {
   return (
     <div {...rest}>
-      {!!label && <label className={labelClassName} htmlFor={id}>{label}</label>}
+      {!!label && (
+        <label className={labelClassName} htmlFor={id}>
+          {label}
+        </label>
+      )}
+      
       {select ? (
         <CustomSelect
           id={id}
@@ -34,7 +43,11 @@ const CustomizedInput = ({
           selectClassName={selectClassName}
         />
       ) : box ? (
-        <CustomTextarea id={id} boxClassName={boxClassName} boxProps={boxProps} />
+        <CustomTextarea
+          id={id}
+          boxClassName={boxClassName}
+          boxProps={boxProps}
+        />
       ) : (
         <CustomInput
           id={id}

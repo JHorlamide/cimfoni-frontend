@@ -184,7 +184,7 @@ const Home = () => {
       </div>
 
       {/* WHY CIMFONI */}
-      <div className='bg-lightGray px-8 py-10 lg:px-28 lg:py-20'>
+      <div className='bg-lightGrayPrimary px-8 py-10 lg:px-28 lg:py-20'>
         <h1 className='font-semibold text-2xl lg:text-4xl md:text-4xl'>
           Why Cimfoni?
         </h1>

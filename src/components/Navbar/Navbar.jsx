@@ -7,22 +7,23 @@ import { Disclosure, Menu, Transition } from "@headlessui/react";
 import CustomBtn from "../CustomBtn";
 import Logo from "../../assets/images/Logo.png";
 import Logo2 from "../../assets/images/Logo2.png";
+import Logo3 from "../../assets/images/cli.png";
 import LogoMobile from "../../assets/images/Logo-mobile.png";
 
 const Navbar = () => {
   return (
     <Disclosure
       as={"nav"}
-      className='sticky top-0 bg-white px-2 lg:px-6 pt-16 md:pt-16 lg:pt-20'
+      className='sticky top-0 bg-white px-2 pb-2 lg:px-0 pt-20 md:pt-16 lg:pt-5 lg:pb-2'
     >
       {({ open }) => (
         <Fragment>
-          <div className='flex justify-between items-center mx-auto max-w-screen-xl'>
+          <div className='flex justify-between items-center mx-auto max-w-screen-xl lg:space-x-16'>
             {/* Image */}
             <Link className='flex' to='/' arial-current='page'>
               <img
-                className='w-full flex -mt-14 md:-mt-16 lg:-mt-16'
-                src={Logo2}
+                className='w-32 h-9 -mt-14 flex md:-mt-10 md:w-full md:h-8 lg:mt-0 lg:w-full lg:h-8'
+                src={Logo3}
                 alt='Cimfoni Logo'
               />
 
@@ -36,21 +37,21 @@ const Navbar = () => {
             {/* NAV LINKS */}
             <div
               id='nav-link'
-              className='hidden justify-between items-center w-full space-x-6 lg:flex lg:w-auto -mt-14'
+              className='hidden justify-between items-center w-full space-x-6 lg:flex lg:w-auto -mt-14 lg:mt-0'
             >
-              <div className='flex flex-col text-base font-normal mt-4 lg:flex-row lg:space-x-6 lg:mt-0'>
+              <div className='flex flex-col text-base font-normal mt-4 lg:flex-row lg:space-x-4 lg:mt-0'>
                 {navigation.map((link) => (
                   <NavLinks
                     key={link.id}
                     link={link}
-                    className='whitespace-normal hover:font-semibold hover:text-primaryColor block py-2 pr-4 pl-3 text-gray-500 rounded'
+                    className='whitespace-nowrap hover:font-semibold hover:text-primaryColor block py-2 pr-4 pl-3 text-gray-500 rounded lg:text-sm'
                   />
                 ))}
               </div>
             </div>
 
             {/* AUTH BUTTONS */}
-            <div className='flex space-x-4 text-gray-500 -mt-14'>
+            <div className='flex space-x-4 text-gray-500 -mt-14 lg:mt-0'>
               <div className='hidden flex items-center space-x-2 md:flex lg:flex'>
                 <CustomBtn className='whitespace-nowrap bg-primaryColor text-white px-5 py-3 rounded font-semibold md:inline-block'>
                   Get Stated
@@ -61,7 +62,7 @@ const Navbar = () => {
                 </CustomBtn>
               </div>
 
-              <Menu as='div' className='ml-3 relative'>
+              <Menu as='div' className='ml-3 -mt-3 md:mt-0 relative'>
                 <Menu.Button>
                   <span className='sr-only'>Open user menu</span>
                   <div

@@ -39,7 +39,6 @@ const Facilitator = () => {
   });
 
   const {
-    register,
     handleSubmit,
     formState: { errors },
   } = useForm();
@@ -59,12 +58,13 @@ const Facilitator = () => {
     <Fragment>
       <Navbar />
 
-      <section className='pt-5 lg:pt-8'>
+      <section className='pt-2 lg:pt-4'>
         <section className='bg-lightPurple px-8 py-8 lg:px-10 md:px-10 lg:py-28 md:py-20'>
           <div className='flex flex-col justify-center items-center space-y-3'>
             <h1 className='max-w-xs text-center text-primaryColor font-extrabold lg:font-bold md:font-bold text-2xl lg:leading-snug md:leading-snug lg:text-5xl md:text-4xl lg:max-w-2xl md:max-w-md'>
               Join our team of talented facilitators
             </h1>
+
             <p className='text-primaryColor text-center lg:text-center md:text-center md:max-w-fit lg:max-w-5xl'>
               You have the knowledge and the expertise, we have the platform.{" "}
               <br className='hidden lg:block md:block' />
@@ -84,7 +84,6 @@ const Facilitator = () => {
                 <CustomInput
                   id='first_name'
                   label={"First Name"}
-                  // {...register('first_name')}
                   inputProps={{
                     type: "text",
                     name: "first_name",
@@ -199,17 +198,21 @@ const Facilitator = () => {
               </div>
             </div>
 
-            <div className='mb-6 lg:mt-20'>
+            <div className='mt-4 lg:mt-10'>
               <CustomBtn
                 type='submit'
                 className='w-full font-semibold bg-primaryColor py-4 mx-auto rounded-lg text-white'
               >
                 Sign me up
               </CustomBtn>
-              <p className='text-xs text-primaryColor mt-4 text-center'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis
-                sit gravida mus enim elit egestas
-              </p>
+
+              <div className='lg:flex lg:justify-center lg:items-center lg:mt-1 lg:space-x-2'>
+                <input className='-mb-3.5' type='checkbox' checked />
+                <p className='text-xs text-primaryColor mt-4 text-center'>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis
+                  sit gravida mus enim elit egestas
+                </p>
+              </div>
             </div>
           </form>
         </section>

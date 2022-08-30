@@ -4,7 +4,7 @@ import CustomBtn from "../CustomBtn";
 
 const index = () => {
   return (
-    <section className="pt-5">
+    <section>
       <div
         className='bg-center bg-cover bg-no-repeat items-center w-full h-full text-white mt-10 lg:mt-16 md:mt-16'
         style={{ backgroundImage: "url('images/hero-image.png')" }}

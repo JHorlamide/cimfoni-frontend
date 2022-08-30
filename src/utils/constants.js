@@ -35,6 +35,11 @@ export const navigation = [
     path: "/gallery",
     title: "Gallery",
   },
+  {
+    id: 7,
+    path: "/glossary",
+    title: "Glossary",
+  },
 ];
 
 export const footerNav = {
