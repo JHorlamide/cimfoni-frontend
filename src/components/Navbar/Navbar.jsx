@@ -5,16 +5,13 @@ import NavLinks from "./NavLinks/Index";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 
 import CustomBtn from "../CustomBtn";
-import Logo from "../../assets/images/Logo.png";
-import Logo2 from "../../assets/images/Logo2.png";
 import Logo3 from "../../assets/images/cli.png";
-import LogoMobile from "../../assets/images/Logo-mobile.png";
 
 const Navbar = () => {
   return (
     <Disclosure
       as={"nav"}
-      className='sticky top-0 bg-white px-2 pb-2 lg:px-0 pt-16 md:pt-16 lg:pt-5 lg:pb-2'
+      className='sticky top-0 z-20 bg-white px-2 pb-2 lg:px-0 pt-16 md:pt-16 lg:pt-5 lg:pb-2'
     >
       {({ open }) => (
         <Fragment>

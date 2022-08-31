@@ -4,6 +4,25 @@ import twitterIcon from "../assets/icons/twitter.png";
 import instagramIcon from "../assets/icons/instagram.png";
 import linkedinIcon from "../assets/icons/linkedin.png";
 
+//Gallery Images
+import Frame1 from "../assets/images/gallery-images/Frame-1.png";
+import Frame2 from "../assets/images/gallery-images/Frame-2.png";
+import Frame3 from "../assets/images/gallery-images/Frame-3.png";
+import Frame4 from "../assets/images/gallery-images/Frame-4.png";
+import Frame5 from "../assets/images/gallery-images/Frame-5.png";
+import Frame6 from "../assets/images/gallery-images/Frame-6.png";
+import Frame7 from "../assets/images/gallery-images/Frame-7.png";
+import Frame8 from "../assets/images/gallery-images/Frame-8.png";
+import Frame9 from "../assets/images/gallery-images/Frame-9.png";
+import Frame10 from "../assets/images/gallery-images/Frame-10.png";
+import Frame11 from "../assets/images/gallery-images/Frame-11.png";
+import Frame12 from "../assets/images/gallery-images/Frame-12.png";
+import Frame13 from "../assets/images/gallery-images/Frame-13.png";
+import Frame14 from "../assets/images/gallery-images/Frame-14.png";
+import Frame15 from "../assets/images/gallery-images/Frame-15.png";
+import Frame16 from "../assets/images/gallery-images/Frame-16.png";
+import Frame17 from "../assets/images/gallery-images/Frame-17.png";
+
 export const navigation = [
   {
     id: 1,
@@ -219,5 +238,115 @@ export const people = [
     name: "Emil Schaefer",
     avatar:
       "https://images.unsplash.com/photo-1561505457-3bcad021f8ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+  },
+];
+
+export const galleryImages = [
+  {
+    id: 4,
+    // imageHeight: "h-1/2",
+    name: "Frame4",
+    image: Frame4,
+  },
+  {
+    id: 1,
+    // imageHeight: "h-full",
+    name: "Frame1",
+    image: Frame1,
+  },
+  {
+    id: 2,
+    // imageHeight: "h-full",
+    name: "Frame2",
+    image: Frame2,
+  },
+  {
+    id: 3,
+    // imageHeight: "h-full",
+    name: "Frame3",
+    image: Frame3,
+  },
+  {
+    id: 5,
+
+    // imageHeight: "",
+    name: "Frame5",
+    image: Frame5,
+  },
+  {
+    id: 6,
+
+    // imageHeight: "",
+    name: "Frame6",
+    image: Frame6,
+  },
+  {
+    id: 7,
+
+    // imageHeight: "",
+    name: "Frame7",
+    image: Frame7,
+  },
+  {
+    id: 8,
+
+    // imageHeight: "",
+    name: "Frame8",
+    image: Frame8,
+  },
+  {
+    id: 9,
+
+    // imageHeight: "",
+    name: "Frame9",
+    image: Frame9,
+  },
+  {
+    id: 10,
+    // imageHeight: "",
+    name: "Frame10",
+    image: Frame10,
+  },
+  {
+    id: 11,
+    // imageHeight: "",
+    name: "Frame11",
+    image: Frame11,
+  },
+  {
+    id: 12,
+    // imageHeight: "",
+    name: "Frame12",
+    image: Frame12,
+  },
+  {
+    id: 13,
+    // imageHeight: "",
+    name: "Frame13",
+    image: Frame13,
+  },
+  {
+    id: 14,
+    // imageHeight: "",
+    name: "Frame14",
+    image: Frame14,
+  },
+  {
+    id: 15,
+    // imageHeight: "",
+    name: "Frame15",
+    image: Frame15,
+  },
+  {
+    id: 16,
+    // imageHeight: "",
+    name: "Frame16",
+    image: Frame16,
+  },
+  {
+    id: 17,
+    // imageHeight: "",
+    name: "Frame1",
+    image: Frame17,
   },
 ];

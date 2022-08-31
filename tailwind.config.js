@@ -13,6 +13,7 @@ module.exports = {
         skyBlue: "#52BFEE",
         lightPurple: "#F0ECF9",
         lightGraySecondary: "#F5F3F5",
+        galleryBackgroundColor: "#E3F5FC",
       },
     },
   },

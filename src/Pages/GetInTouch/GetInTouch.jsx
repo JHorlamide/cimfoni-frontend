@@ -1,7 +1,9 @@
 import React, { Fragment, useState } from "react";
 import PhoneInput from "react-phone-input-2";
+import Community from "../../components/Community";
 import CustomBtn from "../../components/CustomBtn";
 import CustomInput from "../../components/CustomInput";
+import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
 
 const GetInTouch = () => {
@@ -58,7 +60,7 @@ const GetInTouch = () => {
                       value: formData.first_name,
                       onChange: handleChange,
                     }}
-                    errorText={"First name is required"}
+                    // errorText={"First name is required"}
                     required
                     inputClassName='w-full mt-3 px-3 py-2 rounded-md border-2'
                     labelClassName='text-sm text-gray-500 font-medium'
@@ -73,7 +75,7 @@ const GetInTouch = () => {
                       value: formData.last_name,
                       onChange: handleChange,
                     }}
-                    errorText={"Last name is required"}
+                    // errorText={"Last name is required"}
                     required
                     inputClassName='w-full mt-3 px-3 py-2 rounded-md border-2'
                     labelClassName={"text-sm text-gray-500 font-medium"}
@@ -90,7 +92,7 @@ const GetInTouch = () => {
                       value: formData.email,
                       onChange: handleChange,
                     }}
-                    errorText={"Email is required"}
+                    // errorText={"Email is required"}
                     required
                     inputClassName='w-full mt-3 px-3 py-2 rounded-md border-2'
                     labelClassName={"text-sm text-gray-500 font-medium"}
@@ -147,7 +149,7 @@ const GetInTouch = () => {
                       placeholder: "Start typing",
                       rows: "8",
                     }}
-                    errorText={"Project is required"}
+                    // errorText={"Project is required"}
                     boxClassName='w-full mt-3 px-3 py-2 rounded-md border-2'
                   />
                 </div>
@@ -168,32 +170,43 @@ const GetInTouch = () => {
                       placeholder: "Enter link",
                       rows: "5",
                     }}
-                    errorText={"Project is required"}
+                    // errorText={"Project is required"}
                     boxClassName='w-full mt-3 px-3 py-2 rounded-md border-2'
                   />
                 </div>
 
                 <div className='mt-4 lg:mt-10'>
-              <CustomBtn
-                type='submit'
-                className='w-full font-semibold bg-primaryColor py-4 mx-auto rounded-lg text-white'
-              >
-                Submit Application
-              </CustomBtn>
+                  <CustomBtn
+                    type='submit'
+                    className='w-full font-semibold bg-primaryColor py-4 mx-auto rounded-lg text-white'
+                  >
+                    Submit Application
+                  </CustomBtn>
 
-              <div className='flex space-x-2 mt-5 lg:flex lg:justify-center lg:items-center lg:mt-5 md:mt-5 lg:space-x-2'>
-                <input className='-mb-3.5 md:mb-0' type='checkbox' checked />
-                <p className='text-xs text-primaryColor text-center'>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis
-                  sit gravida mus enim elit egestas
-                </p>
-              </div>
-            </div>
+                  <div className='flex space-x-2 mt-5 lg:flex lg:justify-center lg:items-center lg:mt-5 md:mt-5 lg:space-x-2'>
+                    <input
+                      className='-mb-3.5 md:mb-0'
+                      type='checkbox'
+                      checked
+                    />
+
+                    <p className='text-xs text-primaryColor text-center'>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Quis sit gravida mus enim elit egestas
+                    </p>
+                  </div>
+                </div>
               </form>
             </div>
           </div>
         </div>
       </section>
+
+      {/* COMMUNITY */}
+      <Community />
+
+      {/* FOOTER */}
+      <Footer />
     </Fragment>
   );
 };
