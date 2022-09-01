@@ -9,7 +9,7 @@ import Frame1 from "../assets/images/gallery-images/Frame-1.png";
 import Frame2 from "../assets/images/gallery-images/Frame-2.png";
 import Frame3 from "../assets/images/gallery-images/Frame-3.png";
 import Frame4 from "../assets/images/gallery-images/Frame-4.png";
-import Frame5 from "../assets/images/gallery-images/Frame-5.png";
+// import Frame5 from "../assets/images/gallery-images/Frame-5.png";
 import Frame6 from "../assets/images/gallery-images/Frame-6.png";
 import Frame7 from "../assets/images/gallery-images/Frame-7.png";
 import Frame8 from "../assets/images/gallery-images/Frame-8.png";
@@ -266,13 +266,13 @@ export const galleryImages = [
     name: "Frame3",
     image: Frame3,
   },
-  {
-    id: 5,
+  // {
+  //   id: 5,
 
-    // imageHeight: "",
-    name: "Frame5",
-    image: Frame5,
-  },
+  //   // imageHeight: "",
+  //   name: "Frame5",
+  //   image: Frame5,
+  // },
   {
     id: 6,
 
@@ -350,3 +350,9 @@ export const galleryImages = [
     image: Frame17,
   },
 ];
+
+export const paymentLinks = {
+  intro_to_adobe_suite: "https://paystack.com/pay/6ut7z5d9np",
+  intro_to_business_broadcast: "https://paystack.com/pay/kj2m4z8m-9",
+  broadcast_production: "https://paystack.com/pay/ro4158hv8g",
+};

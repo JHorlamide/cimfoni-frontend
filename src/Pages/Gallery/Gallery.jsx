@@ -1,6 +1,8 @@
 import React, { Fragment } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import { galleryImages } from "../../utils/constants";
+import Community from "../../components/Community";
+import Footer from "../../components/Footer/Footer";
 
 //Gallery Images
 // import Frame1 from "../../assets/images/gallery-images/Frame-1.png";
@@ -38,9 +40,12 @@ const Gallery = () => {
         </h1>
       </section>
 
-      <section className='bg-galleryBackgroundColor px-10 py-5 md:px-28'>
-        <h1 className='text-2xl font-bold text-gray-500'>Photo gallery</h1>
-        <p className='text-xs text-gray-500 mt-3 text-justify'>
+      <section className='bg-galleryBackgroundColor px-10 py-5 md:px-28 lg:py-20'>
+        <h1 className='text-2xl font-bold text-gray-500 lg:text-4xl'>
+          Photo gallery
+        </h1>
+
+        <p className='text-xs text-gray-500 mt-3 text-justify lg:max-w-xl'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc
           feugiat massa amet posuere venenatis in sed. Ut purus vestibulum
           vestibulum venenatis a, auctor.
@@ -50,7 +55,7 @@ const Gallery = () => {
           <div className='py-2 mx-auto'>
             <div className='flex flex-wrap -m-1 md:-m-2'>
               {galleryImages.map(({ id, name, image, imageHeight }) => (
-                <div key={id} className='flex flex-wrap w-1/3'>
+                <div key={id} className='flex flex-wrap w-1/4'>
                   <div className='w-full p-1 md:p-2'>
                     <img
                       alt={name}
@@ -61,9 +66,29 @@ const Gallery = () => {
                 </div>
               ))}
             </div>
+
+            {/* <div className='grid grid-rows-4 grid-flow-col gap-4'>
+              {galleryImages.map(({ id, name, image, imageHeight }) => (
+                <div key={id} className='flex flex-wrap w-full'>
+                  <div className='w-full p-1 md:p-2'>
+                    <img
+                      alt={name}
+                      className={`block object-cover object-center w-full h-full rounded-lg`}
+                      src={image}
+                    />
+                  </div>
+                </div>
+              ))}
+            </div> */}
           </div>
         </section>
       </section>
+
+      {/* COMMUNITY */}
+      <Community />
+
+      {/* FOOTER */}
+      <Footer />
     </Fragment>
   );
 };

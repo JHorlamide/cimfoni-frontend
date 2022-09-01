@@ -7,6 +7,7 @@ import Community from "../../components/Community";
 import Testimony from "../../components/Testimony";
 import FAQ from "../../components/FAQ";
 import Footer from "../../components/Footer/Footer";
+import { paymentLinks } from "../../utils/constants";
 
 const badges = ["Javascript", "React.Js", "MongoDB", "HTML & CSS"];
 
@@ -17,6 +18,10 @@ const Badge = ({ badgeText }) => {
 };
 
 const Courses = () => {
+  const handleCoursePayment = (link) => {
+    window.open(link, "_blank");
+  };
+
   return (
     <Fragment>
       <Navbar />
@@ -54,7 +59,7 @@ const Courses = () => {
 
             <div className='flex flex-col items-center space-y-5 lg:space-y-3 md:space-y-2 md:items-start md:space-x-5 md:h-1/4'>
               <h1 className='text-xl font-medium text-primaryColor md:font-bold md:text-2xl md:ml-4 lg:text-3xl'>
-                Software Development
+                Introduction to Adobe Suite
               </h1>
 
               <p className='text-primaryColor md:text-sm'>Duration 10 weeks</p>
@@ -77,10 +82,11 @@ const Courses = () => {
               </p>
 
               <CustomBtn
-                className={
-                  "flex text-white font-medium rounded py-3 px-5 bg-primaryColor"
-                }
+                className='flex text-white font-medium rounded py-3 px-5 bg-primaryColor'
                 rightIcon={<ArrowSVG className={"w-8 h-8 ml-3 -mt-1"} />}
+                onClick={() =>
+                  handleCoursePayment(paymentLinks.intro_to_adobe_suite)
+                }
               >
                 Enroll Now
               </CustomBtn>
@@ -91,7 +97,7 @@ const Courses = () => {
           <div className='flex flex-col flex-col-reverse justify-center items-center space-y-5 md:space-x-5 md:flex-row lg:py-10 lg:space-x-20'>
             <div className='flex flex-col items-center space-y-5 lg:space-y-3 md:space-y-2 md:items-start md:space-x-5 md:h-1/4'>
               <h1 className='mt-5 text-xl font-medium text-primaryColor md:font-bold md:text-2xl md:ml-4 lg:text-3xl'>
-                Graphics Design
+                Introduction to Business Broadcast
               </h1>
 
               <p className='text-primaryColor md:text-sm'>Duration 10 weeks</p>
@@ -114,10 +120,11 @@ const Courses = () => {
               </p>
 
               <CustomBtn
-                className={
-                  "flex text-white font-medium rounded py-3 px-5 bg-primaryColor"
-                }
+                className='flex text-white font-medium rounded py-3 px-5 bg-primaryColor'
                 rightIcon={<ArrowSVG className={"w-8 h-8 ml-3 -mt-1"} />}
+                onClick={() =>
+                  handleCoursePayment(paymentLinks.intro_to_business_broadcast)
+                }
               >
                 Enroll Now
               </CustomBtn>
@@ -140,7 +147,7 @@ const Courses = () => {
 
             <div className='flex flex-col items-center space-y-5 lg:space-y-3 md:space-y-2 md:items-start md:space-x-5 md:h-1/4'>
               <h1 className='mt-5 text-xl font-medium text-primaryColor md:font-bold md:text-2xl md:ml-4 lg:text-3xl'>
-                Broadcasting Services
+                Broadcast Production
               </h1>
 
               <p className='text-primaryColor md:text-sm'>Duration 10 weeks</p>
@@ -163,10 +170,11 @@ const Courses = () => {
               </p>
 
               <CustomBtn
-                className={
-                  "flex text-white font-medium rounded py-3 px-5 bg-primaryColor"
-                }
+                className='flex text-white font-medium rounded py-3 px-5 bg-primaryColor'
                 rightIcon={<ArrowSVG className={"w-8 h-8 ml-3 -mt-1"} />}
+                onClick={() =>
+                  handleCoursePayment(paymentLinks.broadcast_production)
+                }
               >
                 Enroll Now
               </CustomBtn>
