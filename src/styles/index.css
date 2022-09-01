@@ -5,11 +5,26 @@
 @tailwind utilities;
 
 body {
+  margin: 0;
+
   font-family: 'Montserrat', sans-serif;
   /* font-family: 'Roboto', sans-serif; */
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  margin: 0;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }

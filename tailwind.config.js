@@ -15,6 +15,11 @@ module.exports = {
         lightGraySecondary: "#F5F3F5",
         galleryBackgroundColor: "#E3F5FC",
       },
+
+      animation: {
+        "spin": "spin 1s linear",
+        "bounce": "bounce 1s linear"
+      },
     },
   },
   plugins: [],
