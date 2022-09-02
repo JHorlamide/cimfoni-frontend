@@ -246,7 +246,7 @@ const Home = () => {
       </AnimationOnScroll>
 
       {/* FAQ */}
-      <AnimationOnScroll animateIn='animate__slideInDown animate__delay-8s'>
+      <AnimationOnScroll animateIn='animate__zoomIn animate__delay-8s'>
         <FAQ />
       </AnimationOnScroll>
 
