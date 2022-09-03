@@ -1,12 +1,12 @@
 import { Routes, Route } from "react-router-dom";
 
-import About from "./Pages/About/About";
 import Home from "./Pages/Home/Home";
+import About from "./Pages/About/About";
+import Gallery from "./Pages/Gallery/Gallery";
 import Courses from "./Pages/Courses/Courses";
 import Services from "./Pages/Services/Services";
-import Facilitator from "./Pages/Facilitator/Facilitator";
-import Gallery from "./Pages/Gallery/Gallery";
 import GetInTouch from "./Pages/GetInTouch/GetInTouch";
+import Facilitator from "./Pages/Facilitator/Facilitator";
 
 function App() {
   return (
@@ -18,7 +18,8 @@ function App() {
         <Route path='/services' element={<Services />} />
         <Route path='/facilitator' element={<Facilitator />} />
         <Route path='/gallery' element={<Gallery />} />
-        <Route path='/glossary' element={<GetInTouch />} />
+        {/* <Route path='/glossary' element={<GetInTouch />} /> */}
+        <Route path='/get-in-touch' element={<GetInTouch />} />
       </Routes>
     </div>
   );

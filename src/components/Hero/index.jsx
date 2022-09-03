@@ -1,8 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import ArrowSVG from "../../assets/icons/arrow";
 import CustomBtn from "../CustomBtn";
 
-const index = () => {
+const Hero = () => {
+  const navigate = useNavigate();
+
   return (
     <section>
       <div
@@ -14,16 +17,14 @@ const index = () => {
             id='_hero_animation'
             className='max-w-sm text-2xl text-center mx-auto mb-3 font-bold lg:font-bold md:font-bold lg:mx-0 md:mx-0 lg:max-w-4xl md:max-w-lg lg:leading-snug md:leading-snug lg:text-6xl md:text-4xl lg:text-left md:text-left'
           >
-            Design Digital <br className='hidden lg:block' />
-            Experience that Improves business growth
+            Experience design and broadcast training that empowers you
           </h1>
 
           <p className='max-w-2xl py-1 px-5 bottom-0 text-md text-justify mx-auto lg:mx-0 md:mx-0 lg:py-5 lg:px-0 md:px-0 md:py-2 lg:max-w-5xl md:max-w-xl'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis sit
-            gravida mus enim elit egestas ut. Nulla faucibus rutrum phasellus
-            iaculis. Donec tristique volutpat id lectus nibh. Lorem commodo, sit
-            elit suspendisse leo, phasellus <br className='hidden lg:block' />
-            molestie.
+            At Cimfoni we create design and broadcast training classes that
+            empower creatives like you. Helping you maximize the business
+            potentials within the creative economy. Begin your creative career
+            by registering for one of our courses today. It’s that simple!
           </p>
 
           <div className='flex justify-center items-center lg:justify-start md:justify-start items-start space-x-3 py-3 lg:flex-row'>
@@ -45,10 +46,19 @@ const index = () => {
               Start a project
             </CustomBtn>
           </div>
+
+          <div className='flex justify-center items-center lg:py-5'>
+            <CustomBtn
+              className='text-lg border-white bg-primaryColor text-white font-semibold px-6 py-4 rounded-md flex lg:border-0 lg:text-md'
+              onClick={() => navigate("/get-in-touch")}
+            >
+              Get in touch
+            </CustomBtn>
+          </div>
         </div>
       </div>
     </section>
   );
 };
 
-export default index;
+export default Hero;

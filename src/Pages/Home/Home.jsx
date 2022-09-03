@@ -34,7 +34,7 @@ const Home = () => {
         </AnimationOnScroll>
 
         <AnimationOnScroll animateIn='animate__backInUp animate__delay-8s'>
-          <div className='grid grid-rows-2 grid-flow-col gap-2 lg:flex md:flex lg:justify-center lg:items-center space-x-2 lg:space-x-10 md:space-x-4'>
+          <div className='grid grid-row-3 md:grid-rows-2 lg:grid-rows-2 grid-flow-col gap-2 lg:flex md:flex lg:justify-center lg:items-center space-x-2 lg:space-x-10 md:space-x-4'>
             {[1, 2, 3].map((items, index) => (
               <img
                 key={index}

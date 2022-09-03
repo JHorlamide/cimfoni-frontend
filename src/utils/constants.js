@@ -9,7 +9,6 @@ import Frame1 from "../assets/images/gallery-images/Frame-1.png";
 import Frame2 from "../assets/images/gallery-images/Frame-2.png";
 import Frame3 from "../assets/images/gallery-images/Frame-3.png";
 import Frame4 from "../assets/images/gallery-images/Frame-4.png";
-// import Frame5 from "../assets/images/gallery-images/Frame-5.png";
 import Frame6 from "../assets/images/gallery-images/Frame-6.png";
 import Frame7 from "../assets/images/gallery-images/Frame-7.png";
 import Frame8 from "../assets/images/gallery-images/Frame-8.png";
