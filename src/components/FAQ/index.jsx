@@ -9,7 +9,7 @@ const index = () => {
           Frequently Asked Questions
         </h1>
 
-        {[1, 2, 3, 4, 5].map((item, index) => (
+        {[1, 2, 3].map((item, index) => (
           <FAQItem key={index} />
         ))}
       </div>

@@ -13,7 +13,7 @@ import Ellipse6 from "../../assets/images/Ellipse-6.png";
 import Rectangle1 from "../../assets/images/Rectangle-1.png";
 import Rectangle2 from "../../assets/images/Rectangle-2.png";
 
-import "animate.css"
+import "animate.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
 const Home = () => {
@@ -23,28 +23,6 @@ const Home = () => {
       {/* HERO */}
       <div className='h-full w-full bg-cover bg-center -mt-12'>
         <HeroSection />
-      </div>
-
-      {/* SUPPORT */}
-      <div className='bg-secondaryColor px-8 py-10 flex flex-col justify-center items-center space-y-4 lg:space-y-10 md:space-y-10 lg:space-y-8 md:space-y-8 lg:px-10 lg:py-10'>
-        <AnimationOnScroll animateIn='animate__bounce animate__shakeY animate__delay-8s'>
-          <h1 className='max-w-lg font-semibold text-lg text-center lg:text-lg'>
-            Supported by leading brands and organizations
-          </h1>
-        </AnimationOnScroll>
-
-        <AnimationOnScroll animateIn='animate__backInUp animate__delay-8s'>
-          <div className='grid grid-row-3 md:grid-rows-2 lg:grid-rows-2 grid-flow-col gap-2 lg:flex md:flex lg:justify-center lg:items-center space-x-2 lg:space-x-10 md:space-x-4'>
-            {[1, 2, 3].map((items, index) => (
-              <img
-                key={index}
-                className='object-cover'
-                src={Ellipse6}
-                alt='Avatar'
-              />
-            ))}
-          </div>
-        </AnimationOnScroll>
       </div>
 
       {/* WHAT WE DO 1 */}
@@ -65,7 +43,7 @@ const Home = () => {
 
               <div className='flex flex-col space-y-5 lg:w-1/2 md:w-1/2 lg:h-1/4 md:h-1/2'>
                 <h1 className='text-xl font-semibold text-center lg:text-left md:text-left lg:text-4xl md:text-2xl'>
-                  Introduction to Adobe Swift
+                  Introduction to Adobe suite
                 </h1>
 
                 <p className='text-normal text-justify lg:max-w-2xl md:max-w-2xl'>
@@ -100,7 +78,7 @@ const Home = () => {
 
               <div className='flex flex-col space-y-5 lg:w-1/2 md:w-1/2 lg:h-1/4 md:h-1/2'>
                 <h1 className='text-xl font-semibold text-center lg:text-left md:text-left lg:text-4xl md:text-2xl'>
-                  Broadcasting Services
+                  Broadcast Production
                 </h1>
                 <p className='text-normal text-justify lg:max-w-2xl md:max-w-2xl'>
                   Navigating the product industry is usually a challenging phase
@@ -134,7 +112,7 @@ const Home = () => {
 
               <div className='flex flex-col space-y-5 lg:w-1/2 md:w-1/2 lg:h-1/4 md:h-1/2'>
                 <h1 className='text-xl font-semibold text-center lg:text-left md:text-left lg:text-4xl md:text-2xl'>
-                  Graphics Design
+                  Business Broadcasting
                 </h1>
                 <p className='text-normal text-justify lg:max-w-2xl md:max-w-2xl'>
                   Navigating the product industry is usually a challenging phase
@@ -159,11 +137,34 @@ const Home = () => {
         </div>
       </div>
 
+      {/* SUPPORT */}
+      <div className='bg-secondaryColor px-8 py-10 flex flex-col justify-center items-center space-y-4 lg:space-y-10 md:space-y-10 lg:space-y-8 md:space-y-8 lg:px-10 lg:py-10'>
+        <AnimationOnScroll animateIn='animate__bounce animate__shakeY animate__delay-8s'>
+          <h1 className='max-w-lg font-semibold text-lg text-center lg:text-lg'>
+            Supported by leading brands and organizations
+          </h1>
+        </AnimationOnScroll>
+
+        <AnimationOnScroll animateIn='animate__backInUp animate__delay-8s'>
+          <div className='grid grid-row-3 md:grid-rows-2 lg:grid-rows-2 grid-flow-col gap-2 lg:flex md:flex lg:justify-center lg:items-center space-x-2 lg:space-x-10 md:space-x-4'>
+            {[1, 2, 3].map((items, index) => (
+              <img
+                key={index}
+                className='object-cover'
+                src={Ellipse6}
+                alt='Avatar'
+              />
+            ))}
+          </div>
+        </AnimationOnScroll>
+      </div>
+
       {/* WHY CIMFONI */}
       <div className='bg-lightGrayPrimary px-8 py-10 lg:px-28 lg:py-20'>
         <h1 className='font-semibold text-2xl lg:text-4xl md:text-4xl'>
           Why Cimfoni?
         </h1>
+
         <AnimationOnScroll animateIn='animate__zoomIn'>
           <div className='flex flex-col py-5 space-y-4 lg:space-y-0 md:space-y-0 lg:space-x-16 md:space-x-6 lg:flex-row md:flex-row'>
             <img
@@ -172,63 +173,74 @@ const Home = () => {
               alt='Rectangle2'
             />
 
-            <div className='space-y-4 lg:space-y-0 md:space-y-0 lg:grid lg:grid-rows-2 lg:grid-flow-col lg:gap-x-10 lg:gap-y-0 md:grid md:grid-rows-2 md:grid-flow-col md:gap-x-6 md:gap-y-6'>
+            <div className='space-y-4 
+              lg:space-y-0 md:space-y-0 
+              lg:grid lg:grid-rows-2 
+              lg:grid-flow-col 
+              lg:gap-x-10 
+              lg:gap-y-0 
+              md:grid 
+              md:grid-rows-2 
+              md:grid-flow-col
+              md:gap-x-6
+              md:gap-y-6'
+            >
               {/* ITEM 1 */}
               <div className='flex flex-col space-y-3'>
                 <h1 className='text-xl font-semibold'>
-                  Best Knowledge Of Design
+                  In content creation, the right foundation is everything
                 </h1>
 
                 <p className='text-sm font-normal text-justify leading-relaxed'>
-                  Navigating the product industry is usually a challenging phase
-                  for young designers. Without the right guidance and support,
-                  the average designer spends a longer time trying to find their
-                  feet. Perxels connects young designers with professionals and
-                  mentors with years of experience in the field to help them
-                  grow and thrive in the industry
+                  Whether its text, video or audio for film, tv, radio or social
+                  media, you need to build from the right foundation. We teach
+                  you the basics today so that your career can take of tomorrow
                 </p>
               </div>
 
               {/* ITEM 2 */}
               <div className='flex flex-col space-y-3'>
-                <h1 className='text-xl font-semibold'>Growth & Mentorship</h1>
+                {/* <h1 className='text-xl font-semibold'>
+                  Learn more about powerful design tools
+                </h1> */}
 
-                <p className='text-sm font-normal text-justify leading-relaxed'>
-                  Navigating the product industry is usually a challenging phase
-                  for young designers. Without the right guidance and support,
-                  the average designer spends a longer time trying to find their
-                  feet. Perxels connects young designers with professionals and
-                  mentors with years of experience in the field to help them
-                  grow and thrive in the industry
-                </p>
+                {/* <p className='text-sm font-normal text-justify leading-relaxed'>
+                  From Adobe to Corel, today there are so many design tools to
+                  help creators deliver on there projects and new tools keep
+                  emerging in both number and complexity. Our courses give you
+                  the inside track on these applications allowing you know what
+                  to use, how and when to use it.
+                </p> */}
               </div>
 
               {/* ITEM 3 */}
               <div className='flex flex-col space-y-3'>
-                <h1 className='text-xl font-semibold'>Peer Support</h1>
+                <h1 className='text-xl font-semibold'>
+                  {" "}
+                  Learn more about powerful design tools
+                </h1>
 
                 <p className='text-sm font-normal text-justify leading-relaxed'>
-                  Navigating the product industry is usually a challenging phase
-                  for young designers. Without the right guidance and support,
-                  the average designer spends a longer time trying to find their
-                  feet. Perxels connects young designers with professionals and
-                  mentors with years of experience in the field to help them
-                  grow and thrive in the industry
+                  From Adobe to Corel, today there are so many design tools to
+                  help creators deliver on there projects and new tools keep
+                  emerging in both number and complexity. Our courses give you
+                  the inside track on these applications allowing you know what
+                  to use, how and when to use it.
                 </p>
               </div>
 
               {/* ITEM 4 */}
               <div className='flex flex-col space-y-3'>
-                <h1 className='text-xl font-semibold'>Hands on Experiments</h1>
+                {/* <h1 className='text-xl font-semibold'>Hands on Experiments</h1> */}
 
-                <p className='text-sm font-normal text-justify leading-relaxed'>
+                {/* <p className='text-sm font-normal text-justify leading-relaxed'>
                   Navigating the product industry is usually a challenging phase
                   for young designers. Without the right guidance and support,
                   the average designer spends a longer time trying to find their
                   feet. Perxels connects young designers with professionals and
                   mentors with years of experience in the field to help them
                   grow and thrive in the industry
-                </p>
+                </p> */}
               </div>
             </div>
           </div>

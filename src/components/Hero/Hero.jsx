@@ -20,7 +20,7 @@ const Hero = () => {
             Experience design and broadcast training that empowers you
           </h1>
 
-          <p className='max-w-2xl py-1 px-5 bottom-0 text-md text-justify mx-auto lg:mx-0 md:mx-0 lg:py-5 lg:px-0 md:px-0 md:py-2 lg:max-w-5xl md:max-w-xl'>
+          <p className='max-w-2xl py-1 px-5 bottom-0 text-lg text-justify mx-auto lg:mx-0 md:mx-0 lg:py-5 lg:px-0 md:px-0 md:py-2 lg:max-w-5xl md:max-w-xl'>
             At Cimfoni we create design and broadcast training classes that
             empower creatives like you. Helping you maximize the business
             potentials within the creative economy. Begin your creative career
@@ -42,19 +42,20 @@ const Hero = () => {
               rightIcon={
                 <ArrowSVG className='hidden lg:inline-flex md:inline-flex w-6 h-6 ml-3' />
               }
+              onClick={() => navigate("/get-in-touch")}
             >
-              Start a project
+              Request a service
             </CustomBtn>
           </div>
 
-          <div className='flex justify-center items-center py-7 md:py-8 lg:py-5'>
+          {/* <div className='flex justify-center items-center py-7 md:py-8 lg:py-5'>
             <CustomBtn
               className='text-lg border-white bg-primaryColor text-white font-semibold px-6 py-4 rounded-md flex lg:border-0 lg:text-md'
               onClick={() => navigate("/get-in-touch")}
             >
               Get in touch
             </CustomBtn>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { navigation } from "../../utils/constants";
 import NavLinks from "./NavLinks/Index";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
@@ -8,6 +8,8 @@ import CustomBtn from "../CustomBtn";
 import Logo3 from "../../assets/images/cli.png";
 
 const Navbar = () => {
+  const navigate = useNavigate();
+
   return (
     <Disclosure
       as={"nav"}
@@ -19,16 +21,10 @@ const Navbar = () => {
             {/* Image */}
             <Link className='flex' to='/' arial-current='page'>
               <img
-                className='w-32 h-9 -mt-14 flex md:-mt-10 md:w-full md:h-8 lg:mt-0 lg:w-full lg:h-8'
+                className='w-32 h-7 -mt-12 flex md:-mt-10 md:w-full md:h-8 lg:mt-0 lg:w-full lg:h-8'
                 src={Logo3}
                 alt='Cimfoni Logo'
               />
-
-              {/* <img
-                className='-ml-8 -mt-20 lg:hidden md:hidden'
-                src={LogoMobile}
-                alt='Cimfoni Logo'
-              /> */}
             </Link>
 
             {/* NAV LINKS */}
@@ -41,7 +37,7 @@ const Navbar = () => {
                   <NavLinks
                     key={link.id}
                     link={link}
-                    className='whitespace-nowrap hover:font-semibold hover:text-primaryColor block py-2 pr-4 pl-3 text-gray-500 rounded lg:text-sm'
+                    className='whitespace-nowrap font-semibold hover:text-primaryColor block py-2 pr-4 pl-3 text-gray-500 rounded lg:text-md'
                   />
                 ))}
               </div>
@@ -50,13 +46,16 @@ const Navbar = () => {
             {/* AUTH BUTTONS */}
             <div className='flex space-x-4 text-gray-500 -mt-14 lg:mt-0'>
               <div className='hidden flex items-center space-x-2 md:flex lg:flex'>
-                <CustomBtn className='whitespace-nowrap bg-primaryColor text-white px-5 py-3 rounded font-semibold md:inline-block'>
+                <CustomBtn
+                  className='whitespace-nowrap bg-primaryColor text-white px-5 py-3 rounded font-semibold md:inline-block'
+                  onClick={() => navigate("/courses")}
+                >
                   Get Stated
                 </CustomBtn>
 
-                <CustomBtn className='text-primaryColor rounded font-semibold border border-primaryColor px-4 py-3'>
+                {/* <CustomBtn className='text-primaryColor rounded font-semibold border border-primaryColor px-4 py-3'>
                   Login
-                </CustomBtn>
+                </CustomBtn> */}
               </div>
 
               <Menu as='div' className='ml-3 -mt-3 md:mt-0 relative'>
@@ -113,12 +112,13 @@ const Navbar = () => {
                           className={
                             "bg-primaryColor text-white  mx-2 px-2 py-3 rounded font-semibold md:inline-block"
                           }
+                          onClick={() => navigate("/courses")}
                         >
                           Get Stated
                         </CustomBtn>
                       </Menu.Item>
 
-                      <Menu.Item>
+                      {/* <Menu.Item>
                         <CustomBtn
                           className={
                             "text-primaryColor rounded font-semibold border border-primaryColor mx-2 px-4 py-3"
@@ -126,7 +126,7 @@ const Navbar = () => {
                         >
                           Login
                         </CustomBtn>
-                      </Menu.Item>
+                      </Menu.Item> */}
                     </div>
                   </Menu.Items>
                 </Transition>
