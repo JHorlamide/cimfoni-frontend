@@ -3,7 +3,7 @@ import React, { Fragment } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import CustomBtn from "../../components/CustomBtn";
 import Footer from "../../components/Footer/Footer";
-import HeroSection from "../../components/Hero";
+import HeroSection from "../../components/Hero/Hero";
 import FAQ from "../../components/FAQ/";
 import Community from "../../components/Community";
 import Testimony from "../../components/Testimony";

@@ -47,7 +47,7 @@ const Hero = () => {
             </CustomBtn>
           </div>
 
-          <div className='flex justify-center items-center lg:py-5'>
+          <div className='flex justify-center items-center py-7 md:py-8 lg:py-5'>
             <CustomBtn
               className='text-lg border-white bg-primaryColor text-white font-semibold px-6 py-4 rounded-md flex lg:border-0 lg:text-md'
               onClick={() => navigate("/get-in-touch")}
