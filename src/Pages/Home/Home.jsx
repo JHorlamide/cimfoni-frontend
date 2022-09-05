@@ -9,9 +9,10 @@ import Community from "../../components/Community";
 import Testimony from "../../components/Testimony";
 import ArrowSVG from "../../assets/icons/arrow";
 
-import Ellipse6 from "../../assets/images/Ellipse-6.png";
 import Rectangle1 from "../../assets/images/Rectangle-1.png";
 import Rectangle2 from "../../assets/images/Rectangle-2.png";
+
+import { supporterLogo } from "../../utils/constants";
 
 import "animate.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
@@ -26,7 +27,7 @@ const Home = () => {
       </div>
 
       {/* WHAT WE DO 1 */}
-      <div className='bg-white py-5 px-5 lg:px-36 md:px-10'>
+      <div className='bg-backgroundColor py-5 px-5 lg:px-36 md:px-10'>
         <h1 className='text-xl font-semibold text-center pb-6 lg:text-center lg:text-3xl md:text-xl lg:pt-20 md:pt-16 lg:pb-10 md:pb-10'>
           What we do at Cimfoni
         </h1>
@@ -147,11 +148,11 @@ const Home = () => {
 
         <AnimationOnScroll animateIn='animate__backInUp animate__delay-8s'>
           <div className='grid grid-row-3 md:grid-rows-2 lg:grid-rows-2 grid-flow-col gap-2 lg:flex md:flex lg:justify-center lg:items-center space-x-2 lg:space-x-10 md:space-x-4'>
-            {[1, 2, 3].map((items, index) => (
+            {supporterLogo.map(({ id, image, widthHight }) => (
               <img
-                key={index}
-                className='object-cover'
-                src={Ellipse6}
+                key={id}
+                className={`object-cover ${widthHight}`}
+                src={image}
                 alt='Avatar'
               />
             ))}
@@ -173,7 +174,8 @@ const Home = () => {
               alt='Rectangle2'
             />
 
-            <div className='space-y-4 
+            <div
+              className='space-y-4 
               lg:space-y-0 md:space-y-0 
               lg:grid lg:grid-rows-2 
               lg:grid-flow-col 

@@ -1,5 +1,6 @@
 import React from "react";
-import FAQItem from "./FAQItem";
+import { Disclosure } from "@headlessui/react";
+// import FAQItem from "./FAQItem/index";
 
 const index = () => {
   return (
@@ -9,9 +10,109 @@ const index = () => {
           Frequently Asked Questions
         </h1>
 
-        {[1, 2, 3].map((item, index) => (
-          <FAQItem key={index} />
-        ))}
+        {/* FAQ NEW 3 */}
+        <div className='w-full md:max-w-xl lg:max-w-xl'>
+          <div className='w-full max-w-xl rounded-2xl bg-white'>
+            <Disclosure>
+              {({ open }) => (
+                <>
+                  <Disclosure.Button className='flex w-full justify-between rounded-lg border bg-secondaryColor px-4 py-4 text-left text-sm font-medium text-purple-900 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75'>
+                    <span>Are the courses online? </span>
+                    <svg
+                      xmlns='http://www.w3.org/2000/svg'
+                      fill='none'
+                      viewBox='0 0 24 24'
+                      strokeWidth={1.5}
+                      stroke='currentColor'
+                      className={`${
+                        open ? "rotate-180 transform" : ""
+                      } w-6 h-6 text-purple-500`}
+                    >
+                      <path
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                        d='M12 5v14m7-7H5'
+                      />
+                    </svg>
+                  </Disclosure.Button>
+
+                  <Disclosure.Panel className='px-4 pt-4 pb-2 text-sm text-gray-500'>
+                    No, the courses are 100% physical in our class and studio
+                  </Disclosure.Panel>
+                </>
+              )}
+            </Disclosure>
+          </div>
+        </div>
+
+        {/* FAQ NEW 4 */}
+        <div className='w-full md:max-w-xl lg:max-w-xl'>
+          <div className='w-full max-w-xl rounded-2xl bg-white'>
+            <Disclosure>
+              {({ open }) => (
+                <>
+                  <Disclosure.Button className='flex w-full justify-between rounded-lg border bg-secondaryColor px-4 py-4 text-left text-sm font-medium text-purple-900 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75'>
+                    <span>How Long are the classes?</span>
+                    <svg
+                      xmlns='http://www.w3.org/2000/svg'
+                      fill='none'
+                      viewBox='0 0 24 24'
+                      strokeWidth={1.5}
+                      stroke='currentColor'
+                      className={`${
+                        open ? "rotate-180 transform" : ""
+                      } w-6 h-6 text-purple-500`}
+                    >
+                      <path
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                        d='M12 5v14m7-7H5'
+                      />
+                    </svg>
+                  </Disclosure.Button>
+                  <Disclosure.Panel className='px-4 pt-4 pb-2 text-sm text-gray-500'>
+                    Average of 2 weeks
+                  </Disclosure.Panel>
+                </>
+              )}
+            </Disclosure>
+          </div>
+        </div>
+
+        {/* FAQ NEW 5 */}
+        <div className='w-full md:max-w-xl lg:max-w-xl'>
+          <div className='w-full max-w-xl rounded-2xl bg-white'>
+            <Disclosure>
+              {({ open }) => (
+                <>
+                  <Disclosure.Button className='flex w-full justify-between border rounded-lg bg-secondaryColor px-4 py-4 text-left text-sm font-medium text-purple-900 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75'>
+                    <span>When do classes start?</span>
+                    <svg
+                      xmlns='http://www.w3.org/2000/svg'
+                      fill='none'
+                      viewBox='0 0 24 24'
+                      strokeWidth={1.5}
+                      stroke='currentColor'
+                      className={`${
+                        open ? "rotate-180 transform" : ""
+                      } w-6 h-6 text-purple-500`}
+                    >
+                      <path
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                        d='M12 5v14m7-7H5'
+                      />
+                    </svg>
+                  </Disclosure.Button>
+                  <Disclosure.Panel className='px-4 pt-4 pb-2 text-sm text-gray-500'>
+                    Classes start on October 7th
+                  </Disclosure.Panel>
+                </>
+              )}
+            </Disclosure>
+          </div>
+        </div>
+        {/* </div> */}
       </div>
     </div>
   );

@@ -7,6 +7,7 @@ import Courses from "./Pages/Courses/Courses";
 import Services from "./Pages/Services/Services";
 import GetInTouch from "./Pages/GetInTouch/GetInTouch";
 import Facilitator from "./Pages/Facilitator/Facilitator";
+import Glossary from "./Pages/Glossary/Glossary";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
         <Route path='/services' element={<Services />} />
         <Route path='/facilitator' element={<Facilitator />} />
         <Route path='/gallery' element={<Gallery />} />
-        {/* <Route path='/glossary' element={<GetInTouch />} /> */}
+        <Route path='/glossary' element={<Glossary />} />
         <Route path='/get-in-touch' element={<GetInTouch />} />
       </Routes>
     </div>

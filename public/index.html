@@ -19,40 +19,91 @@
       referrerpolicy="no-referrer"
     />
     <title>Cimfoni</title>
-    <script defer>
-      //load TrackerJS
-      !(function (t, n, e, o, a) {
-        function d(t) {
-          var n = ~~(Date.now() / 3e5),
-            o = document.createElement(e);
-          (o.async = !0), (o.src = t + "?ts=" + n);
-          var a = document.getElementsByTagName(e)[0];
-          a.parentNode.insertBefore(o, a);
-        }
-        (t.MooTrackerObject = a),
-          (t[a] =
-            t[a] ||
-            function () {
-              return t[a].q
-                ? void t[a].q.push(arguments)
-                : void (t[a].q = [arguments]);
-            }),
-          window.attachEvent
-            ? window.attachEvent("onload", d.bind(this, o))
-            : window.addEventListener("load", d.bind(this, o), !1);
-      })(
-        window,
-        document,
-        "script",
-        "//cdn.stat-track.com/statics/moosend-tracking.min.js",
-        "mootrack"
-      );
-      //tracker has to be initialized otherwise it will generate warnings and wont sendtracking events
-      mootrack("init", "099b3c46-bc83-4a99-b906-5e3b7a6f7723");
-    </script>
   </head>
+  <script defer>
+    //load TrackerJS
+    !(function (t, n, e, o, a) {
+      function d(t) {
+        var n = ~~(Date.now() / 3e5),
+          o = document.createElement(e);
+        (o.async = !0), (o.src = t + "?ts=" + n);
+        var a = document.getElementsByTagName(e)[0];
+        a.parentNode.insertBefore(o, a);
+      }
+      (t.MooTrackerObject = a),
+        (t[a] =
+          t[a] ||
+          function () {
+            return t[a].q
+              ? void t[a].q.push(arguments)
+              : void (t[a].q = [arguments]);
+          }),
+        window.attachEvent
+          ? window.attachEvent("onload", d.bind(this, o))
+          : window.addEventListener("load", d.bind(this, o), !1);
+    })(
+      window,
+      document,
+      "script",
+      "//cdn.stat-track.com/statics/moosend-tracking.min.js",
+      "mootrack"
+    );
+    //tracker has to be initialized otherwise it will generate warnings and wont sendtracking events
+    mootrack("init", "099b3c46-bc83-4a99-b906-5e3b7a6f7723");
+  </script>
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-KCZHDSE1LP"
+    defer
+  ></script>
+  <script defer>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-KCZHDSE1LP");
+  </script>
+  <!-- Facebook Pixel Code -->
+  <script defer>
+    !(function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod
+          ? n.callMethod.apply(n, arguments)
+          : n.queue.push(arguments);
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = "2.0";
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s);
+    })(
+      window,
+      document,
+      "script",
+      "https://connect.facebook.net/en_US/fbevents.js"
+    );
+    fbq("init", "887769832184600");
+    fbq("track", "PageView");
+  </script>
+
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        src="https://www.facebook.com/tr?id=887769832184600&ev=PageView&noscript=1"
+      />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
   </body>
 </html>

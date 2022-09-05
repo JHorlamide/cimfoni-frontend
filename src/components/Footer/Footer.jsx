@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 import { footerNav, footerSocials } from "../../utils/constants";
 import ArrowSVG from "../../assets/icons/arrow";
+import FooterLogo from '../../assets/images/FooterLogo.png';
 
 const FooterSocial = () => {
   return (
@@ -32,7 +33,7 @@ const Footer = () => {
         {/* ITEM-1 */}
         <div className='mt-10 flex flex-col space-y-5 justify-center items-center lg:justify-start md:justify-start lg:items-start md:items-start'>
           {/* <h4>Logo</h4> */}
-          <img className='w-10 h-10' src='/faviconcli.png' alt='' />
+          <img className='w-10 h-10' src={FooterLogo} alt='Cimfoni Logo' />
 
           <div>
             <p className='text-sm text-center'>

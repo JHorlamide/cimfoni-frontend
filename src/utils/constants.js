@@ -1,8 +1,11 @@
 import ArrowSVG from "../assets/icons/arrow";
 import facebookIcon from "../assets/icons/facebook.png";
 // import twitterIcon from "../assets/icons/twitter.png";
-import instagramIcon from "../assets/icons/instagram.png";
 // import linkedinIcon from "../assets/icons/linkedin.png";
+import instagramIcon from "../assets/icons/instagram.png";
+
+import WitransafLogo from "../assets/images/Witransaf.png";
+import LysiLogo from "../assets/images/LysiLogo.png";
 
 //Gallery Images
 import Frame1 from "../assets/images/gallery-images/Frame-1.png";
@@ -120,13 +123,13 @@ export const footerNav = {
 export const footerSocials = [
   {
     id: 1,
-    url: "https://facebook.com/username",
+    url: "www.facebook.com/cimfonitech",
     title: "Facebook",
     image: facebookIcon,
   },
   {
     id: 2,
-    url: "https://instagram.com/username",
+    url: "www.instagram.com/cimfonitech",
     title: "Instagram",
     image: instagramIcon,
   },
@@ -317,3 +320,22 @@ export const paymentLinks = {
   intro_to_business_broadcast: "https://paystack.com/pay/kj2m4z8m-9",
   broadcast_production: "https://paystack.com/pay/ro4158hv8g",
 };
+
+export const supporterLogo = [
+  {
+    id: 1,
+    image: WitransafLogo,
+    widthHight: "w-20 h-20",
+  },
+
+  {
+    id: 2,
+    image: LysiLogo,
+    widthHight: "w-20 h-20",
+  },
+  {
+    id: 3,
+    image: LysiLogo,
+    widthHight: "w-20 h-20",
+  },
+];

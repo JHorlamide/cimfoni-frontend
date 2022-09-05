@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <Disclosure
       as={"nav"}
-      className='sticky top-0 z-20 bg-white px-2 pb-2 lg:px-0 pt-16 md:pt-16 lg:pt-5 lg:pb-2'
+      className='sticky top-0 z-20 bg-backgroundColor px-2 pb-2 lg:px-0 pt-16 md:pt-16 lg:pt-5 lg:pb-2'
     >
       {({ open }) => (
         <Fragment>
