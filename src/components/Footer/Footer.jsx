@@ -2,12 +2,12 @@ import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 import { footerNav, footerSocials } from "../../utils/constants";
 import ArrowSVG from "../../assets/icons/arrow";
-import FooterLogo from '../../assets/images/FooterLogo.png';
+import FooterLogo from "../../assets/images/FooterLogo.png";
 
 const FooterSocial = () => {
   return (
     <Fragment>
-      <div className="md:flex md:space-x-2 lg:flex lg:space-x-5">
+      <div className='md:flex md:space-x-2 lg:flex lg:space-x-5'>
         <h1 className='font-semibold mb-5 pt-3 text-center lg:mx-auto lg:text-left md:text-left lg:pt-5 md:pt-5 lg:whitespace-nowrap'>
           Follow Us
         </h1>
@@ -15,10 +15,16 @@ const FooterSocial = () => {
         {/* <div className='grid grid-rows-2 grid-flow-col gap-x-16 gap-y-5 mx-5 justify-center items-center lg:justify-start lg:items-start lg:space-x-2 md:space-x-2 lg:flex md:flex lg:ml-0 lg:mt-5'> */}
         <div className='flex space-x-5 mx-5 justify-center items-center lg:justify-start lg:items-start lg:space-x-2 md:space-x-2 lg:flex md:flex lg:ml-0 lg:mt-5'>
           {footerSocials.map(({ id, url, title, image }) => (
-            <Link className='flex space-x-2 lg:mr-5' key={id} to={url} target='_blank'>
+            <a
+              className='flex space-x-2 lg:mr-5'
+              key={id}
+              href={url}
+              target='_blank'
+              rel='noreferrer'
+            >
               <img className='w-4 h-4' src={image} alt={title} />
               <p className='text-sm'>{title}</p>
-            </Link>
+            </a>
           ))}
         </div>
       </div>

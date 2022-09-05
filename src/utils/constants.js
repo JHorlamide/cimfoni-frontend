@@ -123,13 +123,13 @@ export const footerNav = {
 export const footerSocials = [
   {
     id: 1,
-    url: "www.facebook.com/cimfonitech",
+    url: "https://www.facebook.com/cimfonitech",
     title: "Facebook",
     image: facebookIcon,
   },
   {
     id: 2,
-    url: "www.instagram.com/cimfonitech",
+    url: "https://www.instagram.com/cimfonitech",
     title: "Instagram",
     image: instagramIcon,
   },
