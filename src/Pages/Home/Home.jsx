@@ -56,11 +56,7 @@ const Home = () => {
                   grow and thrive in the industry
                 </p>
 
-                <CustomBtn
-                  className={
-                    "hover:animate-bounce flex mx-auto justify-center bg-primaryColor text-white font-medium px-4 py-3 rounded-md lg:w-1/3 md:w-1/2 lg:mx-0 md:mx-0"
-                  }
-                >
+                <CustomBtn className='hover:animate-bounce flex mx-auto justify-center bg-primaryColor text-white font-medium px-4 py-3 rounded-md lg:w-1/3 md:w-1/2 lg:mx-0 md:mx-0'>
                   View Courses
                   <ArrowSVG className={"hover:animate-spin w-6 h-6 ml-3"} />
                 </CustomBtn>
@@ -90,11 +86,7 @@ const Home = () => {
                   grow and thrive in the industry
                 </p>
 
-                <CustomBtn
-                  className={
-                    "flex mx-auto justify-center bg-primaryColor text-white font-medium px-4 py-3 rounded-md lg:w-1/3 md:w-1/2 lg:mx-0 md:mx-0"
-                  }
-                >
+                <CustomBtn className='flex mx-auto justify-center bg-primaryColor text-white font-medium px-4 py-3 rounded-md lg:w-1/3 md:w-1/2 lg:mx-0 md:mx-0'>
                   View Courses
                   <ArrowSVG className={"w-6 h-6 ml-3"} />
                 </CustomBtn>

@@ -33,6 +33,7 @@ const Hero = () => {
               rightIcon={
                 <ArrowSVG className='hidden lg:inline-flex md:inline-flex w-6 h-6 ml-3' />
               }
+              onClick={() => navigate("/courses")}
             >
               View Courses
             </CustomBtn>
