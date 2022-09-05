@@ -68,6 +68,27 @@ const Courses = () => {
               </p>
               <p className='text-primaryColor md:text-sm'>10 class mates</p>
 
+              <div>
+                <p className='text-center text-primaryColor md:text-sm font-semibold md:text-left lg:text-left'>
+                  Start Date
+                </p>
+                <p className='text-primaryColor md:text-sm font-medium'>
+                  Stream 1: 7th - 21st Oct
+                </p>
+                <p className='text-primaryColor md:text-sm font-medium'>
+                  Stream 2: 22nd - 6th Nov
+                </p>
+                <p className='text-primaryColor md:text-sm font-medium'>
+                  Stream 3: 7th - 21st Nov
+                </p>
+                <p className='text-primaryColor md:text-sm font-medium'>
+                  Stream 4: 22nd - 6th Dec
+                </p>
+                <p className='text-primaryColor md:text-sm font-medium'>
+                  Stream 5: 7th - 21st Dec
+                </p>
+              </div>
+
               <div id='languages' className='flex space-x-3 md:py-1'>
                 {badges.map((badge, index) => (
                   <Badge key={index} badgeText={badge} />
@@ -105,6 +126,27 @@ const Courses = () => {
                 90% completion rate
               </p>
               <p className='text-primaryColor md:text-sm'>10 class mates</p>
+
+              <div>
+                <p className='text-center text-primaryColor md:text-sm font-semibold md:text-left lg:text-left'>
+                  Start Date
+                </p>
+                <p className='text-primaryColor md:text-sm font-medium'>
+                  Stream 1: 7th - 21st Oct
+                </p>
+                <p className='text-primaryColor md:text-sm font-medium'>
+                  Stream 2: 22nd - 6th Nov
+                </p>
+                <p className='text-primaryColor md:text-sm font-medium'>
+                  Stream 3: 7th - 21st Nov
+                </p>
+                <p className='text-primaryColor md:text-sm font-medium'>
+                  Stream 4: 22nd - 6th Dec
+                </p>
+                <p className='text-primaryColor md:text-sm font-medium'>
+                  Stream 5: 7th - 21st Dec
+                </p>
+              </div>
 
               <div id='languages' className='flex space-x-3 md:py-1'>
                 {badges.map((badge, index) => (
@@ -155,6 +197,27 @@ const Courses = () => {
                 90% completion rate
               </p>
               <p className='text-primaryColor md:text-sm'>10 class mates</p>
+
+              <div>
+                <p className='text-center text-primaryColor md:text-sm font-semibold md:text-left lg:text-left'>
+                  Start Date
+                </p>
+                <p className='text-primaryColor md:text-sm font-medium'>
+                  Stream 1: 7th - 21st Oct
+                </p>
+                <p className='text-primaryColor md:text-sm font-medium'>
+                  Stream 2: 22nd - 6th Nov
+                </p>
+                <p className='text-primaryColor md:text-sm font-medium'>
+                  Stream 3: 7th - 21st Nov
+                </p>
+                <p className='text-primaryColor md:text-sm font-medium'>
+                  Stream 4: 22nd - 6th Dec
+                </p>
+                <p className='text-primaryColor md:text-sm font-medium'>
+                  Stream 5: 7th - 21st Dec
+                </p>
+              </div>
 
               <div id='languages' className='flex space-x-3 md:py-1'>
                 {badges.map((badge, index) => (
