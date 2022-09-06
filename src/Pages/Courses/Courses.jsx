@@ -9,7 +9,9 @@ import FAQ from "../../components/FAQ";
 import Footer from "../../components/Footer/Footer";
 import { paymentLinks } from "../../utils/constants";
 
-const badges = ["Javascript", "React.Js", "MongoDB", "HTML & CSS"];
+const badges = ["Photoshop", "Illustrator", "After Effects", "Adobe Applications. etc"];
+const badges2 = ["Broadcast Hardware", "Broadcast Software", "Storage & Retrieval Systems. etc"];
+const badges3 = ["Industry and Financial Analysis", "Screen Presentation and Delivery. etc"];
 
 const Badge = ({ badgeText }) => {
   return (
@@ -33,13 +35,18 @@ const Courses = () => {
               Build a career by learning from the best
             </h1>
 
-            <p className='text-primaryColor text-justify lg:text-center md:text-center md:max-w-fit lg:max-w-5xl'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis sit
-              gravida mus enim elit egestas ut. Nulla faucibus rutrum phasellus
-              iaculis. Donec tristique volutpat id lectus nibh. Lorem commodo,
-              sit elit suspendisse leo, phasellus{" "}
-              <br className='hidden lg:block' />
-              molestie.
+            <p className='text-primaryColor text-justify lg:text-justify md:text-justify md:max-w-fit lg:max-w-5xl'>
+              Our curriculum is simple enough for beginners to understand and
+              combines theory with unique practical sessions using modern
+              facilities. Early stage intending professionals can also
+              strengthen their skills with any of our programs. Graduates will
+              be able to find freelance, contract or full-time positions as
+              videographers, editors, writers, performers, and a variety of
+              other production and post-production positions, within the
+              corporate, independent production, and broadcast fields. CDBA
+              prepares you for success and our small class sizes ensures that
+              every participant gets the required attention.
+              {/* <br className='hidden lg:block' /> */}
             </p>
           </div>
         </div>
@@ -99,11 +106,19 @@ const Courses = () => {
                 ))}
               </div>
 
-              <p className='px-5 text-justify md:px-0 md:py-2 lg:max-w-md'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis
-                sit gravida mus enim elit egestas ut. Nulla faucibus rutrum
-                phasellus iaculis. Donec tristique volutpat id lectus nibh.
-                Lorem commodo, sit elit suspendisse leo, phasellus molestie.
+              <p className='px-5 text-sm text-justify md:px-0 md:py-2 lg:max-w-md'>
+                Adobe applications are the most common tools used by media and
+                content professionals globally for mobile, tablet or the big
+                screen and is known for its strong suite of products from
+                photography to illustrations, video editing and effects for
+                mobile, tablets big screen, social media and movies. Our Adobe
+                Introductory Course at CBDA breaks down each Adobe application
+                for participants, explains their functions and how they work
+                together in Adobe’s online distribution platform called the
+                Adobe Cloud. Introduction to Adobe Suites takes learners on a
+                journey through some of the key Adobe products they will use in
+                their creator career and introduces them to the understanding of
+                colors, text and fonts. The course is taught in seven parts
               </p>
 
               <CustomBtn
@@ -156,16 +171,36 @@ const Courses = () => {
               </div>
 
               <div id='languages' className='flex space-x-3 md:py-1'>
-                {badges.map((badge, index) => (
+                {badges2.map((badge, index) => (
                   <Badge key={index} badgeText={badge} />
                 ))}
               </div>
 
-              <p className='px-5 text-justify md:px-0 md:py-2 lg:max-w-md'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis
-                sit gravida mus enim elit egestas ut. Nulla faucibus rutrum
-                phasellus iaculis. Donec tristique volutpat id lectus nibh.
-                Lorem commodo, sit elit suspendisse leo, phasellus molestie.
+              <p className='px-5 text-sm text-justify md:px-0 md:py-2 lg:max-w-md'>
+                This is a very intensive and course intended for those
+                interested in building a career in business broadcasting. In
+                whatever form, whether television, podcasting or other digital
+                broadcast platforms, business broadcasting requires a strong
+                knowledge of business, economy and industry terms, trends
+                analysis and interpretations. Introduction to Business
+                Broadcasting blends the teaching of business and economics with
+                broadcasting. Graduates of this course will not only be able to
+                speak the language of business but also produce and present
+                business programs for any broadcast medium digital or
+                traditional. In this course students review the various roles
+                and duties of those involved in small independent productions
+                and those working together on large network productions.
+                Students learn how to conduct themselves when on-set and how to
+                document the needs of individual productions through the budget
+                and production schedules. The increasing complexities of the
+                business world is crying out for explanations about what is
+                going on around it. This course will equip you with the tools
+                and skills to confidently and effectively deliver that
+                explanation to your audience as a producer or a presenter. It
+                offers you the chance for a career on various media platforms as
+                an entrepreneur or career builder to fill the significant
+                domestic and global demand for business broadcasters. At CBDA
+                this course is taught in five parts as listed below
               </p>
 
               <CustomBtn
@@ -230,16 +265,24 @@ const Courses = () => {
               </div>
 
               <div id='languages' className='flex space-x-3 md:py-1'>
-                {badges.map((badge, index) => (
+                {badges3.map((badge, index) => (
                   <Badge key={index} badgeText={badge} />
                 ))}
               </div>
 
-              <p className='px-5 text-justify md:px-0 md:py-2 lg:max-w-md'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis
-                sit gravida mus enim elit egestas ut. Nulla faucibus rutrum
-                phasellus iaculis. Donec tristique volutpat id lectus nibh.
-                Lorem commodo, sit elit suspendisse leo, phasellus molestie.
+              <p className='px-5 text-sm text-justify md:px-0 md:py-2 lg:max-w-md'>
+                In this program you will learn what it means to write, perform,
+                shoot, and edit content in a variety of formats. You will use
+                use industry standard equipment and software to learn about
+                storytelling, lighting, sound design, and post-production
+                finishing. The rapid growth globally in both traditional and
+                online media broadcasting has created a strong demand for
+                broadcast production skills. Studying broadcast production at
+                Cimfoni Broadcast and Design Academy (CBDA) is as practical and
+                comprehensive as it gets. Beginning with access to our
+                ultra-modern studio, master control room and post production
+                rooms we work you through the basics of broadcast production.
+                Enroll in this course to begin your broadcast
               </p>
 
               <CustomBtn

@@ -10,11 +10,11 @@ import LysiLogo from "../assets/images/LysiLogo.png";
 import CimfoniLogo from '../assets/images/Cimfoni.png';
 
 //Gallery Images
-import Frame1 from "../assets/images/gallery-images/Frame-1.png";
-import Frame2 from "../assets/images/gallery-images/Frame-2.png";
-import Frame3 from "../assets/images/gallery-images/Frame-3.png";
-import Frame4 from "../assets/images/gallery-images/Frame-4.png";
-import Frame6 from "../assets/images/gallery-images/Frame-6.png";
+// import Frame1 from "../assets/images/gallery-images/Frame-1.png";
+// import Frame2 from "../assets/images/gallery-images/Frame-2.png";
+// import Frame3 from "../assets/images/gallery-images/Frame-3.png";
+// import Frame4 from "../assets/images/gallery-images/Frame-4.png";
+// import Frame6 from "../assets/images/gallery-images/Frame-6.png";
 import Frame7 from "../assets/images/gallery-images/Frame-7.png";
 import Frame8 from "../assets/images/gallery-images/Frame-8.png";
 import Frame9 from "../assets/images/gallery-images/Frame-9.png";
@@ -26,6 +26,13 @@ import Frame14 from "../assets/images/gallery-images/Frame-14.png";
 import Frame15 from "../assets/images/gallery-images/Frame-15.png";
 import Frame16 from "../assets/images/gallery-images/Frame-16.png";
 import Frame17 from "../assets/images/gallery-images/Frame-17.png";
+
+// New Frame Pictures
+import NewFrame1 from '../assets/images/gallery-images/NewFrame-1.jpg'
+import NewFrame2 from '../assets/images/gallery-images/NewFrame-2.jpg'
+import NewFrame3 from '../assets/images/gallery-images/NewFrame-3.jpg'
+import NewFrame4 from '../assets/images/gallery-images/NewFrame-4.jpeg'
+import NewFrame5 from '../assets/images/gallery-images/NewFrame-5.jpeg'
 
 export const navigation = [
   {
@@ -210,108 +217,84 @@ export const people = [
 export const galleryImages = [
   {
     id: 4,
-    // imageHeight: "h-1/2",
     name: "Frame4",
-    image: Frame4,
+    image: NewFrame1,
   },
   {
     id: 1,
-    // imageHeight: "h-full",
     name: "Frame1",
-    image: Frame1,
+    image: NewFrame2,
   },
   {
     id: 2,
-    // imageHeight: "h-full",
     name: "Frame2",
-    image: Frame2,
+    image: NewFrame3,
   },
   {
     id: 3,
-    // imageHeight: "h-full",
     name: "Frame3",
-    image: Frame3,
+    image: NewFrame4,
   },
-  // {
-  //   id: 5,
 
-  //   // imageHeight: "",
-  //   name: "Frame5",
-  //   image: Frame5,
-  // },
   {
-    id: 6,
-
-    // imageHeight: "",
+    id: 5,
     name: "Frame6",
-    image: Frame6,
+    image: NewFrame5,
   },
   {
     id: 7,
-
-    // imageHeight: "",
     name: "Frame7",
     image: Frame7,
   },
   {
     id: 8,
 
-    // imageHeight: "",
     name: "Frame8",
     image: Frame8,
   },
   {
     id: 9,
 
-    // imageHeight: "",
     name: "Frame9",
     image: Frame9,
   },
   {
     id: 10,
-    // imageHeight: "",
     name: "Frame10",
     image: Frame10,
   },
   {
     id: 11,
-    // imageHeight: "",
     name: "Frame11",
     image: Frame11,
   },
   {
     id: 12,
-    // imageHeight: "",
     name: "Frame12",
     image: Frame12,
   },
   {
     id: 13,
-    // imageHeight: "",
     name: "Frame13",
     image: Frame13,
   },
   {
     id: 14,
-    // imageHeight: "",
     name: "Frame14",
     image: Frame14,
   },
   {
     id: 15,
-    // imageHeight: "",
     name: "Frame15",
     image: Frame15,
   },
   {
     id: 16,
-    // imageHeight: "",
     name: "Frame16",
     image: Frame16,
   },
   {
     id: 17,
-    // imageHeight: "",
     name: "Frame1",
     image: Frame17,
   },

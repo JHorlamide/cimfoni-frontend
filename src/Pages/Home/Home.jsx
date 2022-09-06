@@ -9,7 +9,11 @@ import Community from "../../components/Community";
 import Testimony from "../../components/Testimony";
 import ArrowSVG from "../../assets/icons/arrow";
 
-import Rectangle1 from "../../assets/images/Rectangle-1.png";
+import NewFrame2 from '../../assets/images/gallery-images/NewFrame-2.jpg'
+import NewFrame3 from '../../assets/images/gallery-images/NewFrame-3.jpg'
+import NewFrame4 from '../../assets/images/gallery-images/NewFrame-4.jpeg'
+
+// import Rectangle1 from "../../assets/images/Rectangle-1.png";
 import Rectangle2 from "../../assets/images/Rectangle-2.png";
 import { supporterLogo } from "../../utils/constants";
 
@@ -42,8 +46,8 @@ const Home = () => {
           <AnimationOnScroll animateIn='animate__fadeInRight animate__delay-8s'>
             <div className='flex flex-col space-y-5 justify-evenly items-center lg:flex-row md:flex-row lg:flex-row-reverse md:flex-row-reverse'>
               <img
-                className='object-cover lg:h-1/2 md:h-3/5 lg:w-1/3 md:w-1/3'
-                src={Rectangle1}
+                className='object-cover rounded-lg lg:h-1/2 md:h-3/5 lg:w-1/3 md:w-1/3'
+                src={NewFrame2}
                 alt='Rectangle'
               />
 
@@ -53,12 +57,15 @@ const Home = () => {
                 </h1>
 
                 <p className='text-normal text-justify lg:max-w-2xl md:max-w-2xl'>
-                  Navigating the product industry is usually a challenging phase
-                  for young designers. Without the right guidance and support,
-                  the average designer spends a longer time trying to find their
-                  feet. Perxels connects young designers with professionals and
-                  mentors with years of experience in the field to help them
-                  grow and thrive in the industry
+                  Adobe applications are the most common tools used by media and
+                  content professionals globally for mobile, tablet or the big
+                  screen and is known for its strong suite of products from
+                  photography to illustrations, video editing and effects for
+                  mobile, tablets big screen, social media and movies. Our Adobe
+                  Introductory Course at CBDA breaks down each Adobe application
+                  for participants, explains their functions and how they work
+                  together in Adobe’s online distribution platform called the
+                  Adobe Cloud.
                 </p>
 
                 <CustomBtn
@@ -76,8 +83,8 @@ const Home = () => {
           <AnimationOnScroll animateIn='animate__fadeInLeft animate__delay-8s'>
             <div className='flex flex-col space-y-10 justify-evenly items-center lg:flex-row md:flex-row'>
               <img
-                className='object-cover lg:h-1/2 md:h-3/5 lg:w-1/3 md:w-1/3'
-                src={Rectangle1}
+                className='object-cover rounded-lg lg:h-1/2 md:h-3/5 lg:w-1/3 md:w-1/3'
+                src={NewFrame3}
                 alt='Rectangle'
               />
 
@@ -87,12 +94,15 @@ const Home = () => {
                 </h1>
 
                 <p className='text-normal text-justify lg:max-w-2xl md:max-w-2xl'>
-                  Navigating the product industry is usually a challenging phase
-                  for young designers. Without the right guidance and support,
-                  the average designer spends a longer time trying to find their
-                  feet. Perxels connects young designers with professionals and
-                  mentors with years of experience in the field to help them
-                  grow and thrive in the industry
+                  In this program you will learn what it means to write,
+                  perform, shoot, and edit content in a variety of formats. You
+                  will use use industry standard equipment and software to learn
+                  about storytelling, lighting, sound design, and
+                  post-production finishing. The rapid growth globally in both
+                  traditional and online media broadcasting has created a strong
+                  demand for broadcast production skills. Studying broadcast
+                  production at Cimfoni Broadcast and Design Academy (CBDA) is
+                  as practical and comprehensive as it gets.
                 </p>
 
                 <CustomBtn
@@ -110,8 +120,8 @@ const Home = () => {
           <AnimationOnScroll animateIn='animate__fadeInRight animate__delay-8s'>
             <div className='flex flex-col space-y-10 justify-evenly items-center lg:flex-row md:flex-row lg:flex-row-reverse md:flex-row-reverse'>
               <img
-                className='object-cover lg:h-1/2 md:h-3/5 lg:w-1/3 md:w-1/3'
-                src={Rectangle1}
+                className='object-cover rounded-lg lg:h-1/2 md:h-3/5 lg:w-1/3 md:w-1/3'
+                src={NewFrame4}
                 alt='Rectangle'
               />
 
@@ -121,12 +131,17 @@ const Home = () => {
                 </h1>
 
                 <p className='text-normal text-justify lg:max-w-2xl md:max-w-2xl'>
-                  Navigating the product industry is usually a challenging phase
-                  for young designers. Without the right guidance and support,
-                  the average designer spends a longer time trying to find their
-                  feet. Perxels connects young designers with professionals and
-                  mentors with years of experience in the field to help them
-                  grow and thrive in the industry
+                  This is a very intensive and course intended for those
+                  interested in building a career in business broadcasting. In
+                  whatever form, whether television, podcasting or other digital
+                  broadcast platforms, business broadcasting requires a strong
+                  knowledge of business, economy and industry terms, trends
+                  analysis and interpretations. Introduction to Business
+                  Broadcasting blends the teaching of business and economics
+                  with broadcasting. Graduates of this course will not only be
+                  able to speak the language of business but also produce and
+                  present business programs for any broadcast medium digital or
+                  traditional.
                 </p>
 
                 <CustomBtn
@@ -173,7 +188,7 @@ const Home = () => {
         <AnimationOnScroll animateIn='animate__zoomIn'>
           <div className='flex flex-col py-5 space-y-4 lg:space-y-0 md:space-y-0 lg:space-x-16 md:space-x-6 lg:flex-row md:flex-row'>
             <img
-              className='lg:h-auto md:h-80 object-cover'
+              className='lg:h-auto md:h-80 object-cover rounded-lg'
               src={Rectangle2}
               alt='Rectangle2'
             />
