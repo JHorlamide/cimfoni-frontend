@@ -4,8 +4,10 @@ import facebookIcon from "../assets/icons/facebook.png";
 // import linkedinIcon from "../assets/icons/linkedin.png";
 import instagramIcon from "../assets/icons/instagram.png";
 
+// Supporting Brands Logos
 import WitransafLogo from "../assets/images/Witransaf.png";
 import LysiLogo from "../assets/images/LysiLogo.png";
+import CimfoniLogo from '../assets/images/Cimfoni.png';
 
 //Gallery Images
 import Frame1 from "../assets/images/gallery-images/Frame-1.png";
@@ -48,8 +50,8 @@ export const navigation = [
   },
   {
     id: 6,
-    path: "/gallery",
-    title: "Gallery",
+    path: "/explore",
+    title: "Explore",
   },
 ];
 
@@ -323,19 +325,18 @@ export const paymentLinks = {
 
 export const supporterLogo = [
   {
-    id: 1,
-    image: WitransafLogo,
-    widthHight: "w-20 h-20",
-  },
-
-  {
     id: 2,
     image: LysiLogo,
     widthHight: "w-20 h-20",
   },
   {
+    id: 1,
+    image: WitransafLogo,
+    widthHight: "w-20 h-20",
+  },
+  {
     id: 3,
-    image: LysiLogo,
+    image: CimfoniLogo,
     widthHight: "w-20 h-20",
   },
 ];

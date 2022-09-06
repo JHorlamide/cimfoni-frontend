@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { useState } from "react";
 import CustomBtn from "../../components/CustomBtn";
 import CustomInput from "../../components/CustomInput";
 import Navbar from "../../components/Navbar/Navbar";
@@ -14,16 +14,20 @@ const specializationOptions = [
     value: "",
   },
   {
-    label: "Software Engineer",
-    value: "software engineer",
-  },
-  {
     label: "Graphic Designer",
     value: "graphics designer",
   },
   {
-    label: "Media Broadcasting",
-    value: "media broadcasting",
+    label: "Broadcast production",
+    value: "broadcast production",
+  },
+  {
+    label: "Journalism",
+    value: "journalism",
+  },
+  {
+    label: "Digital Marketing Platforms",
+    value: "digital marketing platforms",
   },
 ];
 
@@ -55,7 +59,7 @@ const Facilitator = () => {
   };
 
   return (
-    <Fragment>
+    <section>
       <Navbar />
 
       <section className='pt-2 lg:pt-4'>
@@ -223,7 +227,7 @@ const Facilitator = () => {
         {/* FOOTER */}
         <Footer />
       </section>
-    </Fragment>
+    </section>
   );
 };
 

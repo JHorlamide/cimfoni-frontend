@@ -11,18 +11,16 @@ import Glossary from "./Pages/Glossary/Glossary";
 
 function App() {
   return (
-    <div>
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/courses' element={<Courses />} />
-        <Route path='/services' element={<Services />} />
-        <Route path='/facilitator' element={<Facilitator />} />
-        <Route path='/gallery' element={<Gallery />} />
-        <Route path='/glossary' element={<Glossary />} />
-        <Route path='/get-in-touch' element={<GetInTouch />} />
-      </Routes>
-    </div>
+    <Routes>
+      <Route exact path='/' element={<Home />} />
+      <Route exact path='/about' element={<About />} />
+      <Route exact path='/courses' element={<Courses />} />
+      <Route exact path='/services' element={<Services />} />
+      <Route exact path='/facilitator' element={<Facilitator />} />
+      <Route exact path='/explore' element={<Gallery />} />
+      <Route exact path='/glossary' element={<Glossary />} />
+      <Route exact path='/get-in-touch' element={<GetInTouch />} />
+    </Routes>
   );
 }
 

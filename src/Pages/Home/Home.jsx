@@ -1,5 +1,5 @@
-import React, { Fragment } from "react";
-
+import React from "react";
+import { useNavigate } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
 import CustomBtn from "../../components/CustomBtn";
 import Footer from "../../components/Footer/Footer";
@@ -18,8 +18,14 @@ import "animate.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
 const Home = () => {
+  const navigate = useNavigate();
+
+  const navigateToCourse = () => {
+    navigate("/courses");
+  };
+
   return (
-    <Fragment>
+    <section>
       <Navbar />
       {/* HERO */}
       <div className='h-full w-full bg-cover bg-center -mt-12'>
@@ -56,7 +62,10 @@ const Home = () => {
                   grow and thrive in the industry
                 </p>
 
-                <CustomBtn className='hover:animate-bounce flex mx-auto justify-center bg-primaryColor text-white font-medium px-4 py-3 rounded-md lg:w-1/3 md:w-1/2 lg:mx-0 md:mx-0'>
+                <CustomBtn
+                  className='flex mx-auto justify-center bg-primaryColor text-white font-medium px-4 py-3 rounded-md lg:w-1/3 md:w-1/2 lg:mx-0 md:mx-0'
+                  onClick={navigateToCourse}
+                >
                   View Courses
                   <ArrowSVG className={"hover:animate-spin w-6 h-6 ml-3"} />
                 </CustomBtn>
@@ -77,6 +86,7 @@ const Home = () => {
                 <h1 className='text-xl font-semibold text-center lg:text-left md:text-left lg:text-4xl md:text-2xl'>
                   Broadcast Production
                 </h1>
+
                 <p className='text-normal text-justify lg:max-w-2xl md:max-w-2xl'>
                   Navigating the product industry is usually a challenging phase
                   for young designers. Without the right guidance and support,
@@ -86,7 +96,10 @@ const Home = () => {
                   grow and thrive in the industry
                 </p>
 
-                <CustomBtn className='flex mx-auto justify-center bg-primaryColor text-white font-medium px-4 py-3 rounded-md lg:w-1/3 md:w-1/2 lg:mx-0 md:mx-0'>
+                <CustomBtn
+                  className='flex mx-auto justify-center bg-primaryColor text-white font-medium px-4 py-3 rounded-md lg:w-1/3 md:w-1/2 lg:mx-0 md:mx-0'
+                  onClick={navigateToCourse}
+                >
                   View Courses
                   <ArrowSVG className={"w-6 h-6 ml-3"} />
                 </CustomBtn>
@@ -107,6 +120,7 @@ const Home = () => {
                 <h1 className='text-xl font-semibold text-center lg:text-left md:text-left lg:text-4xl md:text-2xl'>
                   Business Broadcasting
                 </h1>
+
                 <p className='text-normal text-justify lg:max-w-2xl md:max-w-2xl'>
                   Navigating the product industry is usually a challenging phase
                   for young designers. Without the right guidance and support,
@@ -117,9 +131,8 @@ const Home = () => {
                 </p>
 
                 <CustomBtn
-                  className={
-                    "flex mx-auto justify-center bg-primaryColor text-white font-medium px-4 py-3 rounded-md lg:w-1/3 md:w-1/2 lg:mx-0 md:mx-0"
-                  }
+                  className='flex mx-auto justify-center bg-primaryColor text-white font-medium px-4 py-3 rounded-md lg:w-1/3 md:w-1/2 lg:mx-0 md:mx-0'
+                  onClick={navigateToCourse}
                 >
                   View Courses
                   <ArrowSVG className={"w-6 h-6 ml-3"} />
@@ -261,7 +274,7 @@ const Home = () => {
       <AnimationOnScroll animateIn='animate__fadeInBottomRight animate__delay-8s'>
         <Footer />
       </AnimationOnScroll>
-    </Fragment>
+    </section>
   );
 };
 

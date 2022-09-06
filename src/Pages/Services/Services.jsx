@@ -3,9 +3,9 @@ import Navbar from "../../components/Navbar/Navbar";
 
 const Services = () => {
   return (
-    <div>
+    <section>
       <Navbar />
-    </div>
+    </section>
   );
 };
 

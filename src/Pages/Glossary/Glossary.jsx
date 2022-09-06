@@ -1,13 +1,13 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import LysiLogo from "../../assets/images/LysiLogo.png";
 import Footer from "../../components/Footer/Footer";
 
 const Glossary = () => {
   return (
-    <Fragment>
-      {/* NAVBAR */}
+    <section>
       <Navbar />
+
       <section className='bg-backgroundColor px-10 py-10 md:px-20 md:py-16 lg:px-28 lg:py-32'>
         <div
           className='flex 
@@ -447,7 +447,7 @@ const Glossary = () => {
 
       {/* FOOTER */}
       <Footer />
-    </Fragment>
+    </section>
   );
 };
 

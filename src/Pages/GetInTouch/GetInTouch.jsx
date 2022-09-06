@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { useState } from "react";
 import PhoneInput from "react-phone-input-2";
 import Community from "../../components/Community";
 import CustomBtn from "../../components/CustomBtn";
@@ -26,7 +26,7 @@ const GetInTouch = () => {
   };
 
   return (
-    <Fragment>
+    <section>
       <Navbar />
 
       <section className='lg:mt-4 bg-lightGraySecondary'>
@@ -130,13 +130,12 @@ const GetInTouch = () => {
                     htmlFor='phone'
                     className='text-sm text-gray-500 font-medium'
                   >
-                    Project Details
+                    Training Details
                   </label>
 
                   <p className='text-sm mt-3'>
-                    Tell us about your project. Give us a short brief so that we
-                    can understand what you are looking for and what your
-                    product is all about
+                    Tell us about your Organisation. Give us a short brief so
+                    that we can understand what you are looking for
                   </p>
                   <CustomInput
                     id='project'
@@ -154,7 +153,7 @@ const GetInTouch = () => {
                   />
                 </div>
 
-                <div>
+                {/* <div>
                   <p className='text-sm mt-3'>
                     Share Links to project files you’d like to share, if any
                   </p>
@@ -170,10 +169,9 @@ const GetInTouch = () => {
                       placeholder: "Enter link",
                       rows: "5",
                     }}
-                    // errorText={"Project is required"}
                     boxClassName='w-full mt-3 px-3 py-2 rounded-md border-2'
                   />
-                </div>
+                </div> */}
 
                 <div className='mt-4 lg:mt-10'>
                   <CustomBtn
@@ -207,7 +205,7 @@ const GetInTouch = () => {
 
       {/* FOOTER */}
       <Footer />
-    </Fragment>
+    </section>
   );
 };
 

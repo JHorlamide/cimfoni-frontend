@@ -49,7 +49,7 @@ const Community = () => {
                   "text-lightBlueText px-8 py-3 rounded-tr-xl rounded-br-xl bg-skyBlue"
                 }
               >
-                Send invite
+                Request
               </CustomBtn>
             </div>
           </form>

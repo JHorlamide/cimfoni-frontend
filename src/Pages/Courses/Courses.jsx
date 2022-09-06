@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import Rectangle8 from "../../assets/images/Rectangle-8.png";
 import CustomBtn from "../../components/CustomBtn";
@@ -23,10 +23,10 @@ const Courses = () => {
   };
 
   return (
-    <Fragment>
+    <section>
       <Navbar />
 
-      <section className='lg:pt-5'>
+      <section id='courses' className='lg:pt-5'>
         <div className='bg-secondaryColor px-8 py-8 lg:px-10 md:px-10 lg:py-28 md:py-20'>
           <div className='flex flex-col justify-center items-center space-y-3'>
             <h1 className='max-w-xs text-center text-primaryColor font-extrabold lg:font-bold md:font-bold text-2xl lg:leading-snug md:leading-snug lg:text-5xl md:text-4xl lg:max-w-2xl md:max-w-md'>
@@ -50,7 +50,10 @@ const Courses = () => {
           </h1>
 
           {/* item-1 */}
-          <div className='flex flex-col justify-center items-center space-y-5 md:space-x-5 md:flex-row lg:py-10 lg:space-x-20'>
+          <div
+            id='course-adobe-suite'
+            className='flex flex-col justify-center items-center space-y-5 md:space-x-5 md:flex-row lg:py-10 lg:space-x-20'
+          >
             <img
               className='object-cover rounded-md w-80 md:w-1/2 md:h-1/2 lg:w-1/3 lg:h-1/3'
               src={Rectangle8}
@@ -115,7 +118,10 @@ const Courses = () => {
           </div>
 
           {/* item-2 */}
-          <div className='flex flex-col flex-col-reverse justify-center items-center space-y-5 md:space-x-5 md:flex-row lg:py-10 lg:space-x-20'>
+          <div
+            id='course-business-broadcast'
+            className='flex flex-col flex-col-reverse justify-center items-center space-y-5 md:space-x-5 md:flex-row lg:py-10 lg:space-x-20'
+          >
             <div className='flex flex-col items-center space-y-5 lg:space-y-3 md:space-y-2 md:items-start md:space-x-5 md:h-1/4'>
               <h1 className='mt-5 text-xl font-medium text-primaryColor md:font-bold md:text-2xl md:ml-4 lg:text-3xl'>
                 Introduction to Business Broadcast
@@ -180,7 +186,10 @@ const Courses = () => {
           </div>
 
           {/* item-3 */}
-          <div className='flex flex-col justify-center items-center space-y-5 md:space-x-5 md:flex-row lg:py-10 lg:space-x-20'>
+          <div
+            id='course-broadcast-production'
+            className='flex flex-col justify-center items-center space-y-5 md:space-x-5 md:flex-row lg:py-10 lg:space-x-20'
+          >
             <img
               className='object-cover rounded-md w-80 md:w-1/2 md:h-1/2 lg:w-1/3 lg:h-1/3'
               src={Rectangle8}
@@ -257,7 +266,7 @@ const Courses = () => {
         {/* FOOTER */}
         <Footer />
       </section>
-    </Fragment>
+    </section>
   );
 };
 
