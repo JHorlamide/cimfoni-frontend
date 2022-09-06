@@ -23,7 +23,7 @@ const Courses = () => {
   };
 
   return (
-    <section>
+    <>
       <Navbar />
 
       <section id='courses' className='lg:pt-5'>
@@ -32,6 +32,7 @@ const Courses = () => {
             <h1 className='max-w-xs text-center text-primaryColor font-extrabold lg:font-bold md:font-bold text-2xl lg:leading-snug md:leading-snug lg:text-5xl md:text-4xl lg:max-w-2xl md:max-w-md'>
               Build a career by learning from the best
             </h1>
+
             <p className='text-primaryColor text-justify lg:text-center md:text-center md:max-w-fit lg:max-w-5xl'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis sit
               gravida mus enim elit egestas ut. Nulla faucibus rutrum phasellus
@@ -266,7 +267,7 @@ const Courses = () => {
         {/* FOOTER */}
         <Footer />
       </section>
-    </section>
+    </>
   );
 };
 

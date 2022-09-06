@@ -11,11 +11,10 @@ import ArrowSVG from "../../assets/icons/arrow";
 
 import Rectangle1 from "../../assets/images/Rectangle-1.png";
 import Rectangle2 from "../../assets/images/Rectangle-2.png";
-
 import { supporterLogo } from "../../utils/constants";
 
-import "animate.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
+import "animate.css";
 
 const Home = () => {
   const navigate = useNavigate();
