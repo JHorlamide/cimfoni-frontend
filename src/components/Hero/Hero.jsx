@@ -27,6 +27,33 @@ const Hero = () => {
             by registering for one of our courses today. It’s that simple!
           </p>
 
+          <div className='mt-5 flex flex-col space-y-10 md:space-y-0 lg:space-y-0 md:flex-row lg:flex-row md:space-x-10 lg:space-x-10'>
+            <div>
+              <h1 className='text-xl text-center md:text-left lg:text-left font-semibold'>
+                Learn more about <br className='md:hidden lg:hidden' />
+                powerful design tools
+              </h1>
+              <p className='max-w-2xl py-1 px-5 bottom-0 text-lg text-justify mx-auto lg:mx-0 md:mx-0 lg:px-0 md:px-0 md:py-2 lg:max-w-5xl md:max-w-xl'>
+                From Adobe to Corel, today there are so many design tools to
+                help creators deliver on there projects and new tools keep
+                emerging in both number and complexity. Our courses give you the
+                inside track on these applications allowing you know what to
+                use, how and when to use it.
+              </p>
+            </div>
+
+            <div>
+              <h1 className='text-xl text-center md:text-left lg:text-left font-semibold'>
+                In content creation, the right foundation is everything
+              </h1>
+              <p className='max-w-2xl py-1 px-5 bottom-0 text-lg text-justify mx-auto lg:mx-0 md:mx-0 lg:px-0 md:px-0 md:py-2 lg:max-w-5xl md:max-w-xl'>
+                Whether its text, video or audio for film, tv, radio or social
+                media, you need to build from the right foundation. We teach you
+                the basics today so that your career can take of tomorrow
+              </p>
+            </div>
+          </div>
+
           <div className='flex justify-center items-center lg:justify-start md:justify-start items-start space-x-3 py-3 lg:flex-row'>
             <CustomBtn
               className='text-sm bg-white text-primaryColor font-medium px-4 py-3 rounded-md flex lg:text-md'

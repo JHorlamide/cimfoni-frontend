@@ -174,7 +174,8 @@ const Home = () => {
               lg:gap-x-10 
               lg:gap-y-0 
               md:grid 
-              md:grid-rows-2 
+              md:grid-cols-2
+              md:grid-rows-2
               md:grid-flow-col
               md:gap-x-6
               md:gap-y-6'
@@ -182,59 +183,59 @@ const Home = () => {
               {/* ITEM 1 */}
               <div className='flex flex-col space-y-3'>
                 <h1 className='text-xl font-semibold'>
-                  In content creation, the right foundation is everything
+                  Best knowledge for creatives
                 </h1>
 
                 <p className='text-sm font-normal text-justify leading-relaxed'>
-                  Whether its text, video or audio for film, tv, radio or social
-                  media, you need to build from the right foundation. We teach
-                  you the basics today so that your career can take of tomorrow
+                  For both new and matured creatives the quest for knowledge is
+                  never ending. Cimfoni provides creatives with one the most
+                  dynamic knowledge environment to help them keep pace with
+                  developments in the media industry. New creatives trust us to
+                  equip them with the right foundation while mature creatives
+                  rely on us to take them further in their careers
                 </p>
               </div>
 
               {/* ITEM 2 */}
               <div className='flex flex-col space-y-3'>
-                {/* <h1 className='text-xl font-semibold'>
-                  Learn more about powerful design tools
-                </h1> */}
+                <h1 className='text-xl font-semibold'>Growth and mentorship</h1>
 
-                {/* <p className='text-sm font-normal text-justify leading-relaxed'>
-                  From Adobe to Corel, today there are so many design tools to
-                  help creators deliver on there projects and new tools keep
-                  emerging in both number and complexity. Our courses give you
-                  the inside track on these applications allowing you know what
-                  to use, how and when to use it.
-                </p> */}
+                <p className='text-sm font-normal text-justify leading-relaxed'>
+                  Our hub and spoke approach ensures that you not only progress
+                  but also find like minds that can guide you along your own way
+                  without compromising your unique vision of your career. In a
+                  world often and easily dominated by senior industry influences
+                  it is important that the uniqueness of each creative is
+                  preserved for the diversity it gives to us all without getting
+                  lost in the crowd.
+                </p>
               </div>
 
               {/* ITEM 3 */}
               <div className='flex flex-col space-y-3'>
-                <h1 className='text-xl font-semibold'>
-                  {" "}
-                  Learn more about powerful design tools
-                </h1>
+                <h1 className='text-xl font-semibold'>Peer support</h1>
 
                 <p className='text-sm font-normal text-justify leading-relaxed'>
-                  From Adobe to Corel, today there are so many design tools to
-                  help creators deliver on there projects and new tools keep
-                  emerging in both number and complexity. Our courses give you
-                  the inside track on these applications allowing you know what
-                  to use, how and when to use it.
+                  The friendships and relationships that form during our courses
+                  lead to career long peer support for alumni. At Cimfoni we
+                  help alumni build and sustain professional networks that serve
+                  as valuable and available resources for future projects and
+                  sounding boards
                 </p>
               </div>
 
               {/* ITEM 4 */}
               <div className='flex flex-col space-y-3'>
-                {/* <h1 className='text-xl font-semibold'>Hands on Experiments</h1> */}
+                <h1 className='text-xl font-semibold'>Deliberately hands on</h1>
 
-                {/* <p className='text-sm font-normal text-justify leading-relaxed'>
-                  Navigating the product industry is usually a challenging phase
-                  for young designers. Without the right guidance and support,
-                  the average designer spends a longer time trying to find their
-                  feet. Perxels connects young designers with professionals and
-                  mentors with years of experience in the field to help them
-                  grow and thrive in the industry
-                </p> */}
+                <p className='text-sm font-normal text-justify leading-relaxed'>
+                  All aspects of media from graphic design, broadcast
+                  journalism, post production to script writing are are
+                  practical. It’s for this reason that our courses at Cimfoni
+                  are deliberately hands on. Our classroom teaching are only a
+                  stepping stone to the world of practice where skills are
+                  forged in the furnace of experimentation and discovery
+                </p>
               </div>
             </div>
           </div>
