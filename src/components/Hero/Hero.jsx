@@ -12,7 +12,7 @@ const Hero = () => {
         className='bg-center bg-cover bg-no-repeat items-center w-full h-full text-white mt-10 lg:mt-16 md:mt-16'
         style={{ backgroundImage: "url('images/hero-image.png')" }}
       >
-        <div className='px-5 py-6 lg:px-36 md:px-20 lg:py-36 md:py-20 bg-primaryColorLight justify-center'>
+        <div className='px-5 py-6 lg:px-36 md:px-20 lg:py-30 md:py-20 bg-primaryColorLight justify-center'>
           <h1
             id='_hero_animation'
             className='max-w-sm text-2xl text-center mx-auto mb-3 font-bold lg:font-bold md:font-bold lg:mx-0 md:mx-0 lg:max-w-4xl md:max-w-lg lg:leading-snug md:leading-snug lg:text-6xl md:text-4xl lg:text-left md:text-left'
