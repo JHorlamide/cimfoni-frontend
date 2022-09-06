@@ -61,7 +61,7 @@ const Facilitator = () => {
   return (
     <section>
       <Navbar />
-
+      
       <section className='pt-2 lg:pt-4'>
         <section className='bg-lightPurple px-8 py-8 lg:px-10 md:px-10 lg:py-28 md:py-20'>
           <div className='flex flex-col justify-center items-center space-y-3'>
