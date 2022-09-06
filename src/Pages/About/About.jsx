@@ -13,7 +13,15 @@ const About = () => {
     <section>
       <Navbar />
 
-      <div className='bg-secondary py-5 px-5 lg:px-36 lg:py-20 md:px-10'>
+      <section className='bg-lightPurple px-8 py-8 lg:px-10 md:px-10 lg:py-28 md:py-20'>
+        <div className='flex flex-col justify-center items-center space-y-3'>
+          <h1 className='max-w-xs text-center text-primaryColor font-extrabold lg:font-bold md:font-bold text-2xl lg:leading-snug md:leading-snug lg:text-5xl md:text-4xl lg:max-w-2xl md:max-w-md'>
+            About Us
+          </h1>
+        </div>
+      </section>
+
+      <section className='bg-secondary py-5 px-5 lg:px-36 lg:py-20 md:px-10'>
         <div className='space-y-10 lg:space-y-32'>
           {/* ITEM 1 */}
           <div className='flex flex-col space-y-5 justify-evenly items-center lg:flex-row md:flex-row lg:flex-row-reverse md:flex-row-reverse'>
@@ -62,12 +70,12 @@ const About = () => {
               </h1> */}
 
               <p className='text-normal text-justify lg:max-w-2xl md:max-w-2xl'>
-                Our curriculum is simple enough for beginners to
-                understand and combines theory with unique practical sessions
-                using modern facilities. Early stage intending professionals can
-                also strengthen their skills with any of our programs. Graduates
-                will be able to find freelance, contract or full-time positions
-                as videographers, editors, writers, performers, and a variety of
+                Our curriculum is simple enough for beginners to understand and
+                combines theory with unique practical sessions using modern
+                facilities. Early stage intending professionals can also
+                strengthen their skills with any of our programs. Graduates will
+                be able to find freelance, contract or full-time positions as
+                videographers, editors, writers, performers, and a variety of
                 other production and post-production positions, within the
                 corporate, independent production, and broadcast fields. CDBA
                 prepares you for success and our small class sizes ensures that
@@ -81,7 +89,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <Footer />
     </section>

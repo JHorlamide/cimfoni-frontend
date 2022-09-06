@@ -9,12 +9,14 @@ import Community from "../../components/Community";
 import Testimony from "../../components/Testimony";
 import ArrowSVG from "../../assets/icons/arrow";
 
+import NewFrame1 from '../../assets/images/gallery-images/NewFrame-1.jpg'
 import NewFrame2 from '../../assets/images/gallery-images/NewFrame-2.jpg'
 import NewFrame3 from '../../assets/images/gallery-images/NewFrame-3.jpg'
 import NewFrame4 from '../../assets/images/gallery-images/NewFrame-4.jpeg'
 
 // import Rectangle1 from "../../assets/images/Rectangle-1.png";
-import Rectangle2 from "../../assets/images/Rectangle-2.png";
+// import Rectangle2 from "../../assets/images/Rectangle-2.png";
+
 import { supporterLogo } from "../../utils/constants";
 
 import { AnimationOnScroll } from "react-animation-on-scroll";
@@ -121,7 +123,7 @@ const Home = () => {
             <div className='flex flex-col space-y-10 justify-evenly items-center lg:flex-row md:flex-row lg:flex-row-reverse md:flex-row-reverse'>
               <img
                 className='object-cover rounded-lg lg:h-1/2 md:h-3/5 lg:w-1/3 md:w-1/3'
-                src={NewFrame4}
+                src={NewFrame1}
                 alt='Rectangle'
               />
 
@@ -188,8 +190,8 @@ const Home = () => {
         <AnimationOnScroll animateIn='animate__zoomIn'>
           <div className='flex flex-col py-5 space-y-4 lg:space-y-0 md:space-y-0 lg:space-x-16 md:space-x-6 lg:flex-row md:flex-row'>
             <img
-              className='lg:h-auto md:h-80 object-cover rounded-lg'
-              src={Rectangle2}
+              className='lg:w-80 lg:h-96 md:h-80 object-cover rounded-lg'
+              src={NewFrame4}
               alt='Rectangle2'
             />
 

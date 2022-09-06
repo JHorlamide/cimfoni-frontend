@@ -10,7 +10,7 @@ const Hero = () => {
     <section>
       <div
         className='bg-center bg-cover bg-no-repeat items-center w-full h-full text-white mt-10 lg:mt-16 md:mt-16'
-        style={{ backgroundImage: "url('images/hero-image.png')" }}
+        style={{ backgroundImage: "url('images/NewFrame-2.jpg')" }}
       >
         <div className='px-5 py-6 lg:px-36 md:px-20 lg:py-30 md:py-20 bg-primaryColorLight justify-center'>
           <h1
