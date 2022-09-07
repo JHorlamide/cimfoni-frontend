@@ -23,7 +23,7 @@ const testimonies = [
   {
     id: 3,
     image: Ellipse6,
-    name: "Olamide Jubril",
+    name: "Chidi Ogbonna",
     testimony:
       "I highly recommend the broadcast production course, these guys are well seasoned and pay attention to details",
   },
