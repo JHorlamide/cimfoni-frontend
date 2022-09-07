@@ -50,7 +50,7 @@ const Navbar = () => {
                   className='whitespace-nowrap bg-primaryColor text-white px-5 py-3 rounded font-semibold md:inline-block'
                   onClick={() => navigate("/courses")}
                 >
-                  Get Stated
+                  Get Started
                 </CustomBtn>
 
                 {/* <CustomBtn className='text-primaryColor rounded font-semibold border border-primaryColor px-4 py-3'>
