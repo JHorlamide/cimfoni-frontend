@@ -181,7 +181,7 @@ const GetInTouch = () => {
                     Submit Application
                   </CustomBtn>
 
-                  <div className='flex space-x-2 mt-5 lg:flex lg:justify-center lg:items-center lg:mt-5 md:mt-5 lg:space-x-2'>
+                  {/* <div className='flex space-x-2 mt-5 lg:flex lg:justify-center lg:items-center lg:mt-5 md:mt-5 lg:space-x-2'>
                     <input
                       className='-mb-3.5 md:mb-0'
                       type='checkbox'
@@ -192,7 +192,7 @@ const GetInTouch = () => {
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Quis sit gravida mus enim elit egestas
                     </p>
-                  </div>
+                  </div> */}
                 </div>
               </form>
             </div>

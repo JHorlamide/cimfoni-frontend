@@ -12,7 +12,7 @@ const About = () => {
   return (
     <section>
       <Navbar />
-      
+
       <section className='bg-lightPurple px-8 py-8 lg:px-10 md:px-10 lg:py-28 md:py-20'>
         <div className='flex flex-col justify-center items-center space-y-3'>
           <h1 className='max-w-xs text-center text-primaryColor font-extrabold lg:font-bold md:font-bold text-2xl lg:leading-snug md:leading-snug lg:text-5xl md:text-4xl lg:max-w-2xl md:max-w-md'>
@@ -32,10 +32,6 @@ const About = () => {
             />
 
             <div className='flex flex-col space-y-5 lg:w-1/2 md:w-1/2 lg:h-1/4 md:h-1/2'>
-              {/* <h1 className='text-xl font-semibold text-center lg:text-left md:text-left lg:text-4xl md:text-2xl'>
-                Introduction to Adobe suite
-              </h1> */}
-
               <p className='text-normal text-justify lg:max-w-2xl md:max-w-2xl'>
                 Creating and curating content is critical to the production of
                 music, movies, social media clips or even the meta verse.
@@ -49,10 +45,19 @@ const About = () => {
                 market.
               </p>
 
-              {/* <CustomBtn className='flex mx-auto justify-center bg-primaryColor text-white font-medium px-4 py-3 rounded-md lg:w-1/3 md:w-1/2 lg:mx-0 md:mx-0'>
-                View Courses
-                <ArrowSVG className={"hover:animate-spin w-6 h-6 ml-3"} />
-              </CustomBtn> */}
+              <div>
+                <h1 className='text-xl text-center md:text-left lg:text-left font-semibold'>
+                  Learn more about <br className='md:hidden lg:hidden' />
+                  powerful design tools
+                </h1>
+                <p className='max-w-2xl py-1 px-5 bottom-0 text-lg text-justify mx-auto lg:mx-0 md:mx-0 lg:px-0 md:px-0 md:py-2 lg:max-w-5xl md:max-w-xl'>
+                  From Adobe to Corel, today there are so many design tools to
+                  help creators deliver on there projects and new tools keep
+                  emerging in both number and complexity. Our courses give you
+                  the inside track on these applications allowing you know what
+                  to use, how and when to use it.
+                </p>
+              </div>
             </div>
           </div>
 
@@ -65,9 +70,16 @@ const About = () => {
             />
 
             <div className='flex flex-col space-y-5 lg:w-1/2 md:w-1/2 lg:h-1/4 md:h-1/2'>
-              {/* <h1 className='text-xl font-semibold text-center lg:text-left md:text-left lg:text-4xl md:text-2xl'>
-                Broadcast Production
-              </h1> */}
+              <div>
+                <h1 className='text-xl text-center md:text-left lg:text-left font-semibold'>
+                  In content creation, the right foundation is everything
+                </h1>
+                <p className='max-w-2xl py-1 px-5 bottom-0 text-lg text-justify mx-auto lg:mx-0 md:mx-0 lg:px-0 md:px-0 md:py-2 lg:max-w-5xl md:max-w-xl'>
+                  Whether its text, video or audio for film, tv, radio or social
+                  media, you need to build from the right foundation. We teach
+                  you the basics today so that your career can take of tomorrow
+                </p>
+              </div>
 
               <p className='text-normal text-justify lg:max-w-2xl md:max-w-2xl'>
                 Our curriculum is simple enough for beginners to understand and
@@ -81,11 +93,6 @@ const About = () => {
                 prepares you for success and our small class sizes ensures that
                 every participant gets the required attention.
               </p>
-
-              {/* <CustomBtn className='flex mx-auto justify-center bg-primaryColor text-white font-medium px-4 py-3 rounded-md lg:w-1/3 md:w-1/2 lg:mx-0 md:mx-0'>
-                View Courses
-                <ArrowSVG className={"w-6 h-6 ml-3"} />
-              </CustomBtn> */}
             </div>
           </div>
         </div>
