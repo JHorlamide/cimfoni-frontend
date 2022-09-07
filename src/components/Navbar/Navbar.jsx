@@ -3,7 +3,6 @@ import { Link, useNavigate } from "react-router-dom";
 import { navigation } from "../../utils/constants";
 import NavLinks from "./NavLinks/Index";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
-
 import CustomBtn from "../CustomBtn";
 import Logo3 from "../../assets/images/cli.png";
 
@@ -114,7 +113,7 @@ const Navbar = () => {
                           }
                           onClick={() => navigate("/courses")}
                         >
-                          Get Stated
+                          Get Started
                         </CustomBtn>
                       </Menu.Item>
 
