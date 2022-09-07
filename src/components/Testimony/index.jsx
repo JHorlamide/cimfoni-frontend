@@ -3,6 +3,7 @@ import RatingCard from "../RatingCard";
 
 import Testimony1 from "../../assets/images/testimony-images/testimony-1.jpeg";
 import Testimony2 from "../../assets/images/testimony-images/testimony-2.jpeg";
+import Ellipse6 from '../../assets/images/Ellipse-6.png';
 
 const testimonies = [
   {
@@ -21,7 +22,7 @@ const testimonies = [
   },
   {
     id: 3,
-    image: Testimony2,
+    image: Ellipse6,
     name: "Olamide Jubril",
     testimony:
       "I highly recommend the broadcast production course, these guys are well seasoned and pay attention to details",
