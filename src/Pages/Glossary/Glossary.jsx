@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
-import LysiLogo from "../../assets/images/LysiLogo.png";
+// import LysiLogo from "../../assets/images/LysiLogo.png";
 import Footer from "../../components/Footer/Footer";
 
 const Glossary = () => {
@@ -32,7 +32,7 @@ const Glossary = () => {
             <p className='text-lg'>Terms and Definations.</p>
           </div>
 
-          <img className='w-20 h-20' src={LysiLogo} alt='Lysi Logo' />
+          {/* <img className='w-20 h-20' src={LysiLogo} alt='Lysi Logo' /> */}
         </div>
 
         <hr className='mt-10 border divide-y divide-dashed' />
