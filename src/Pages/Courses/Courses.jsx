@@ -93,7 +93,9 @@ const Courses = () => {
               <p className='text-primaryColor md:text-sm'>
                 90% completion rate
               </p>
-              <p className='text-primaryColor md:text-sm'>maximum of 10 persons per class</p>
+              <p className='text-primaryColor md:text-sm'>
+                maximum of 10 persons per class
+              </p>
 
               <div>
                 <p className='text-center text-primaryColor md:text-sm font-semibold md:text-left lg:text-left'>
@@ -163,7 +165,9 @@ const Courses = () => {
               <p className='text-primaryColor md:text-sm'>
                 90% completion rate
               </p>
-              <p className='text-primaryColor md:text-sm'>maximum of 10 persons per class</p>
+              <p className='text-primaryColor md:text-sm'>
+                maximum of 10 persons per class
+              </p>
 
               <div>
                 <p className='text-center text-primaryColor md:text-sm font-semibold md:text-left lg:text-left'>
@@ -187,7 +191,7 @@ const Courses = () => {
               </div>
 
               <div id='languages' className='flex space-x-3 md:py-1'>
-                {badges2.map((badge, index) => (
+                {badges3.map((badge, index) => (
                   <Badge key={index} badgeText={badge} />
                 ))}
               </div>
@@ -257,7 +261,9 @@ const Courses = () => {
               <p className='text-primaryColor md:text-sm'>
                 90% completion rate
               </p>
-              <p className='text-primaryColor md:text-sm'>maximum of 10 persons per class</p>
+              <p className='text-primaryColor md:text-sm'>
+                maximum of 10 persons per class
+              </p>
 
               <div>
                 <p className='text-center text-primaryColor md:text-sm font-semibold md:text-left lg:text-left'>
@@ -281,7 +287,7 @@ const Courses = () => {
               </div>
 
               <div id='languages' className='flex space-x-3 md:py-1'>
-                {badges3.map((badge, index) => (
+                {badges2.map((badge, index) => (
                   <Badge key={index} badgeText={badge} />
                 ))}
               </div>
