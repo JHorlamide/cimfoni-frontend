@@ -53,7 +53,7 @@ const GetInTouch = () => {
                 <div className='grid gap-6 mb-6 md:grid-cols-2 mt-4'>
                   <CustomInput
                     id='first_name'
-                    label='First Name'
+                    label='First Name *'
                     inputProps={{
                       type: "text",
                       name: "first_name",
@@ -68,7 +68,7 @@ const GetInTouch = () => {
 
                   <CustomInput
                     id='last_name'
-                    label='Last Name'
+                    label='Last Name *'
                     inputProps={{
                       type: "text",
                       name: "last_name",
@@ -85,7 +85,7 @@ const GetInTouch = () => {
                 <div>
                   <CustomInput
                     id='email'
-                    label='Email'
+                    label='Email *'
                     inputProps={{
                       type: "email",
                       name: "email",
@@ -105,7 +105,7 @@ const GetInTouch = () => {
                       htmlFor='phone'
                       className='text-sm text-gray-500 font-medium'
                     >
-                      Phone Number
+                      Phone Number *
                     </label>
                     <div className='w-full flex space-x-3 lg:flex lg:space-x-2 md:flex md:space-x-2'>
                       <PhoneInput
@@ -130,7 +130,7 @@ const GetInTouch = () => {
                     htmlFor='phone'
                     className='text-sm text-gray-500 font-medium'
                   >
-                    Training Details
+                    Training Details *
                   </label>
 
                   <p className='text-sm mt-3'>
