@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
-import Rectangle8 from "../../assets/images/Rectangle-8.png";
 import CustomBtn from "../../components/CustomBtn";
 import ArrowSVG from "../../assets/icons/arrow";
 import Community from "../../components/Community";
@@ -9,9 +8,26 @@ import FAQ from "../../components/FAQ";
 import Footer from "../../components/Footer/Footer";
 import { paymentLinks } from "../../utils/constants";
 
-const badges = ["Photoshop", "Illustrator", "After Effects", "Adobe Applications. etc"];
-const badges2 = ["Broadcast Hardware", "Broadcast Software", "Storage & Retrieval Systems. etc"];
-const badges3 = ["Industry and Financial Analysis", "Screen Presentation and Delivery. etc"];
+// import Rectangle8 from "../../assets/images/Rectangle-8.png";
+import NewFrame1 from "../../assets/images/gallery-images/NewFrame-1.jpg";
+import NewFrame2 from "../../assets/images/gallery-images/NewFrame-2.jpg";
+import NewFrame3 from "../../assets/images/gallery-images/NewFrame-3.jpg";
+
+const badges = [
+  "Photoshop",
+  "Illustrator",
+  "After Effects",
+  "Adobe Applications. etc",
+];
+const badges2 = [
+  "Broadcast Hardware",
+  "Broadcast Software",
+  "Storage & Retrieval Systems. etc",
+];
+const badges3 = [
+  "Industry and Financial Analysis",
+  "Screen Presentation and Delivery. etc",
+];
 
 const Badge = ({ badgeText }) => {
   return (
@@ -53,8 +69,8 @@ const Courses = () => {
 
         {/* ALL YOU NEED TO KNOW ABOUT OUR COURSES */}
         <section className='flex flex-col space-y-5 py-10 md:px-20 lg:py-16 lg:px-20'>
-          <h1 className='text-primaryColor text-center text-xl font-medium md:text-2xl md:font-semibold'>
-            All you need to know about our courses
+          <h1 className='text-primaryColor text-center text-xl font-medium md:text-2xl lg:text-5xl md:font-semibold'>
+            Our courses
           </h1>
 
           {/* item-1 */}
@@ -63,8 +79,8 @@ const Courses = () => {
             className='flex flex-col justify-center items-center space-y-5 md:space-x-5 md:flex-row lg:py-10 lg:space-x-20'
           >
             <img
-              className='object-cover rounded-md w-80 md:w-1/2 md:h-1/2 lg:w-1/3 lg:h-1/3'
-              src={Rectangle8}
+              className='object-cover rounded-md w-80 md:w-1/2 md:h-1/2 lg:w-1/3 lg:h-96'
+              src={NewFrame2}
               alt=''
             />
 
@@ -73,11 +89,11 @@ const Courses = () => {
                 Introduction to Adobe Suite
               </h1>
 
-              <p className='text-primaryColor md:text-sm'>Duration 10 weeks</p>
+              <p className='text-primaryColor md:text-sm'>Duration 2 weeks</p>
               <p className='text-primaryColor md:text-sm'>
                 90% completion rate
               </p>
-              <p className='text-primaryColor md:text-sm'>10 class mates</p>
+              <p className='text-primaryColor md:text-sm'>maximum of 10 persons per class</p>
 
               <div>
                 <p className='text-center text-primaryColor md:text-sm font-semibold md:text-left lg:text-left'>
@@ -143,11 +159,11 @@ const Courses = () => {
                 Introduction to Business Broadcast
               </h1>
 
-              <p className='text-primaryColor md:text-sm'>Duration 10 weeks</p>
+              <p className='text-primaryColor md:text-sm'>Duration 2 weeks</p>
               <p className='text-primaryColor md:text-sm'>
                 90% completion rate
               </p>
-              <p className='text-primaryColor md:text-sm'>10 class mates</p>
+              <p className='text-primaryColor md:text-sm'>maximum of 10 persons per class</p>
 
               <div>
                 <p className='text-center text-primaryColor md:text-sm font-semibold md:text-left lg:text-left'>
@@ -215,8 +231,8 @@ const Courses = () => {
             </div>
 
             <img
-              className='object-cover rounded-md w-80 md:w-1/2 md:h-1/2 lg:w-1/3 lg:h-1/3'
-              src={Rectangle8}
+              className='object-cover rounded-md w-80 md:w-1/2 md:h-1/2 lg:w-1/3 lg:h-96'
+              src={NewFrame1}
               alt=''
             />
           </div>
@@ -227,8 +243,8 @@ const Courses = () => {
             className='flex flex-col justify-center items-center space-y-5 md:space-x-5 md:flex-row lg:py-10 lg:space-x-20'
           >
             <img
-              className='object-cover rounded-md w-80 md:w-1/2 md:h-1/2 lg:w-1/3 lg:h-1/3'
-              src={Rectangle8}
+              className='object-cover rounded-md w-80 md:w-1/2 md:h-1/2 lg:w-1/3 lg:h-96'
+              src={NewFrame3}
               alt=''
             />
 
@@ -237,11 +253,11 @@ const Courses = () => {
                 Broadcast Production
               </h1>
 
-              <p className='text-primaryColor md:text-sm'>Duration 10 weeks</p>
+              <p className='text-primaryColor md:text-sm'>Duration 2 weeks</p>
               <p className='text-primaryColor md:text-sm'>
                 90% completion rate
               </p>
-              <p className='text-primaryColor md:text-sm'>10 class mates</p>
+              <p className='text-primaryColor md:text-sm'>maximum of 10 persons per class</p>
 
               <div>
                 <p className='text-center text-primaryColor md:text-sm font-semibold md:text-left lg:text-left'>

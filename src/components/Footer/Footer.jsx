@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 import { footerNav, footerSocials } from "../../utils/constants";
 import ArrowSVG from "../../assets/icons/arrow";
-import FooterLogo from "../../assets/images/FooterLogo.png";
+// import FooterLogo from "../../assets/images/FooterLogo.png";
 
 const FooterSocial = () => {
   return (
@@ -39,7 +39,7 @@ const Footer = () => {
         {/* ITEM-1 */}
         <div className='mt-10 flex flex-col space-y-5 justify-center items-center lg:justify-start md:justify-start lg:items-start md:items-start'>
           {/* <h4>Logo</h4> */}
-          <img className='w-10 h-10' src={FooterLogo} alt='Cimfoni Logo' />
+          {/* <img className='w-10 h-10' src={FooterLogo} alt='Cimfoni Logo' /> */}
 
           <div>
             <p className='text-sm text-center'>
@@ -59,28 +59,33 @@ const Footer = () => {
             <p className='text-md font-semibold'>Contact Us</p>
 
             <div className='flex space-x-1'>
-              <p className='text-sm'>Hello@cimfoni.com</p>
+              <p className='text-sm'>info@cimfoni.com</p>
               <ArrowSVG className='hidden w-6 h-6 lg:block md:block' />
             </div>
           </div>
 
           <div className='flex flex-col'>
-            <div className='flex space-x-1'>
-              <p className='text-md font-semibold'>Office</p>
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                viewBox='0 0 24 24'
-                fill='currentColor'
-                className='w-6 h-6'
-              >
-                <path
-                  fillRule='evenodd'
-                  d='M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z'
-                  clipRule='evenodd'
-                />
-              </svg>
+            <div className='flex flex-col items-center justify-center space-x-1 md:items-start lg:items-start md:justify-start md:flex-row lg:flex-row'>
+              <div className="flex space-x-2 md:flex-none lg:flex-none">
+                <p className='text-md font-semibold'>Office</p>
 
-              <p className='text-sm'>No: 14a surulere road, lagos, Nigeria.</p>
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  viewBox='0 0 24 24'
+                  fill='currentColor'
+                  className='w-6 h-6'
+                >
+                  <path
+                    fillRule='evenodd'
+                    d='M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z'
+                    clipRule='evenodd'
+                  />
+                </svg>
+              </div>
+
+              <p className='text-sm'>
+                49 Raufu Williams crescent Surulere, Lagos
+              </p>
             </div>
           </div>
         </div>
@@ -134,10 +139,11 @@ const Footer = () => {
         <div className='flex flex-col space-x-5 justify-center items-center lg:items-start md:items-start lg:justify-start md:justify-start lg:space-x-0 md:space-x-0 lg:flex-col md:flex-col'>
           <h1 className='mx-auto font-semibold mb-5 md:mx-0 lg:mx-0'>Legal</h1>
 
-          <div className='text-sm grid grid-rows-2 grid-flow-col gap-3 lg:flex md:flex lg:flex-col md:flex-col lg:space-y-2'>
+          {/* <div className='text-sm grid grid-rows-2 grid-flow-col gap-3 lg:flex md:flex lg:flex-col md:flex-col lg:space-y-2'> */}
+          <div className='text-sm flex space-x-3 md:space-x-0 lg:space-x-0 lg:flex md:flex lg:flex-col md:flex-col lg:space-y-2'>
             {footerNav.legal.map((navItem) => (
               <div key={navItem.id} className='flex space-x-1'>
-                <Link to={navItem.path} className='text-sm whitespace-nowrap'>
+                <Link to={navItem.path} className='text-xs whitespace-nowrap'>
                   {navItem.title}
                 </Link>
                 <ArrowSVG className={"hidden lg:block md:block  w-6 h-6"} />

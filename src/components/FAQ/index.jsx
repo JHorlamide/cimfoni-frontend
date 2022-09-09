@@ -105,7 +105,7 @@ const index = () => {
                     </svg>
                   </Disclosure.Button>
                   <Disclosure.Panel className='px-4 pt-4 pb-2 text-sm text-gray-500'>
-                    Classes start on October 7th
+                    Morning and afternoon sessions
                   </Disclosure.Panel>
                 </>
               )}

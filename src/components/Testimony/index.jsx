@@ -3,7 +3,7 @@ import RatingCard from "../RatingCard";
 
 import Testimony1 from "../../assets/images/testimony-images/testimony-1.jpeg";
 import Testimony2 from "../../assets/images/testimony-images/testimony-2.jpeg";
-import Ellipse6 from '../../assets/images/Ellipse-6.png';
+import Ellipse6 from "../../assets/images/Ellipse-6.png";
 
 const testimonies = [
   {
@@ -36,7 +36,7 @@ const index = () => {
         {/* ITEM ONE */}
         <div className='flex flex-col justify-center items-center space-y-3'>
           <h1 className='mx-auto text-2xl text-center font-bold text-lightBlueText'>
-            Our Student Feedbacks
+            Feedbacks
           </h1>
 
           <p className='font-normal text-center text-lightBlueText'>
@@ -46,14 +46,14 @@ const index = () => {
 
         {/* ITEM TWO */}
         <div className='flex flex-col justify-center items-center space-y-5 lg:space-x-3 md:space-x-5 lg:space-y-0 md:space-y-0 lg:flex-row md:flex-row'>
-         {testimonies.map((testimony) => (
-           <RatingCard
-           key={testimony.id}
-           image={testimony.image}
-           name={testimony.name}
-           testimony={testimony.testimony}
-         />
-         ))}
+          {testimonies.map((testimony) => (
+            <RatingCard
+              key={testimony.id}
+              image={testimony.image}
+              name={testimony.name}
+              testimony={testimony.testimony}
+            />
+          ))}
         </div>
       </div>
     </div>

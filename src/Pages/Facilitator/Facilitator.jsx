@@ -61,7 +61,7 @@ const Facilitator = () => {
   return (
     <section>
       <Navbar />
-      
+
       <section className='pt-2 lg:pt-4'>
         <section className='bg-lightPurple px-8 py-8 lg:px-10 md:px-10 lg:py-28 md:py-20'>
           <div className='flex flex-col justify-center items-center space-y-3'>
@@ -70,9 +70,7 @@ const Facilitator = () => {
             </h1>
 
             <p className='text-primaryColor text-center lg:text-center md:text-center md:max-w-fit lg:max-w-5xl'>
-              You have the knowledge and the expertise, we have the platform.{" "}
-              <br className='hidden lg:block md:block' />
-              Join us upskill the next generation of tech talents.
+              Let’s up-skill the next generation creators
             </p>
           </div>
         </section>
@@ -87,7 +85,7 @@ const Facilitator = () => {
               <div>
                 <CustomInput
                   id='first_name'
-                  label={"First Name"}
+                  label={"First Name *"}
                   inputProps={{
                     type: "text",
                     name: "first_name",
@@ -104,7 +102,7 @@ const Facilitator = () => {
               <div>
                 <CustomInput
                   id='last_name'
-                  label={"Last Name"}
+                  label={"Last Name *"}
                   inputProps={{
                     type: "text",
                     name: "last_name",
@@ -122,7 +120,7 @@ const Facilitator = () => {
             <div className='mb-6'>
               <CustomInput
                 id='email'
-                label={"Email"}
+                label={"Email *"}
                 inputProps={{
                   type: "email",
                   name: "email",
@@ -139,7 +137,7 @@ const Facilitator = () => {
             <div className='mb-6'>
               <CustomInput
                 id='linkedin'
-                label={"LinkedIn Profile"}
+                label={"LinkedIn Profile *"}
                 inputProps={{
                   type: "text",
                   name: "linkedin_profile",
@@ -161,7 +159,7 @@ const Facilitator = () => {
                   htmlFor='phone'
                   className='text-sm text-gray-500 font-medium'
                 >
-                  Phone Number
+                  Phone Number *
                 </label>
                 <div className='w-full flex space-x-3 lg:flex lg:space-x-2 md:flex md:space-x-2'>
                   <PhoneInput
@@ -183,7 +181,7 @@ const Facilitator = () => {
               <div>
                 <CustomInput
                   id='specialization'
-                  label={"Area of specialization"}
+                  label={"Area of specialization *"}
                   select
                   selectOptions={specializationOptions}
                   selectProps={{

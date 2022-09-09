@@ -15,17 +15,17 @@ import CimfoniLogo from '../assets/images/Cimfoni.png';
 // import Frame3 from "../assets/images/gallery-images/Frame-3.png";
 // import Frame4 from "../assets/images/gallery-images/Frame-4.png";
 // import Frame6 from "../assets/images/gallery-images/Frame-6.png";
-import Frame7 from "../assets/images/gallery-images/Frame-7.png";
-import Frame8 from "../assets/images/gallery-images/Frame-8.png";
-import Frame9 from "../assets/images/gallery-images/Frame-9.png";
-import Frame10 from "../assets/images/gallery-images/Frame-10.png";
-import Frame11 from "../assets/images/gallery-images/Frame-11.png";
-import Frame12 from "../assets/images/gallery-images/Frame-12.png";
-import Frame13 from "../assets/images/gallery-images/Frame-13.png";
-import Frame14 from "../assets/images/gallery-images/Frame-14.png";
-import Frame15 from "../assets/images/gallery-images/Frame-15.png";
-import Frame16 from "../assets/images/gallery-images/Frame-16.png";
-import Frame17 from "../assets/images/gallery-images/Frame-17.png";
+// import Frame7 from "../assets/images/gallery-images/Frame-7.png";
+// import Frame8 from "../assets/images/gallery-images/Frame-8.png";
+// import Frame9 from "../assets/images/gallery-images/Frame-9.png";
+// import Frame10 from "../assets/images/gallery-images/Frame-10.png";
+// import Frame11 from "../assets/images/gallery-images/Frame-11.png";
+// import Frame12 from "../assets/images/gallery-images/Frame-12.png";
+// import Frame13 from "../assets/images/gallery-images/Frame-13.png";
+// import Frame14 from "../assets/images/gallery-images/Frame-14.png";
+// import Frame15 from "../assets/images/gallery-images/Frame-15.png";
+// import Frame16 from "../assets/images/gallery-images/Frame-16.png";
+// import Frame17 from "../assets/images/gallery-images/Frame-17.png";
 
 // New Frame Pictures
 import NewFrame1 from '../assets/images/gallery-images/NewFrame-1.jpg'
@@ -241,63 +241,63 @@ export const galleryImages = [
     name: "Frame6",
     image: NewFrame5,
   },
-  {
-    id: 7,
-    name: "Frame7",
-    image: Frame7,
-  },
-  {
-    id: 8,
+  // {
+  //   id: 7,
+  //   name: "Frame7",
+  //   image: Frame7,
+  // },
+  // {
+  //   id: 8,
 
-    name: "Frame8",
-    image: Frame8,
-  },
-  {
-    id: 9,
+  //   name: "Frame8",
+  //   image: Frame8,
+  // },
+  // {
+  //   id: 9,
 
-    name: "Frame9",
-    image: Frame9,
-  },
-  {
-    id: 10,
-    name: "Frame10",
-    image: Frame10,
-  },
-  {
-    id: 11,
-    name: "Frame11",
-    image: Frame11,
-  },
-  {
-    id: 12,
-    name: "Frame12",
-    image: Frame12,
-  },
-  {
-    id: 13,
-    name: "Frame13",
-    image: Frame13,
-  },
-  {
-    id: 14,
-    name: "Frame14",
-    image: Frame14,
-  },
-  {
-    id: 15,
-    name: "Frame15",
-    image: Frame15,
-  },
-  {
-    id: 16,
-    name: "Frame16",
-    image: Frame16,
-  },
-  {
-    id: 17,
-    name: "Frame1",
-    image: Frame17,
-  },
+  //   name: "Frame9",
+  //   image: Frame9,
+  // },
+  // {
+  //   id: 10,
+  //   name: "Frame10",
+  //   image: Frame10,
+  // },
+  // {
+  //   id: 11,
+  //   name: "Frame11",
+  //   image: Frame11,
+  // },
+  // {
+  //   id: 12,
+  //   name: "Frame12",
+  //   image: Frame12,
+  // },
+  // {
+  //   id: 13,
+  //   name: "Frame13",
+  //   image: Frame13,
+  // },
+  // {
+  //   id: 14,
+  //   name: "Frame14",
+  //   image: Frame14,
+  // },
+  // {
+  //   id: 15,
+  //   name: "Frame15",
+  //   image: Frame15,
+  // },
+  // {
+  //   id: 16,
+  //   name: "Frame16",
+  //   image: Frame16,
+  // },
+  // {
+  //   id: 17,
+  //   name: "Frame1",
+  //   image: Frame17,
+  // },
 ];
 
 export const paymentLinks = {

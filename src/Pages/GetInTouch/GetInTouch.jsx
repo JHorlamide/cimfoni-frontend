@@ -37,14 +37,14 @@ const GetInTouch = () => {
                 Get in touch with us?
               </h1>
               <p className='text-xs mt-4 text-center lg:text-md'>
-                Have an idea? Fill the details in the below form and we’ll get
-                in touch with you at the earliest.
+                Do you require a service? Fill the details in the below form and
+                we’ll get in touch with you at the earliest.
               </p>
             </div>
 
             <div className='mt-10 lg:mt-28'>
               <h1 className='text-lg font-medium text-center'>
-                Lets translate your idea into reality
+                Lets translate your need into reality
               </h1>
 
               <form className='mt-5' onSubmit={handleSubmit}>
