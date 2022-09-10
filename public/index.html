@@ -19,90 +19,110 @@
       referrerpolicy="no-referrer"
     />
     <title>Cimfoni</title>
-  </head>
-  <script defer>
-    //load TrackerJS
-    !(function (t, n, e, o, a) {
-      function d(t) {
-        var n = ~~(Date.now() / 3e5),
-          o = document.createElement(e);
-        (o.async = !0), (o.src = t + "?ts=" + n);
-        var a = document.getElementsByTagName(e)[0];
-        a.parentNode.insertBefore(o, a);
+
+    <!-- Global site tag (gtag.js) - Google Ads: 10980599859 -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-10980599859"
+      defer
+    ></script>
+    
+    <script defer>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
       }
-      (t.MooTrackerObject = a),
-        (t[a] =
-          t[a] ||
-          function () {
-            return t[a].q
-              ? void t[a].q.push(arguments)
-              : void (t[a].q = [arguments]);
-          }),
-        window.attachEvent
-          ? window.attachEvent("onload", d.bind(this, o))
-          : window.addEventListener("load", d.bind(this, o), !1);
-    })(
-      window,
-      document,
-      "script",
-      "//cdn.stat-track.com/statics/moosend-tracking.min.js",
-      "mootrack"
-    );
-    //tracker has to be initialized otherwise it will generate warnings and wont sendtracking events
-    mootrack("init", "099b3c46-bc83-4a99-b906-5e3b7a6f7723");
-  </script>
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-KCZHDSE1LP"
-    defer
-  ></script>
-  <script defer>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
+      gtag("js", new Date());
 
-    gtag("config", "G-KCZHDSE1LP");
-  </script>
-  <!-- Facebook Pixel Code -->
-  <script defer>
-    !(function (f, b, e, v, n, t, s) {
-      if (f.fbq) return;
-      n = f.fbq = function () {
-        n.callMethod
-          ? n.callMethod.apply(n, arguments)
-          : n.queue.push(arguments);
-      };
-      if (!f._fbq) f._fbq = n;
-      n.push = n;
-      n.loaded = !0;
-      n.version = "2.0";
-      n.queue = [];
-      t = b.createElement(e);
-      t.async = !0;
-      t.src = v;
-      s = b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t, s);
-    })(
-      window,
-      document,
-      "script",
-      "https://connect.facebook.net/en_US/fbevents.js"
-    );
-    fbq("init", "887769832184600");
-    fbq("track", "PageView");
-  </script>
+      gtag("config", "AW-10980599859");
+    </script>
 
-  <!-- Start of HubSpot Embed Code -->
-  <script
-    type="text/javascript"
-    id="hs-script-loader"
-    async
-    defer
-    src="//js-eu1.hs-scripts.com/26226203.js"
-  ></script>
-  <!-- End of HubSpot Embed Code -->
+    <script defer>
+      //load TrackerJS
+      !(function (t, n, e, o, a) {
+        function d(t) {
+          var n = ~~(Date.now() / 3e5),
+            o = document.createElement(e);
+          (o.async = !0), (o.src = t + "?ts=" + n);
+          var a = document.getElementsByTagName(e)[0];
+          a.parentNode.insertBefore(o, a);
+        }
+        (t.MooTrackerObject = a),
+          (t[a] =
+            t[a] ||
+            function () {
+              return t[a].q
+                ? void t[a].q.push(arguments)
+                : void (t[a].q = [arguments]);
+            }),
+          window.attachEvent
+            ? window.attachEvent("onload", d.bind(this, o))
+            : window.addEventListener("load", d.bind(this, o), !1);
+      })(
+        window,
+        document,
+        "script",
+        "//cdn.stat-track.com/statics/moosend-tracking.min.js",
+        "mootrack"
+      );
+      //tracker has to be initialized otherwise it will generate warnings and wont sendtracking events
+      mootrack("init", "099b3c46-bc83-4a99-b906-5e3b7a6f7723");
+    </script>
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-KCZHDSE1LP"
+      defer
+    ></script>
+
+    <script defer>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-KCZHDSE1LP");
+    </script>
+    <!-- Facebook Pixel Code -->
+    <script defer>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "887769832184600");
+      fbq("track", "PageView");
+    </script>
+
+    <!-- Start of HubSpot Embed Code -->
+    <script
+      type="text/javascript"
+      id="hs-script-loader"
+      async
+      src="//js-eu1.hs-scripts.com/26226203.js"
+      defer
+    ></script>
+    <!-- End of HubSpot Embed Code -->
+  </head>
 
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
