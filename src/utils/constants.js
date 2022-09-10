@@ -301,9 +301,9 @@ export const galleryImages = [
 ];
 
 export const paymentLinks = {
-  intro_to_adobe_suite: "https://paystack.com/pay/6ut7z5d9np",
-  intro_to_business_broadcast: "https://paystack.com/pay/kj2m4z8m-9",
-  broadcast_production: "https://paystack.com/pay/ro4158hv8g",
+  intro_to_adobe_suite: "https://share-eu1.hsforms.com/1Wqg1M2jnQnWNaadHWmdUmgfm49n",
+  intro_to_business_broadcast: "https://share-eu1.hsforms.com/1L-9SrCGBRFmE4Rc-g6cRfAfm49n",
+  broadcast_production: "https://share-eu1.hsforms.com/1WAlr5h5MRpeNbrWR-ge-iQfm49n",
 };
 
 export const supporterLogo = [
