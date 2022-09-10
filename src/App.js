@@ -5,10 +5,10 @@ import Home from "./Pages/Home/Home";
 import About from "./Pages/About/About";
 import Gallery from "./Pages/Gallery/Gallery";
 import Courses from "./Pages/Courses/Courses";
+import Glossary from "./Pages/Glossary/Glossary";
 import Services from "./Pages/Services/Services";
 import GetInTouch from "./Pages/GetInTouch/GetInTouch";
 import Facilitator from "./Pages/Facilitator/Facilitator";
-import Glossary from "./Pages/Glossary/Glossary";
 
 function App() {
   return (

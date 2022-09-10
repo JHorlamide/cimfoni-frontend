@@ -20,7 +20,8 @@ const Navbar = () => {
             {/* Image */}
             <Link className='flex' to='/' arial-current='page'>
               <img
-                className='w-32 h-7 -mt-12 flex md:-mt-10 md:w-full md:h-8 lg:mt-0 lg:w-full lg:h-8'
+                className='w-32 h-7 -mt-12 flex md:-mt-10 md:w-full md:h-8 lg:mt-0 lg:w-40 lg:h-8'
+                // className='w-32 h-7 -mt-12 flex md:-mt-10 md:w-full md:h-8 lg:mt-0 lg:w-full lg:h-8'
                 src={Logo3}
                 alt='Cimfoni Logo'
               />

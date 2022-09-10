@@ -26,11 +26,11 @@ const Gallery = () => {
           Photo gallery
         </h1>
 
-        <p className='text-xs text-gray-500 mt-3 text-justify lg:max-w-xl'>
+        {/* <p className='text-xs text-gray-500 mt-3 text-justify lg:max-w-xl'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc
           feugiat massa amet posuere venenatis in sed. Ut purus vestibulum
           vestibulum venenatis a, auctor.
-        </p>
+        </p> */}
 
         <section className='overflow-hidden text-gray-700 mt-3'>
           <div className='py-2 mx-auto'>
