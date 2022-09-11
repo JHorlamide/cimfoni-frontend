@@ -1,21 +1,23 @@
 import React from "react";
 import RatingCard from "../RatingCard";
 
-import Testimony1 from "../../assets/images/testimony-images/testimony-1.jpeg";
-import Testimony2 from "../../assets/images/testimony-images/testimony-2.jpeg";
+// import Testimony1 from "../../assets/images/testimony-images/testimony-1.jpeg";
+// import Testimony2 from "../../assets/images/testimony-images/testimony-2.jpeg";
+import Testimony3 from "../../assets/images/testimony-images/testimony-3.jpg";
+import Testimony4 from "../../assets/images/testimony-images/testimony-4.jpg";
 import Ellipse6 from "../../assets/images/Ellipse-6.png";
 
 const testimonies = [
   {
     id: 1,
-    image: Testimony1,
+    image: Testimony3,
     name: "Olamide Balogun",
     testimony:
       "I enjoyed my time at Cimfoni, The limited number of people in the class made learning easier",
   },
   {
     id: 2,
-    image: Testimony2,
+    image: Testimony4,
     name: "Ada Njoku",
     testimony:
       "Great experience! I had a wonderful time here. The trainers are patient and take their time to teach you.",
