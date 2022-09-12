@@ -7,32 +7,21 @@ import instagramIcon from "../assets/icons/instagram.png";
 // Supporting Brands Logos
 import WitransafLogo from "../assets/images/Witransaf.png";
 import LysiLogo from "../assets/images/LysiLogo.png";
-import CimfoniLogo from '../assets/images/Cimfoni.png';
+import CimfoniLogo from "../assets/images/Cimfoni.png";
 
 //Gallery Images
-// import Frame1 from "../assets/images/gallery-images/Frame-1.png";
-// import Frame2 from "../assets/images/gallery-images/Frame-2.png";
-// import Frame3 from "../assets/images/gallery-images/Frame-3.png";
-// import Frame4 from "../assets/images/gallery-images/Frame-4.png";
-// import Frame6 from "../assets/images/gallery-images/Frame-6.png";
-// import Frame7 from "../assets/images/gallery-images/Frame-7.png";
-// import Frame8 from "../assets/images/gallery-images/Frame-8.png";
-// import Frame9 from "../assets/images/gallery-images/Frame-9.png";
-// import Frame10 from "../assets/images/gallery-images/Frame-10.png";
-// import Frame11 from "../assets/images/gallery-images/Frame-11.png";
-// import Frame12 from "../assets/images/gallery-images/Frame-12.png";
-// import Frame13 from "../assets/images/gallery-images/Frame-13.png";
-// import Frame14 from "../assets/images/gallery-images/Frame-14.png";
-// import Frame15 from "../assets/images/gallery-images/Frame-15.png";
-// import Frame16 from "../assets/images/gallery-images/Frame-16.png";
-// import Frame17 from "../assets/images/gallery-images/Frame-17.png";
-
-// New Frame Pictures
-import NewFrame1 from '../assets/images/gallery-images/NewFrame-1.jpg'
-import NewFrame2 from '../assets/images/gallery-images/NewFrame-2.jpg'
-import NewFrame3 from '../assets/images/gallery-images/NewFrame-3.jpg'
-import NewFrame4 from '../assets/images/gallery-images/NewFrame-4.jpeg'
-import NewFrame5 from '../assets/images/gallery-images/NewFrame-5.jpeg'
+// import NewFrame1 from "../assets/images/gallery-images/NewFrame-1.jpg";
+// import NewFrame2 from "../assets/images/gallery-images/NewFrame-2.jpg";
+import NewFrame3 from "../assets/images/gallery-images/NewFrame-3.jpg";
+import NewFrame4 from "../assets/images/gallery-images/NewFrame-4.jpeg";
+import NewFrame5 from "../assets/images/gallery-images/NewFrame-5.jpeg";
+import NewFrame6 from "../assets/images/gallery-images/NewFrame-6.jpeg";
+import NewFrame7 from "../assets/images/gallery-images/NewFrame-7.jpeg";
+import NewFrame8 from "../assets/images/gallery-images/NewFrame-8.jpeg";
+import NewFrame9 from "../assets/images/gallery-images/NewFrame-9.jpeg";
+import NewFrame10 from "../assets/images/gallery-images/NewFrame-10.jpeg";
+import NewFrame11 from "../assets/images/gallery-images/NewFrame-11.jpeg";
+import NewFrame12 from "../assets/images/gallery-images/NewFrame-12.jpeg";
 
 export const navigation = [
   {
@@ -82,6 +71,13 @@ export const footerNav = {
       id: 3,
       path: "/glossary",
       title: "Glossary",
+      icon: ArrowSVG,
+    },
+
+    {
+      id: 6,
+      path: "/contact-us",
+      title: "Contact Us",
       icon: ArrowSVG,
     },
   ],
@@ -215,15 +211,25 @@ export const people = [
 ];
 
 export const galleryImages = [
+  // {
+  //   id: 4,
+  //   name: "Frame4",
+  //   image: NewFrame1,
+  // },
+  // {
+  //   id: 1,
+  //   name: "Frame1",
+  //   image: NewFrame2,
+  // },
   {
-    id: 4,
-    name: "Frame4",
-    image: NewFrame1,
+    id: 11,
+    name: "Frame11",
+    image: NewFrame11,
   },
   {
-    id: 1,
-    name: "Frame1",
-    image: NewFrame2,
+    id: 12,
+    name: "Frame12",
+    image: NewFrame12,
   },
   {
     id: 2,
@@ -238,72 +244,43 @@ export const galleryImages = [
 
   {
     id: 5,
-    name: "Frame6",
+    name: "Frame5",
     image: NewFrame5,
   },
-  // {
-  //   id: 7,
-  //   name: "Frame7",
-  //   image: Frame7,
-  // },
-  // {
-  //   id: 8,
-
-  //   name: "Frame8",
-  //   image: Frame8,
-  // },
-  // {
-  //   id: 9,
-
-  //   name: "Frame9",
-  //   image: Frame9,
-  // },
-  // {
-  //   id: 10,
-  //   name: "Frame10",
-  //   image: Frame10,
-  // },
-  // {
-  //   id: 11,
-  //   name: "Frame11",
-  //   image: Frame11,
-  // },
-  // {
-  //   id: 12,
-  //   name: "Frame12",
-  //   image: Frame12,
-  // },
-  // {
-  //   id: 13,
-  //   name: "Frame13",
-  //   image: Frame13,
-  // },
-  // {
-  //   id: 14,
-  //   name: "Frame14",
-  //   image: Frame14,
-  // },
-  // {
-  //   id: 15,
-  //   name: "Frame15",
-  //   image: Frame15,
-  // },
-  // {
-  //   id: 16,
-  //   name: "Frame16",
-  //   image: Frame16,
-  // },
-  // {
-  //   id: 17,
-  //   name: "Frame1",
-  //   image: Frame17,
-  // },
+  {
+    id: 6,
+    name: "Frame6",
+    image: NewFrame6,
+  },
+  {
+    id: 7,
+    name: "Frame7",
+    image: NewFrame7,
+  },
+  {
+    id: 8,
+    name: "Frame8",
+    image: NewFrame8,
+  },
+  {
+    id: 9,
+    name: "Frame9",
+    image: NewFrame9,
+  },
+  {
+    id: 10,
+    name: "Frame10",
+    image: NewFrame10,
+  },
 ];
 
 export const paymentLinks = {
-  intro_to_adobe_suite: "https://share-eu1.hsforms.com/1Wqg1M2jnQnWNaadHWmdUmgfm49n",
-  intro_to_business_broadcast: "https://share-eu1.hsforms.com/1L-9SrCGBRFmE4Rc-g6cRfAfm49n",
-  broadcast_production: "https://share-eu1.hsforms.com/1WAlr5h5MRpeNbrWR-ge-iQfm49n",
+  intro_to_adobe_suite:
+    "https://share-eu1.hsforms.com/1Wqg1M2jnQnWNaadHWmdUmgfm49n",
+  intro_to_business_broadcast:
+    "https://share-eu1.hsforms.com/1L-9SrCGBRFmE4Rc-g6cRfAfm49n",
+  broadcast_production:
+    "https://share-eu1.hsforms.com/1WAlr5h5MRpeNbrWR-ge-iQfm49n",
 };
 
 export const supporterLogo = [

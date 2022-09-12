@@ -1,10 +1,7 @@
 import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
-// import CustomBtn from "../../components/CustomBtn";
-// import ArrowSVG from "../../assets/icons/arrow";
 import Footer from "../../components/Footer/Footer";
 
-// import NewFrame1 from '../../assets/images/gallery-images/NewFrame-1.jpg'
 import NewFrame2 from "../../assets/images/gallery-images/NewFrame-2.jpg";
 import NewFrame5 from "../../assets/images/gallery-images/NewFrame-5.jpeg";
 
