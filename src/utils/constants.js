@@ -73,6 +73,13 @@ export const footerNav = {
       title: "Glossary",
       icon: ArrowSVG,
     },
+
+    {
+      id: 6,
+      path: "/contact-us",
+      title: "Contact Us",
+      icon: ArrowSVG,
+    },
   ],
 
   learn: [

@@ -9,6 +9,7 @@ import Glossary from "./Pages/Glossary/Glossary";
 import Services from "./Pages/Services/Services";
 import GetInTouch from "./Pages/GetInTouch/GetInTouch";
 import Facilitator from "./Pages/Facilitator/Facilitator";
+import ContactUs from "./Pages/Contact_Us/ContactUs";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route exact path='/explore' element={<Gallery />} />
         <Route exact path='/glossary' element={<Glossary />} />
         <Route exact path='/get-in-touch' element={<GetInTouch />} />
+        <Route exact path='/contact-us' element={<ContactUs />} />
       </Routes>
     </ScrollToTop>
   );
