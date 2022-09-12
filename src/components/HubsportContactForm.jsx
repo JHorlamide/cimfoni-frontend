@@ -1,22 +1,12 @@
 import React, { useEffect } from "react";
 
-const HubspotContactForm = ({ region, portalId, formId }) => {
+// const HubspotContactForm = ({ region, portalId, formId }) => {
+const HubspotContactForm = () => {
+  const HUBSPORT_FORM_ID = process.env.REACT_APP_HUBSPORT_FORM_ID;
+  const HUBSPORT_PORTAL_ID = process.env.REACT_APP_HUBSPORT_PORTAL_ID;
+  const HUBSPORT_REGION = process.env.REACT_APP_REGION;
+
   useEffect(() => {
-    //  const script = document.createElement("script");
-    //  script.src = "https://js-eu1.hsforms.net/forms/v2.js?pre=1";
-    //  document.body.appendChild(script);
-
-    //  script.addEventListener("load", () => {
-    //    if (window.hbspt) {
-    //      window.hbspt.forms.create({
-    //        target: { target },
-    //        portalId: { portalId },
-    //        formId: { formId },
-    //        //  target: "#hubspotForm",
-    //      });
-    //    }
-    //  });
-
     const script = document.createElement("script");
     script.src = "https://js-eu1.hsforms.net/forms/v2.js?pre=1";
     script.type = "text/javascript";
@@ -25,16 +15,16 @@ const HubspotContactForm = ({ region, portalId, formId }) => {
     const hbsptConfig = () => {
       if (window.hbspt) {
         window.hbspt.forms.create({
-          portalId: "26226203",
-          formId: "f444d897-9d9d-48e3-adc1-a91caa1c5055",
-          region: "eu1",
+          portalId: HUBSPORT_PORTAL_ID,
+          formId: HUBSPORT_FORM_ID,
+          region: HUBSPORT_REGION,
           target: "#hubspotForm",
         });
       }
     };
 
     script.addEventListener("load", hbsptConfig);
-  }, [formId, portalId]);
+  }, [HUBSPORT_FORM_ID, HUBSPORT_PORTAL_ID, HUBSPORT_REGION]);
 
   return (
     <div>

@@ -3,10 +3,6 @@ import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import HubspotContactForm from "../../components/HubsportContactForm";
 
-const HUBSPORT_FORM_ID = process.env.REACT_APP_HUBSPORT_FORM_ID;
-const HUBSPORT_PORTAL_ID = process.env.REACT_APP_HUBSPORT_PORTAL_ID;
-const HUBSPORT_REGION = process.env.REACT_APP_REGION;
-
 const ContactUs = () => {
   return (
     <section>
@@ -21,14 +17,7 @@ const ContactUs = () => {
       </section>
 
       <section className='bg-secondary py-5 px-5 lg:px-36 lg:py-20 md:px-10'>
-        <HubspotContactForm
-          region={HUBSPORT_REGION}
-          formId={HUBSPORT_FORM_ID}
-          portalId={HUBSPORT_PORTAL_ID}
-          // region={"eu1"}
-          // formId={"f444d897-9d9d-48e3-adc1-a91caa1c5055"}
-          // portalId={"26226203"}
-        />
+        <HubspotContactForm />
       </section>
 
       <Footer />
