@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 
-// const HubspotContactForm = ({ region, portalId, formId }) => {
 const HubspotContactForm = () => {
   const HUBSPORT_FORM_ID = process.env.REACT_APP_HUBSPORT_FORM_ID;
   const HUBSPORT_PORTAL_ID = process.env.REACT_APP_HUBSPORT_PORTAL_ID;
