@@ -3,7 +3,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import { galleryImages } from "../../utils/constants";
 import Community from "../../components/Community";
 import Footer from "../../components/Footer/Footer";
-import YouTube from "react-youtube";
+// import YouTube from "react-youtube";
 
 const Gallery = () => {
   const opts = {
@@ -79,7 +79,7 @@ const Gallery = () => {
         </section>
 
         <div className='flex justify-center items-center lg:py-20'>
-          <YouTube className={'rounded-lg'} videoId='2g811Eo7K8U' opts={opts} onReady={_onReady} />
+          {/* <YouTube className={'rounded-lg'} videoId='2g811Eo7K8U' opts={opts} onReady={_onReady} /> */}
         </div>
       </section>
 
