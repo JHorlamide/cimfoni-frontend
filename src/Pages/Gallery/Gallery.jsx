@@ -81,7 +81,7 @@ const Gallery = () => {
         <div className='flex justify-center items-center lg:py-20'>
           <YouTube
             className={"rounded-lg"}
-            videoId='EhEATXzif0E'
+            videoId='e5Z_Fr3R5QQ'
             opts={opts}
             onReady={_onReady}
           />
