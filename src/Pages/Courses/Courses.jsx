@@ -102,10 +102,10 @@ const Courses = () => {
                   Start Date
                 </p>
                 <p className='text-primaryColor md:text-sm font-medium'>
-                  Stream 1: 7th - 21st Oct
+                  
                 </p>
                 <p className='text-primaryColor md:text-sm font-medium'>
-                  Stream 2: 22nd - 6th Nov
+                  Stream : 22nd - 6th Nov
                 </p>
                 <p className='text-primaryColor md:text-sm font-medium'>
                   Stream 3: 7th - 21st Nov
