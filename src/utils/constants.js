@@ -10,8 +10,8 @@ import LysiLogo from "../assets/images/LysiLogo.png";
 import CimfoniLogo from "../assets/images/Cimfoni.png";
 
 //Gallery Images
-// import NewFrame1 from "../assets/images/gallery-images/NewFrame-1.jpg";
-// import NewFrame2 from "../assets/images/gallery-images/NewFrame-2.jpg";
+import NewFrame1 from "../assets/images/gallery-images/NewFrame-1.jpg";
+import NewFrame2 from "../assets/images/gallery-images/NewFrame-2.jpg";
 import NewFrame3 from "../assets/images/gallery-images/NewFrame-3.jpg";
 import NewFrame4 from "../assets/images/gallery-images/NewFrame-4.jpeg";
 import NewFrame5 from "../assets/images/gallery-images/NewFrame-5.jpeg";
@@ -211,16 +211,16 @@ export const people = [
 ];
 
 export const galleryImages = [
-  // {
-  //   id: 4,
-  //   name: "Frame4",
-  //   image: NewFrame1,
-  // },
-  // {
-  //   id: 1,
-  //   name: "Frame1",
-  //   image: NewFrame2,
-  // },
+  {
+    id: 4,
+    name: "Frame4",
+    image: NewFrame1,
+  },
+  {
+    id: 1,
+    name: "Frame1",
+    image: NewFrame2,
+  },
   {
     id: 11,
     name: "Frame11",
