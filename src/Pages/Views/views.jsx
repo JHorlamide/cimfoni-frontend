@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Gallery } from "react-grid-gallery";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
-import { images, CustomImage } from "./images";
+import { images, CustomImage } from "../../utils/constants";
 
 export default function App() {
   const [index, setIndex] = useState(-1);
