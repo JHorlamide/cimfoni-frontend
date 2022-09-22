@@ -24,6 +24,7 @@ function App() {
         <Route exact path='/glossary' element={<Glossary />} />
         <Route exact path='/get-in-touch' element={<GetInTouch />} />
         <Route exact path='/contact-us' element={<ContactUs />} />
+        <Route exact path='/views' element={<Views />} />
       </Routes>
     </ScrollToTop>
   );
