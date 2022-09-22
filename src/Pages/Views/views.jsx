@@ -64,7 +64,7 @@ function Views() {
               ))}
             </div>
 
-            onClick={(e) => this.openModal(e, index)}
+            onClick={(e) => this.openModal(e, galleryImages)}
           
 
             {/* <div className='grid grid-rows-4 grid-flow-col gap-4'>
