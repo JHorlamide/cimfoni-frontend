@@ -10,6 +10,7 @@ import Services from "./Pages/Services/Services";
 import GetInTouch from "./Pages/GetInTouch/GetInTouch";
 import Facilitator from "./Pages/Facilitator/Facilitator";
 import ContactUs from "./Pages/Contact_Us/ContactUs";
+import Views from "./Pages/Views/views";
 
 function App() {
   return (

@@ -5,7 +5,7 @@ import Community from "../../components/Community";
 import Footer from "../../components/Footer/Footer";
 import YouTube from "react-youtube";
 
-const Views = () => {
+function Views() {
   const opts = {
     height: "390",
     width: "640",
@@ -26,12 +26,12 @@ const Views = () => {
 
       <section className='bg-lightPurple px-10 py-10 md:px-28 md:py-20'>
         {/* <p className='text-primaryColor font-medium mb-5 md:text-xl'>
-          Our story
-        </p> */}
+              Our story
+            </p> */}
 
         {/* <h1 className='text-primaryColor font-bold text-2xl md:text-5xl'>
-          What we believe
-        </h1> */}
+              What we believe
+            </h1> */}
 
         <h1 className='text-primaryColor font-bold mb-2 md:mb-3 text-2xl md:text-5xl'>
           Photo gallery
@@ -40,13 +40,13 @@ const Views = () => {
 
       <section className='bg-galleryBackgroundColor px-10 py-5 md:px-28 lg:py-20'>
         {/* <h1 className='text-2xl font-bold text-gray-500 lg:text-4xl'>
-          Photo gallery
-        </h1> */}
+              Photo gallery
+            </h1> */}
         {/* <p className='text-xs text-gray-500 mt-3 text-justify lg:max-w-xl'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc
-          feugiat massa amet posuere venenatis in sed. Ut purus vestibulum
-          vestibulum venenatis a, auctor.
-        </p> */}
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc
+              feugiat massa amet posuere venenatis in sed. Ut purus vestibulum
+              vestibulum venenatis a, auctor.
+            </p> */}
         <section className='overflow-hidden text-gray-700 mt-3'>
           <div className='py-2 mx-auto'>
             <div className='flex flex-wrap -m-1 md:-m-2'>
@@ -56,8 +56,7 @@ const Views = () => {
                     <img
                       alt={name}
                       className={`block object-cover object-center w-full h-full rounded-lg`}
-                      src={image}
-                    />
+                      src={image} />
                   </div>
                 </div>
               ))}
@@ -84,8 +83,7 @@ const Views = () => {
             className={"rounded-lg"}
             videoId='e5Z_Fr3R5QQ'
             opts={opts}
-            onReady={_onReady}
-          />
+            onReady={_onReady} />
           {/* <YouTube className={'rounded-lg'} videoId='e5Z_Fr3R5QQ' opts={opts} onReady={_onReady} /> */}
         </div>
       </section>
@@ -97,6 +95,6 @@ const Views = () => {
       <Footer />
     </section>
   );
-};
+}
 
 export default Gallery;
