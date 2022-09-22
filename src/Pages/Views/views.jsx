@@ -97,4 +97,4 @@ function Views() {
   );
 }
 
-export default Gallery;
+export default Views;
