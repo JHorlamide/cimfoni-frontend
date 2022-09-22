@@ -5,7 +5,7 @@ import Community from "../../components/Community";
 import Footer from "../../components/Footer/Footer";
 import YouTube from "react-youtube";
 
-const Gallery = () => {
+const Views = () => {
   const opts = {
     height: "390",
     width: "640",
