@@ -15,6 +15,12 @@ function Views() {
       autoplay: 1,
     },
   };
+  const openCardView = (e, index) => {
+    e.preventDefault();
+    setCardViewIsActive(!cardViewIsActive);
+    setSelectedIndex(index)
+  };
+  
 
   const _onReady = (event) => {
     // access to player in all event handlers via event.target
@@ -61,6 +67,19 @@ function Views() {
                 </div>
               ))}
             </div>
+            {images.map((image, index) => (
+    <button onClick={openCardView} data-index={index}>
+      <div className="grid-item">
+        <h1 className="title-with-grid">{image.title}</h1>
+        <img
+          className="grid-item picture-img"
+          data-aos={randChoice(animations)}
+          src={image.image}
+          alt="nature1"
+        />
+      </div>
+    </button>
+))}
 
             {/* <div className='grid grid-rows-4 grid-flow-col gap-4'>
               {galleryImages.map(({ id, name, image, imageHeight }) => (
