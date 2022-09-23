@@ -5,114 +5,98 @@ import Community from "../../components/Community";
 import Footer from "../../components/Footer/Footer";
 import YouTube from "react-youtube";
 
-const imgUrls = ['https://source.unsplash.com/PC_lbSSxCZE/800x600','https://source.unsplash.com/lVmR1YaBGG4/800x600','https://source.unsplash.com/5KvPQc1Uklk/800x600','https://source.unsplash.com/GtYFwFrFbMA/800x600','https://source.unsplash.com/Igct8iZucFI/800x600','https://source.unsplash.com/M01DfkOqz7I/800x600','https://source.unsplash.com/MoI_cHNcSK8/800x600','https://source.unsplash.com/M0WbGFRTXqU/800x600','https://source.unsplash.com/s48nn4NtlZ4/800x600','https://source.unsplash.com/E4944K_4SvI/800x600','https://source.unsplash.com/F5Dxy9i8bxc/800x600','https://source.unsplash.com/iPum7Ket2jo/800x600'
-];
+function Views() {
+  const opts = {
+    height: "390",
+    width: "640",
+    rel: "0",
+    playerVars: {
+      // https://developers.google.com/youtube/player_parameters
+      autoplay: 1,
+    },
+  };
 
-<section class="gallery-container"></section>
+  
 
-class Gallery extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { currentIndex: null };
-    this.closeModal = this.closeModal.bind(this);
-    this.findNext = this.findNext.bind(this);
-    this.findPrev = this.findPrev.bind(this);
-    this.renderImageContent = this.renderImageContent.bind(this);
-  }
-  renderImageContent(src, index) {
-    return (
-      <div onClick={(e) => this.openModal(e, index)}>
-        <img src={src} key={src} />
-      </div>
-    ) 
-  }
-  openModal(e, index) {
-    this.setState ({ currentIndex: index });
-  }
-  closeModal(e) {
-    if (e != undefined) {
-      e.preventDefault();
-    }
-    this.setState ({ currentIndex: null });
-  }
-  findPrev(e) {
-    if (e != undefined) {
-      e.preventDefault();
-    }
-    this.setState(prevState => ({
-      currentIndex: prevState.currentIndex -1
-    }));
-  }
-  findNext(e) {
-    if (e != undefined) {
-      e.preventDefault();
-    }
-    this.setState(prevState => ({
-      currentIndex: prevState.currentIndex + 1
-    }));
-  }
-  render() {
-    return (
-      <div className="gallery-container">
-        <h1>🔥 This Gallery Is Lit 🔥</h1>
-        <div className="gallery-grid">
-          {imgUrls.map(this.renderImageContent)}
-        </div>
-        <GalleryModal 
-          closeModal={this.closeModal} 
-          findPrev={this.findPrev} 
-          findNext={this.findNext} 
-          hasPrev={this.state.currentIndex > 0} 
-          hasNext={this.state.currentIndex + 1 < imgUrls.length} 
-          src={imgUrls[this.state.currentIndex]} 
-        />
-      </div>
-    )
-  }
-}
+  const _onReady = (event) => {
+    // access to player in all event handlers via event.target
+    event.target.pauseVideo();
+  };
+  return (
+    <section>
+      <Navbar />
 
-class GalleryModal extends React.Component {
-  constructor() {
-    super();
-    this.handleKeyDown = this.handleKeyDown.bind(this);
-  }
-  componentDidMount() {
-    document.body.addEventListener('keydown', this.handleKeyDown);
-  }  
-  componentWillUnMount() {
-    document.body.removeEventListener('keydown', this.handleKeyDown);
-  }
-  handleKeyDown(e) {
-    if (e.keyCode === 27)
-      this.props.closeModal();
-    if (e.keyCode === 37 && this.props.hasPrev)
-      this.props.findPrev();
-    if (e.keyCode === 39 && this.props.hasNext)
-      this.props.findNext();
-  }
-  render () {
-    const { closeModal, hasNext, hasPrev, findNext, findPrev, src } = this.props;
-    if (!src) {
-      console.log('whut')
-      return null;
-    }
-    return (
-      <div>
-        <div className="modal-overlay" onClick={closeModal}></div>
-        <div isOpen={!!src} className="modal">
-          <div className='modal-body'>
-            <a href="#" className='modal-close' onClick={closeModal} onKeyDown={this.handleKeyDown}>&times;</a>
-            {hasPrev && <a href="#" className='modal-prev' onClick={findPrev} onKeyDown={this.handleKeyDown}>&lsaquo;</a>}
-            {hasNext && <a href="#" className='modal-next' onClick={findNext} onKeyDown={this.handleKeyDown}>&rsaquo;</a>}
-            <img src={src} />
+      <section className='bg-lightPurple px-10 py-10 md:px-28 md:py-20'>
+        {/* <p className='text-primaryColor font-medium mb-5 md:text-xl'>
+              Our story
+            </p> */}
+
+        {/* <h1 className='text-primaryColor font-bold text-2xl md:text-5xl'>
+              What we believe
+            </h1> */}
+
+        <h1 className='text-primaryColor font-bold mb-2 md:mb-3 text-2xl md:text-5xl'>
+          Photo gallery
+        </h1>
+      </section>
+
+      <section className='bg-galleryBackgroundColor px-10 py-5 md:px-28 lg:py-20'>
+        {/* <h1 className='text-2xl font-bold text-gray-500 lg:text-4xl'>
+              Photo gallery
+            </h1> */}
+        {/* <p className='text-xs text-gray-500 mt-3 text-justify lg:max-w-xl'>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc
+              feugiat massa amet posuere venenatis in sed. Ut purus vestibulum
+              vestibulum venenatis a, auctor.
+            </p> */}
+        <section className='overflow-hidden text-gray-700 mt-3'>
+          <div className='py-2 mx-auto'>
+            <div className='flex flex-wrap -m-1 md:-m-2'>
+              {galleryImages.map(({ id, name, image, imageHeight }) => (
+                <div key={id} className='flex flex-wrap w-1/4'>
+                  <div className='w-full p-1 md:p-2'>
+                    <img
+                      alt={name}
+                      className={`block object-cover object-center w-full h-full rounded-lg`}
+                      src={image} />
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* <div className='grid grid-rows-4 grid-flow-col gap-4'>
+              {galleryImages.map(({ id, name, image, imageHeight }) => (
+                <div key={id} className='flex flex-wrap w-full'>
+                  <div className='w-full p-1 md:p-2'>
+                    <img
+                      alt={name}
+                      className={`block object-cover object-center w-full h-full rounded-lg`}
+                      src={image}
+                    />
+                  </div>
+                </div>
+              ))}
+            </div> */}
           </div>
+        </section>
+
+        <div className='flex justify-center items-center lg:py-20'>
+          <YouTube
+            className={"rounded-lg"}
+            videoId='e5Z_Fr3R5QQ'
+            opts={opts}
+            onReady={_onReady} />
+          {/* <YouTube className={'rounded-lg'} videoId='e5Z_Fr3R5QQ' opts={opts} onReady={_onReady} /> */}
         </div>
-      </div>
-    )
-  }
+      </section>
+
+      {/* COMMUNITY */}
+      <Community />
+
+      {/* FOOTER */}
+      <Footer />
+    </section>
+  );
 }
-
-ReactDOM.render(<Gallery />, document.querySelector('.gallery-container'));
-
 
 export default Views;
