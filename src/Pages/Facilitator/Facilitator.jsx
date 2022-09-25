@@ -6,7 +6,7 @@ import Community from "../../components/Community";
 import Footer from "../../components/Footer/Footer";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
-import { useForm } from "react-hook-form";
+import HubspotForm from 'react-hubspot-form'
 
 
 const specializationOptions = [
