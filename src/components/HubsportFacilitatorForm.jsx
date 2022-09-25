@@ -32,4 +32,4 @@ const HubspotContactForm = () => {
   );
 };
 
-export default HubspotContactForm;
+export default HubsportFacilitatorForm;
