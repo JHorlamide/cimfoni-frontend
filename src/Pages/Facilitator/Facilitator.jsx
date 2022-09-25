@@ -6,8 +6,8 @@ import Community from "../../components/Community";
 import Footer from "../../components/Footer/Footer";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
-import HubspotForm from 'react-hubspot-form';
 import { useForm } from "react-hook-form";
+import HubspotFacilitatorForm from "../../components/HubsportFacilitatorForm";
 
 
 const specializationOptions = [
@@ -81,14 +81,11 @@ const Facilitator = () => {
           <h1 className='text-lg font-medium md:text-2xl lg:text-3xl'>
             Fill out the form below
           </h1>
-
-          <HubspotForm
-                portalId='26226203'
-                formId='5a06921c-9229-4caa-aef5-39b8f75bbcb1'
-                onSubmit={() => console.log('Submit!')}
-                onReady={(form) => console.log('Form ready!')}
-                loading={<div>Loading...</div>}
-            />
+          
+          <section className='bg-secondary py-5 px-5 lg:px-36 lg:py-20 md:px-10'>
+        <HubspotFacilitatorForm />
+      </section>
+         
         </section>
 
         {/* COMMUNITY */}

@@ -14,8 +14,8 @@ const HubspotContactForm = () => {
     const hbsptConfig = () => {
       if (window.hbspt) {
         window.hbspt.forms.create({
-          portalId: HUBSPORT_PORTAL_ID,
-          formId: HUBSPORT_FORM_ID,
+          portalId: '26226203',
+          formId: '5a06921c-9229-4caa-aef5-39b8f75bbcb1',
           region: HUBSPORT_REGION,
           target: "#hubspotForm",
         });
