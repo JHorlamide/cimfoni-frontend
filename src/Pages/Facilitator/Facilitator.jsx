@@ -7,8 +7,6 @@ import Footer from "../../components/Footer/Footer";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import { useForm } from "react-hook-form";
-import HubspotFacilitatorForm from "../../components/HubsportFacilitatorForm";
-
 
 const specializationOptions = [
   {
@@ -81,11 +79,144 @@ const Facilitator = () => {
           <h1 className='text-lg font-medium md:text-2xl lg:text-3xl'>
             Fill out the form below
           </h1>
-          
-          <section className='bg-secondary py-5 px-5 lg:px-36 lg:py-20 md:px-10'>
-        <HubspotFacilitatorForm />
-      </section>
-         
+
+          <form onSubmit={handleSubmit(onSubmit)}>
+            <div className='grid gap-6 mb-6 md:grid-cols-2 mt-10 lg:mt-10 md:mt-10'>
+              <div>
+                <CustomInput
+                  id='first_name'
+                  label={"First Name *"}
+                  inputProps={{
+                    type: "text",
+                    name: "first_name",
+                    value: formData.first_name,
+                    onChange: handleChange,
+                  }}
+                  errorText={errors.first_name && "First name is required"}
+                  required
+                  inputClassName='w-full mt-3 px-3 py-2 rounded-md border-2'
+                  labelClassName={"text-sm text-gray-500 font-medium"}
+                />
+              </div>
+
+              <div>
+                <CustomInput
+                  id='last_name'
+                  label={"Last Name *"}
+                  inputProps={{
+                    type: "text",
+                    name: "last_name",
+                    value: formData.last_name,
+                    onChange: handleChange,
+                  }}
+                  errorText={errors.label && "Last name is required"}
+                  required
+                  inputClassName='w-full mt-3 px-3 py-2 rounded-md border-2'
+                  labelClassName={"text-sm text-gray-500 font-medium"}
+                />
+              </div>
+            </div>
+
+            <div className='mb-6'>
+              <CustomInput
+                id='email'
+                label={"Email *"}
+                inputProps={{
+                  type: "email",
+                  name: "email",
+                  value: formData.email,
+                  onChange: handleChange,
+                }}
+                errorText={errors.email && "Email is required"}
+                required
+                inputClassName='w-full mt-3 px-3 py-2 rounded-md border-2'
+                labelClassName={"text-sm text-gray-500 font-medium"}
+              />
+            </div>
+
+            <div className='mb-6'>
+              <CustomInput
+                id='linkedin'
+                label={"LinkedIn Profile *"}
+                inputProps={{
+                  type: "text",
+                  name: "linkedin_profile",
+                  value: formData.linkedin_profile,
+                  onChange: handleChange,
+                }}
+                errorText={
+                  errors.linkedin_profile && "linkedin profile is required"
+                }
+                required
+                inputClassName='w-full mt-3 px-3 py-2 rounded-md border-2'
+                labelClassName={"text-sm text-gray-500 font-medium"}
+              />
+            </div>
+
+            <div className='grid gap-6 mb-6 md:grid-cols-2 lg:mt-10'>
+              <div>
+                <label
+                  htmlFor='phone'
+                  className='text-sm text-gray-500 font-medium'
+                >
+                  Phone Number *
+                </label>
+                <div className='w-full flex space-x-3 lg:flex lg:space-x-2 md:flex md:space-x-2'>
+                  <PhoneInput
+                    country={"ng"}
+                    containerClass='phone_input_container'
+                    inputClass='phone_input'
+                    autoFormat={true}
+                    value={formData.phone_code}
+                    onChange={(phone_code) => {
+                      setFormData({
+                        ...formData,
+                        phone_code: phone_code,
+                      });
+                    }}
+                  />
+                </div>
+              </div>
+
+              <div>
+                <CustomInput
+                  id='specialization'
+                  label={"Area of specialization *"}
+                  select
+                  selectOptions={specializationOptions}
+                  selectProps={{
+                    name: "specialization",
+                    value: formData.specialization,
+                    onChange: handleChange,
+                  }}
+                  required
+                  selectClassName='w-full mt-3 px-3 py-2 rounded-md border-2'
+                  labelClassName={"text-sm text-gray-500 font-medium"}
+                  aria-label='Choose your specialization'
+                  errorText={
+                    errors.specialization && "Your specialization is required"
+                  }
+                />
+              </div>
+            </div>
+
+            <div className='mt-4 lg:mt-10'>
+              <CustomBtn
+                type='submit'
+                className='w-full font-semibold bg-primaryColor py-4 mx-auto rounded-lg text-white'
+              >
+                Sign me up
+              </CustomBtn>
+
+              {/* <div className='flex space-x-2 mt-5 lg:flex lg:justify-center lg:items-center lg:mt-5 md:mt-5 lg:space-x-2'>
+                <input className='-mb-3.5 md:mb-0' type='checkbox' checked />
+                <p className='text-xs text-primaryColor text-center'>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis
+                  sit gravida mus enim elit egestas
+                </p>
+              </div> */}
+            </div>
+          </form>
         </section>
 
         {/* COMMUNITY */}
