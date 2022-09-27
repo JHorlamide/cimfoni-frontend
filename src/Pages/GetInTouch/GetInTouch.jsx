@@ -5,6 +5,7 @@ import CustomBtn from "../../components/CustomBtn";
 import CustomInput from "../../components/CustomInput";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
+import HubsportServiceRequestForm from "../../components/HubsportServiceRequestForm";
 
 const GetInTouch = () => {
   const [formData, setFormData] = useState({
@@ -47,7 +48,11 @@ const GetInTouch = () => {
                 Lets translate your need into reality
               </h1>
 
-              <form className='mt-5' onSubmit={handleSubmit}>
+              <section className='bg-secondary py-5 px-5 lg:px-36 lg:py-20 md:px-10'>
+                <HubsportServiceRequestForm />
+              </section>
+
+              {/* <form className='mt-5' onSubmit={handleSubmit}>
                 <p className='text-sm font-medium'>Personal Details</p>
 
                 <div className='grid gap-6 mb-6 md:grid-cols-2 mt-4'>
@@ -60,7 +65,6 @@ const GetInTouch = () => {
                       value: formData.first_name,
                       onChange: handleChange,
                     }}
-                    // errorText={"First name is required"}
                     required
                     inputClassName='w-full mt-3 px-3 py-2 rounded-md border-2'
                     labelClassName='text-sm text-gray-500 font-medium'
@@ -75,7 +79,6 @@ const GetInTouch = () => {
                       value: formData.last_name,
                       onChange: handleChange,
                     }}
-                    // errorText={"Last name is required"}
                     required
                     inputClassName='w-full mt-3 px-3 py-2 rounded-md border-2'
                     labelClassName={"text-sm text-gray-500 font-medium"}
@@ -92,7 +95,6 @@ const GetInTouch = () => {
                       value: formData.email,
                       onChange: handleChange,
                     }}
-                    // errorText={"Email is required"}
                     required
                     inputClassName='w-full mt-3 px-3 py-2 rounded-md border-2'
                     labelClassName={"text-sm text-gray-500 font-medium"}
@@ -148,30 +150,9 @@ const GetInTouch = () => {
                       placeholder: "Start typing",
                       rows: "8",
                     }}
-                    // errorText={"Project is required"}
                     boxClassName='w-full mt-3 px-3 py-2 rounded-md border-2'
                   />
                 </div>
-
-                {/* <div>
-                  <p className='text-sm mt-3'>
-                    Share Links to project files you’d like to share, if any
-                  </p>
-
-                  <CustomInput
-                    id='project'
-                    box
-                    boxProps={{
-                      type: "text",
-                      name: "project",
-                      value: formData.project,
-                      onChange: handleChange,
-                      placeholder: "Enter link",
-                      rows: "5",
-                    }}
-                    boxClassName='w-full mt-3 px-3 py-2 rounded-md border-2'
-                  />
-                </div> */}
 
                 <div className='mt-4 lg:mt-10'>
                   <CustomBtn
@@ -180,21 +161,8 @@ const GetInTouch = () => {
                   >
                     Submit Application
                   </CustomBtn>
-
-                  {/* <div className='flex space-x-2 mt-5 lg:flex lg:justify-center lg:items-center lg:mt-5 md:mt-5 lg:space-x-2'>
-                    <input
-                      className='-mb-3.5 md:mb-0'
-                      type='checkbox'
-                      checked
-                    />
-
-                    <p className='text-xs text-primaryColor text-center'>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Quis sit gravida mus enim elit egestas
-                    </p>
-                  </div> */}
                 </div>
-              </form>
+              </form> */}
             </div>
           </div>
         </div>

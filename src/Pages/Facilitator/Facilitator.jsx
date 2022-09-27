@@ -7,6 +7,7 @@ import Footer from "../../components/Footer/Footer";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import { useForm } from "react-hook-form";
+import HubspotFacilitatorForm from "../../components/HubsportFacilitatorForm";
 
 const specializationOptions = [
   {
@@ -80,7 +81,11 @@ const Facilitator = () => {
             Fill out the form below
           </h1>
 
-          <form onSubmit={handleSubmit(onSubmit)}>
+          <section className='bg-secondary py-5 px-5 lg:px-36 lg:py-20 md:px-10'>
+            <HubspotFacilitatorForm />
+          </section>
+
+          {/* <form onSubmit={handleSubmit(onSubmit)}>
             <div className='grid gap-6 mb-6 md:grid-cols-2 mt-10 lg:mt-10 md:mt-10'>
               <div>
                 <CustomInput
@@ -207,16 +212,8 @@ const Facilitator = () => {
               >
                 Sign me up
               </CustomBtn>
-
-              {/* <div className='flex space-x-2 mt-5 lg:flex lg:justify-center lg:items-center lg:mt-5 md:mt-5 lg:space-x-2'>
-                <input className='-mb-3.5 md:mb-0' type='checkbox' checked />
-                <p className='text-xs text-primaryColor text-center'>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis
-                  sit gravida mus enim elit egestas
-                </p>
-              </div> */}
             </div>
-          </form>
+          </form> */}
         </section>
 
         {/* COMMUNITY */}

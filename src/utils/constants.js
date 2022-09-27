@@ -23,6 +23,21 @@ import NewFrame10 from "../assets/images/gallery-images/NewFrame-10.jpeg";
 import NewFrame11 from "../assets/images/gallery-images/NewFrame-11.jpeg";
 import NewFrame12 from "../assets/images/gallery-images/NewFrame-12.jpeg";
 
+export const lightBoxImage = [
+  "../assets/images/gallery-images/NewFrame-1.jpg",
+  "../assets/images/gallery-images/NewFrame-2.jpg",
+  "../assets/images/gallery-images/NewFrame-3.jpg",
+  "../assets/images/gallery-images/NewFrame-4.jpeg",
+  "../assets/images/gallery-images/NewFrame-5.jpeg",
+  "../assets/images/gallery-images/NewFrame-6.jpeg",
+  "../assets/images/gallery-images/NewFrame-7.jpeg",
+  "../assets/images/gallery-images/NewFrame-8.jpeg",
+  "../assets/images/gallery-images/NewFrame-9.jpeg",
+  "../assets/images/gallery-images/NewFrame-10.jpeg",
+  "../assets/images/gallery-images/NewFrame-11.jpeg",
+  "../assets/images/gallery-images/NewFrame-12.jpeg",
+];
+
 export const navigation = [
   {
     id: 1,

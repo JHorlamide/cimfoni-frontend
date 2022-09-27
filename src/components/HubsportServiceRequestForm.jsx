@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 
-const HubspotFacilitatorForm = () => {
+const HubsportServiceRequestForm = () => {
   const HUBSPORT_FORM_ID = process.env.REACT_APP_HUBSPORT_FORM_ID;
   const HUBSPORT_PORTAL_ID = process.env.REACT_APP_HUBSPORT_PORTAL_ID;
   const HUBSPORT_REGION = process.env.REACT_APP_REGION;
 
   useEffect(() => {
     const script = document.createElement("script");
-    script.src = "https://js-eu1.hsforms.net/forms/v2.js?pre=1";
+    script.src = "https//js-eu1.hsforms.net/forms/v2.js?pre=1";
     script.type = "text/javascript";
     document.body.appendChild(script);
 
@@ -30,5 +30,4 @@ const HubspotFacilitatorForm = () => {
   );
 };
 
-export default HubspotFacilitatorForm;
-//script.src = "https://js.hsforms.net/forms/shell.js";
+export default HubsportServiceRequestForm;
