@@ -1,0 +1,76 @@
+.phone_input_container {
+   margin-top: 13px;
+}
+
+.phone_input {
+   width: 100% !important;
+   padding-top: 19px !important;
+   padding-bottom: 19px !important;
+   border: 2px solid #DFDFE6 !important;
+}
+
+#_hero_animation {
+   -webkit-animation: fadein 6s;
+   /* Safari, Chrome and Opera > 12.1 */
+   -moz-animation: fadein 6s;
+   /* Firefox < 16 */
+   -ms-animation: fadein 6s;
+   /* Internet Explorer */
+   -o-animation: fadein 6s;
+   /* Opera < 12.1 */
+   animation: fadein 6s;
+}
+
+@keyframes fadein {
+   from {
+      opacity: 0;
+   }
+
+   to {
+      opacity: 1;
+   }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+   from {
+      opacity: 0;
+   }
+
+   to {
+      opacity: 1;
+   }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+   from {
+      opacity: 0;
+   }
+
+   to {
+      opacity: 1;
+   }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+   from {
+      opacity: 0;
+   }
+
+   to {
+      opacity: 1;
+   }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+   from {
+      opacity: 0;
+   }
+
+   to {
+      opacity: 1;
+   }
+}
